@@ -7,6 +7,10 @@
 \usepackage{amsthm}
 \usepackage{amssymb}
 
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{csquotes}
+\addbibresource{viitteet.bib}
+
 \title{Eulerin $\phi$-funktion koko kun $n \rightarrow \infty$}
 \author{Elli Kiiski}
 \date{2020}
@@ -23,6 +27,8 @@
 \newpage
 
 \section{Tiivistelmä}
+
+Viittaus \cite{HardyWright} toinenkin \cite{Saksman}
 
 \section{Johdanto}
 
@@ -82,5 +88,7 @@ Siis $\phi(n) < n$ jokaisella $n \geq 2$.
 \section{Asiaaaa}
 
 \section{Lähteet}
+
+\printbibliography[heading=none]
 
 \end{document}
