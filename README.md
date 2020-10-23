@@ -1,7 +1,7 @@
 # Kanditutkielma
 
-Aihe: Eulerin φ-funktion koko kun n → ∞
-\nOhjaaja: Eero Saksman
+Aihe: Eulerin φ-funktion koko kun n → ∞  
+Ohjaaja: Eero Saksman
 
 ### Suunnitelma
 
