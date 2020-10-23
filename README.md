@@ -15,12 +15,12 @@ Kandisykkimistä loppuvuonna joka perjantai (koska muut päivät on aikalailla t
 | viikko | tavoitteet | toteutuma | tunnit |
 | :------| :----------| :---------| :------| :-----------|
 | 43 | kandin mieleen palauttaminen | käytännön säätöä kansioiden ja tiedostojen rakenteen kanssa, kirjan lukemista | 2 |
-| 44 | fii-funktion arvoja alle neliöjuuri n? |
-| 45 | fii-funktion ylärajan todistus
-| 46 | yhteys Saksmaniin, fii-funktion ylärajan todistus
-| 47 | möbiuksen myy-funktio
-| 48 | fii-funktion keskiarvo
-| 49 | yhteys Saksamaniin, fii-funktion keskiarvo
-| 50 | ??
-| 51 | ??
-| 52 | LOMALLE PLIIIIIS
+| 44 | fii-funktion arvoja alle neliöjuuri n? | | |
+| 45 | fii-funktion ylärajan todistus | | |
+| 46 | yhteys Saksmaniin, fii-funktion ylärajan todistus | | |
+| 47 | möbiuksen myy-funktio | | |
+| 48 | fii-funktion keskiarvo | | |
+| 49 | yhteys Saksamaniin, fii-funktion keskiarvo | | |
+| 50 | ?? | | |
+| 51 | ?? | | |
+| 52 | LOMALLE PLIIIIIS | | |
