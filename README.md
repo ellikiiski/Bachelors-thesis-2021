@@ -13,7 +13,7 @@ Kandisykkimistä loppuvuonna joka perjantai (koska muut päivät on aikalailla t
 
 | viikko | tavoitteet | toteutuma | tunnit |
 | :------| :----------| :---------| :------|
-| 43 | kandin mieleen palauttaminen | käytännön säätöä kansioiden ja tiedostojen rakenteen kanssa, kirjan lukemista | 2 |
+| 43 | kandin mieleen palauttaminen | käytännön säätöä kansioiden ja tiedostojen rakenteen kanssa, alustava aikataulu, kirjan lukemista | 2 |
 | 44 | fii-funktion arvoja alle neliöjuuri n? | | |
 | 45 | fii-funktion ylärajan todistus | | |
 | 46 | yhteys Saksmaniin, fii-funktion ylärajan todistus | | |
