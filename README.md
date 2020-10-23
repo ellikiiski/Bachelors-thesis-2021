@@ -1,6 +1,6 @@
 # Kanditutkielma
 
-Kandidaatintutkielma aiheesta Eulerin φ-funktion koko kun n → ∞
+Aihe: Eulerin φ-funktion koko kun n → ∞
 
 Ohjaaja: Eero Saksman
 
