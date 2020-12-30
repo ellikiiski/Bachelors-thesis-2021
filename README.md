@@ -14,7 +14,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | viikko | tavoitteet | tunnit |
 | :------| :----------| :------|
 | 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021 |  |
-| [01](# Viikko 1) | fii-funktion arvoja alle neliöjuuri n? |  |
+| [01](#Viikko-1) | fii-funktion arvoja alle neliöjuuri n? |  |
 | 02 | fii-funktion ylärajan todistus |  |
 | 03 | back on track: fii-funktion arvoja alle neliöjuuri n? |  |
 | 04 | fii-funktion ylärajan todistus | |
