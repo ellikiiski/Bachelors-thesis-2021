@@ -13,7 +13,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 
 | viikko | tavoitteet | toteutuneet tunnit |
 | :------| :----------| :------|
-| vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio githubiin |  |
+| vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio | 1 |
 | [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? |  |
 | [vk 2](#Viikko-2) | fii-funktion alarajan todistuksen ymmärtäminen |  |
 | [vk 3](#Viikko-3) | yhteys Saksmaniin, alarajan todistaminen |  |
