@@ -30,8 +30,6 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 4.1. | Aivojen herättelyä lomahorroksesta ja lukuteorian kertausta | 1 |
-| 5.1. |  |  |
-| 6.1. |  |  |
 | 7.1. |  |  |
 | 8.1. |  |  |
 
