@@ -32,18 +32,18 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | 4.1. | Aivojen herättelyä lomahorroksesta ja lukuteorian kertausta | 1 |
 | 7.1. | Vähän lukuteorian kurssimateriaalian vilkuilua, mutta todellisuudessa heikkoa suorittamista | 1 |
 
-<emp>Tavoitteiden toteutuminen:</emp> Nolla tavoitetta savutettu, surkeaa toimintaa
+*Tavoitteiden toteutuminen:* Nolla tavoitetta savutettu, surkeaa toimintaa
 
 ##### Viikko 2
 
-<emp>Tavoitteita muokattu 14.1.</emp>
+*Tavoitteita muokattu 14.1.*
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 14.1. |  |  |
 | 15.1. |  |  |
 
-<emp>Tavoitteiden toteutuminen:</emp>
+*Tavoitteiden toteutuminen:*
 
 ##### Viikko 3
 
