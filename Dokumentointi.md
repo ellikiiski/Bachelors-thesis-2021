@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-*(Alkuperäinen versio 3.1.2021)*
+*(Viikkotavoitteita muokattu viimeksi 14.1.2021)*
 
 Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut kovinkaan tuottoisa.
 
@@ -32,8 +32,6 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 *Tavoitteiden toteutuminen:* Nolla tavoitetta savutettu, surkeaa toimintaa
 
 ##### Viikko 2
-
-*Tavoitteita muokattu 14.1.*
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
