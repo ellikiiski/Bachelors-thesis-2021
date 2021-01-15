@@ -69,15 +69,22 @@ If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relative primes.
 
 \end{definition}
 
-\section{Euler's totient function}
+\begin{definition}{Multiplicative number theoretic function}
 
-%Eulerin $\phi$-funktio on lukuteoreettinen funktio, eli se kuvautuu luonnollisilta luvuilta luonnollisille luvuille. Nönnönnöö
+Function $f: \mathbb{N} \rightarrow \mathbb{R}$ is called number theoretic function. Function $f$ is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
 
-\begin{definition}{\emph{Eulerin totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
+\end{definition}
+
+\section{Euler's totient function and its properties}
+
+Euler's totient function is a number theoretic function used in NÖNÖNÖNÖ
+
+\begin{definition}{\emph{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
 
 It's set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
 
 AIKA SURKEE SELITYS
+
 That is, the value of the totient function in $n \in \mathbb{N}$ is the number of natural numbers smaller than $n$, which are its co-primes.
 
 %Toisin sanoen Eulerin $\phi$-funktion arvo luonnollisella luvulla $n$ on sitä pienempien luonnolisten lukujen määrä, jotka ovat alkulukuja sen suhteen.
@@ -102,11 +109,27 @@ KIKKI
 
 \end{theorem}
 
-\section{The bounds of Euler's totient function JÄIN TÄHÄN}
+\begin{theorem}{Totient function and primes}
 
-Kuten pätee monille lukuteoreettisille funktioille, myös Eulerin $\phi$-funktion arvo heittelehtii $n$:n kasvaessa OIKEI LUOVUTAN, VAIHDAN ENKKUUN
+For every $p \in \mathbb{P}$ holds $\phi(p) = p-1$
 
-\subsection{Eulerin $\phi$-funktion yläraja}
+\begin{proof}
+
+KIKKI
+
+\end{proof}
+
+\end{theorem}
+
+\section{The limits of Euler's totient function}
+
+As shown, there is an exact formula for the rather verbally defined totient function $\phi(n)$. Tough, using it requires factorization of $n$, which seems to cause the complicatedness to estimate its size as $n$ gets bigger.
+
+For example let $n = 2^p - 1 \in \mathbb{P}$ where also $p \in \mathbb{P}$ (meaning $n$ is so called Mersenne prime). By theorem \ref{Totient function and primes} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$. Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the value of $\phi(n)$.
+
+As we see the size of Euler's totient function fluctuates as it grows, making its size quite difficult to define. After shortly proving the trivial upper limit of the totient function, we move on to the more complicated lower limit.
+
+\subsection{Upper limit of Euler's totient function TÄHÄN JÄIN}
 
 \begin{theorem}{\emph{Eulerin $\phi$-funktion yläraja}}
 
