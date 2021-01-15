@@ -36,7 +36,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 14.1. | C.P. kirjoituksen lukemista, kandin kielen vaihtaminen englantiin ja kääntämishommia | 3 |
-| 15.1. |  |  |
+| 15.1. | Englanniksi kääntämistä ja Mersenne prime -esimerkin kirjoittaminen | 2 |
 
 *Tavoitteiden toteutuminen:*
 
