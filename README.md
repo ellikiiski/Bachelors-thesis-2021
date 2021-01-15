@@ -1,6 +1,6 @@
 # Bachelor's thesis
 
-Subject: Size of Euler's φ-function when n → ∞  
+Subject: The size of Euler's totient function when n → ∞  
 Supervisor: Eero Saksman
 
 [Latest verion of the paper (version 0)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/0-versio.pdf)  
