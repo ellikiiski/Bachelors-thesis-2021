@@ -18,6 +18,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}[subsection]{Definition}
 \newtheorem{notation}[subsection]{Notation}
+\newtheorem{agreement}[subsection]{Agreement}
 \newtheorem{theorem}[subsection]{Theorem}
 
 \begin{document}
@@ -32,24 +33,30 @@ Viittaus \cite{HardyWright} toinenkin \cite{Saksman}
 
 \section{Introduction}
 
-\section{Notation and definitons}
+\section{Notation and definitions}
 
-\begin{notation}{\emph{Divisibility $a \vert b$}}
+\begin{agreement}{\emph{About numbers}}
 
-Let $a \in \mathbb{Z}$ and $b \in \mathbb{Z}$ be such that $b$ is divisible by $a$. This is denoted by $a \vert b$.
+Unless defined otherwise, all introduced variables $a, b, c, ...$ are integers. The set of natural numbers $\mathbb{N}$ consists of positive integers, meaning $0 \not\in \mathbb{N}$.
+
+\end{agreement}
+
+\begin{notation}{\emph{Divisibility}}
+
+Let $a$ and $b$ be such that $b$ is divisible by $a$. This is denoted by $a \vert b$.
 
 \end{notation}
 
-\begin{definition}{\emph{Greatest common divisor, $gcd(a, b)$}}
+\begin{definition}{\emph{Greatest common divisor}}
 
-Let $a \not= 0$ and $b \not= 0$. There is a unique $d \in \mathbb{N}$ with following properties:
+Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{N}$ with following properties:
 
 \begin{enumerate}
  \item $d \vert a$ and $d \vert b$
- \item if $d' \vert a$ and $d' \vert b$, then $d' \vert d$
+ \item if $c \vert a$ and $c \vert b$, then $c \vert d$
 \end{enumerate}
 
-The number $d$ is called the greatest common divisor of $a$ and $b$. It's denoted by $gcd(a,b) = d$.
+The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by $gcd(a,b) = d$.
 
 \end{definition}
 
@@ -63,37 +70,35 @@ In other words, all integers greater than than $1$, which are only divisible by 
 
 \end{definition}
 
-\begin{definition}{\emph{Co-primes}}
+\begin{definition}{\emph{Co-prime}}
 
 If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relative primes.
 
 \end{definition}
 
-\begin{definition}{Multiplicative number theoretic function}
+\begin{definition}{\emph{Multiplicative number theoretic function}}
 
-Function $f: \mathbb{N} \rightarrow \mathbb{R}$ is called number theoretic function. Function $f$ is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
+Function $f: \mathbb{N} \rightarrow \mathbb{R}$ is called number theoretic function. It is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
 
 \end{definition}
 
 \section{Euler's totient function and its properties}
 
-Euler's totient function is a number theoretic function used in NÖNÖNÖNÖ
+Euler's totient function is a number theoretic function. KESKEN
 
 \begin{definition}{\emph{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
 
-It's set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
-
-AIKA SURKEE SELITYS
-
-That is, the value of the totient function in $n \in \mathbb{N}$ is the number of natural numbers smaller than $n$, which are its co-primes.
+It is set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
 
 %Toisin sanoen Eulerin $\phi$-funktion arvo luonnollisella luvulla $n$ on sitä pienempien luonnolisten lukujen määrä, jotka ovat alkulukuja sen suhteen.
 
 \end{definition}
 
+That is, the value of the totient function at $n \in \mathbb{N}$ is the number of co-primes of $n$ smaller than it. KENTIES SELKEÄMPI SELITYS ON OLEMASSA
+
 \newpage
 
-\begin{theorem}{Euler's product formula}
+\begin{theorem}{\emph{Euler's product formula}}
 
 \begin{equation*}
     \phi(n) = n \prod_{p \vert n} (1 - \frac{1}{p})
@@ -109,7 +114,7 @@ KIKKI
 
 \end{theorem}
 
-\begin{theorem}{Totient function and primes}
+\begin{theorem}{\emph{Totient function and primes}}
 
 For every $p \in \mathbb{P}$ holds $\phi(p) = p-1$
 
@@ -123,65 +128,45 @@ KIKKI
 
 \section{The limits of Euler's totient function}
 
-As shown, there is an exact formula for the rather verbally defined totient function $\phi(n)$. Tough, using it requires factorization of $n$, which seems to cause the complicatedness to estimate its size as $n$ gets bigger.
+As shown, there is an exact formula for the rather verbally defined totient function $\phi(n)$. Though, using it requires factorization of $n$, which seems to cause the difficulty to estimate its size as $n$ gets bigger. VÄHÄN AIHEEN VIERESTÄ JA OUTO
 
-For example let $n = 2^p - 1 \in \mathbb{P}$ where also $p \in \mathbb{P}$ (meaning $n$ is so called Mersenne prime). By theorem \ref{Totient function and primes} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$. Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the value of $\phi(n)$.
+For example, let $n = 2^p - 1 \in \mathbb{P}$ where also $p \in \mathbb{P}$ ($n$ is so called Mersenne prime). By theorem \ref{Totient function and primes} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$. Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the value of $\phi(n)$. MERSENNE PRIME EHKÄ PITÄÄ AVATA JA EHKÄ PERUSTELLA ETTÄ SELLASIA ON OLEMASSA
 
-As we see the size of Euler's totient function fluctuates as it grows, making its size quite difficult to define. After shortly proving the trivial upper limit of the totient function, we move on to the more complicated lower limit.
+As we see the size of Euler's totient function fluctuates as it grows, making its size quite difficult to define. After shortly proving the trivial upper limit of the totient function, we move on to the more complicated lower limit. PAREMPI AASINSILTA TARVITAAN, EHKÄ VOI JOPA SIIRTÄÄ SEURAAVAN ALAOTSIKON ALLE
 
-\subsection{Upper limit of Euler's totient function TÄHÄN JÄIN}
+\subsection{Upper limit of Euler's totient function}
 
-\begin{theorem}{\emph{Eulerin $\phi$-funktion yläraja}}
+AASINSILTA HAKUSESSA
 
-Kaikilla luonnollisilla luvuilla $n \geq 2$ pätee $\phi(n) < n$.
+\begin{theorem}{\emph{Upper limit of the totient function}}
+
+$\phi(n) \leq n-1$ for every $n \geq 2$.
 
 \begin{proof}
 
-Suoraan määritelmästä seuraa, että $\phi(n) \leq n$, koska joukossa $\{1,2,...,n\}$ on $n$ alkiota ja siten niiden joukosta ei voi löytyä yli $n$ kappaletta ehtoa täyttävää lukua. Lisäksi jokaisella $n$ pätee $syt(n,n) = n$. Täten millään $n \geq 2$ ei voi olla $\phi(n) = n$.
+By definition $\phi(n) \leq n$ beacause there are $n$ elements in the set $\{1,2,...,n\}$. Also, for every $n \geq 2$ holds $gcd(n,n) = n \neq 1$. Thus, $\phi(n) \leq n-1$.
 
-Siis $\phi(n) < n$ jokaisella $n \geq 2$.
+On the other hand, according to theorem \ref{Totient function and primes}, $\phi(p) = p-1$ for every $p\in\mathbb{P}$. This means that $\phi(n) = n-1$ is, in fact, the sumpremum of Euler's totient function. TARKISTA SUPREMUM MÄÄRITELMÄ. PITÄÄ VARMAAN MAINITA VIELÄ, ETTÄ ALKULUKUJA ON ÄÄRETTÖMÄSTI.
 
 \end{proof}
 
 \end{theorem}
 
-\begin{theorem}{\emph{Alkuluvuilla $\phi(p)=p-1$}}
+\subsection{Lower limit of Euler's totient function}
 
-Jokaisella alkuluvulla $p\in\mathbb{P}$ pätee $\phi(p)=p-1$.
+The lower limit of the totient function being anything but trivial, as given a little example above, let's start examining it by considering some simple lower limit candidates.
 
-\begin{proof}
+\subsubsection{Are there such integers $n$ that $\phi(n) < \sqrt(n)$?}
 
-Olkoon $p\in\mathbb{P}$. Tällöin jokaisella $k<p$, $k\in\mathbb{N}$ pätee $syt(k, p)=1$, mistä seuraa suoraan $\phi(p)=p-1$. PITÄISIKÖ TÄÄ TODISTAA PAREMMIN
+Let's begin with $\sqrt{n}$. Is there such large number $n$ that $\phi(n) < \sqrt(n)$? When checking the values of $\phi(n)$ for smaller $n$, we see that at least with $n=6$ the statement is true, as $\phi(6)=2<\sqrt{6}$. After that, however, the values seem to be consistently above the corresponding squareroot value.
 
-\end{proof}
+Reasonable guess would be to assume that $\sqrt{n}$ is a lower limit for $\phi(n)$ when $n \rightarrow \infty$. With more precise examination, we see that is indeed the case.
 
-\end{theorem}
-
-\begin{theorem}{$\phi$-funktion pienin yläraja}
-
-Jokaisella $n \in \mathbb{N}$ pätee $\phi(n)\leq {n-1}$.
-
-\begin{proof}
-
-Tulos saadaan suoraan yhdistämällä lauseet ÄSKEINEN ja SITÄ EDELLINEN.
-
-\end{proof}
-
-\end{theorem}
-
-\subsection{Eulerin $\phi$-funktion alaraja}
-
-\subsection{$\phi(n) < \sqrt(n)$?}
-
-Lähdetään tutkimaan $\phi$-funktion alarajaa tarkastelemalla onko olemassa suuria luonnollisia lukuja, joilla $\phi(n) < \sqrt{n}$. Huomataan, että ainakin vielä luvulla $n=6$ pätee $\phi(6)=2<\sqrt(6)$, mutta sen jälkeen arvot näyttäisivät järjestään ylittävän vastaavan neliöjuuren arvon.
-
-Tarkastellaan tilannetta tarkemmin jos osataan ehehe
-
-\section{Eulerin $\phi$-funktion keskiarvo}
+\section{Average of Euler's totient function}
 
 \section{Asiaaa}
 
-\section{Lähteet}
+\section{References}
 
 \printbibliography[heading=none]
 
