@@ -12,7 +12,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | :------| :----------| :------|
 | vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio | 1 |
 | [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 2 |
-| [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? |  |
+| [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 5 |
 | [vk 3](#Viikko-3) | fii-funktion alarajan todistaminen, yhteys Saksmaniin |  |
 | [vk 4](#Viikko-4) | fii-funktion alarajan todistaminen |  |
 | [vk 5](#Viikko-5) | (??) möbiuksen myy-funktio | |
@@ -38,13 +38,14 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | 14.1. | C.P. kirjoituksen lukemista, kandin kielen vaihtaminen englantiin ja kääntämishommia | 3 |
 | 15.1. | Englanniksi kääntämistä ja Mersenne prime -esimerkin kirjoittaminen | 2 |
 
-*Tavoitteiden toteutuminen:*
+*Tavoitteiden toteutuminen:* Ylärajan todistus done (supremunjuttu pitää tarkistaa), apumääritelmät kirjoitettu, englanninnos aloitettu vaikkei se ollutkaan alunperin tavoitteissa
 
 ##### Viikko 3
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 18.1. |  |  |
+| 18.1. | Englanninnosta eteenpäin | 1 |
+| 19.1. | Englanninnos loppuun, versio 0.1 | 1 |
 
 ##### Viikko 4
 
