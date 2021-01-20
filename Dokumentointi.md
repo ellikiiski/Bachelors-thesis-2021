@@ -46,6 +46,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | :-----| :-------| :------|
 | 18.1. | Englanninnosta eteenpäin | 1 |
 | 19.1. | Englanninnos loppuun, versio 0.1 | 1 |
+| 20.1. | Yritystä päästä jyvälle Hardy-Wrightin todistuksista | 2 |
 
 *Tavoitteiden toteutuminen:*
 
