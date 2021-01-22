@@ -47,6 +47,8 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | 18.1. | Englanninnosta eteenpäin | 1 |
 | 19.1. | Englanninnos loppuun, versio 0.1 | 1 |
 | 20.1. | Yritystä päästä jyvälle Hardy-Wrightin todistuksista | 2 |
+| 21.1. | Lähteiden etsimistä neliöjuuri-todistukseen | 1 |
+| 22.1. | Pari potentiaalista lähdettä löydetty, Saksmanille laitettu viestiä | 1 |
 
 *Tavoitteiden toteutuminen:*
 
