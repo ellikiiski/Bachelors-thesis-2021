@@ -13,7 +13,7 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio | 1 |
 | [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 2 |
 | [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 5 |
-| [vk 3](#Viikko-3) | englanninnos loppuun, fii-funktion arvoja alle neliöjuuri n?, fii-funktion alarajan todistuksen ymmärtäminen, **yhteys Saksmaniin** |  |
+| [vk 3](#Viikko-3) | englanninnos loppuun, fii-funktion arvoja alle neliöjuuri n?, fii-funktion alarajan todistuksen ymmärtäminen, **yhteys Saksmaniin** | 6 |
 | [vk 4](#Viikko-4) | fii-funktion alarajan todistaminen |  |
 | [vk 5](#Viikko-5) | (??) möbiuksen myy-funktio | |
 | [vk 6](#Viikko-6) | (??) fii-funktion keskiarvo | |
@@ -50,13 +50,13 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | 21.1. | Lähteiden etsimistä neliöjuuri-todistukseen | 1 |
 | 22.1. | Pari potentiaalista lähdettä löydetty, Saksmanille laitettu viestiä | 1 |
 
-*Tavoitteiden toteutuminen:*
+*Tavoitteiden toteutuminen:* Englanninnos ok, Saksmaniin otettu yhteyttä. Vähän edistystä neliöjuuritilanteen kanssa, mutta ei juuri muuta.
 
 ##### Viikko 4
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 25.1. |  |  |
+| 28.1. | Tapaaminen Saksmanin kanssa | 1 |
 
 ##### Viikko 5
 
