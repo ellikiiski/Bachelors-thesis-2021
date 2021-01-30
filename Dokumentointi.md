@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-*(Viikkotavoitteita muokattu viimeksi 19.1.2021)*
+*(Viikkotavoitteita muokattu viimeksi 30.1.2021 ensimmäisen ohjaustapaamasin jälkeen)*
 
 Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut kovinkaan tuottoisa.
 
@@ -14,11 +14,11 @@ Todellista sykkimistä vuoden 2021 alusta alkaen. Edeltävä vuosi kun ei ollut 
 | [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 2 |
 | [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 5 |
 | [vk 3](#Viikko-3) | englanninnos loppuun, fii-funktion arvoja alle neliöjuuri n?, fii-funktion alarajan todistuksen ymmärtäminen, **yhteys Saksmaniin** | 6 |
-| [vk 4](#Viikko-4) | fii-funktion alarajan todistaminen |  |
-| [vk 5](#Viikko-5) | (??) möbiuksen myy-funktio | |
-| [vk 6](#Viikko-6) | (??) fii-funktion keskiarvo | |
+| [vk 4](#Viikko-4) | tapaaminen Saksmanin kanssa, fii-funktion alarajan todistuksen perkaamista |  |
+| [vk 5](#Viikko-5) | fii-funktion alarajan todistuksen perkaamista, ylös tarvittavia lemmoja yms. | |
+| [vk 6](#Viikko-6) | **yhteys Saksmaniin** | |
 | [vk 7](#Viikko-7) | ?? | |
-| [vk 8](#Viikko-8) | kandin tarkistaminen ja PALAUTUS | |
+| [vk 8](#Viikko-8) | kandin tarkistaminen ja PALAUTUS (tuskin vielä) | |
 
 #### Tarkempi aikataulu
 
