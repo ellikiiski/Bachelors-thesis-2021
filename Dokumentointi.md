@@ -21,6 +21,8 @@
 
 Pitää muokkaa viel paremmin muttaa tässä jättömaa:
 
+| viikko | tavoitteet | toteutuneet tunnit |
+| :------| :----------| :------|
 | vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio | 1 |
 | [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 2 |
 | [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 5 |
