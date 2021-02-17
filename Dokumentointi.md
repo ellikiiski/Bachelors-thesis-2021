@@ -9,7 +9,7 @@
 
 | viikko | tavoitteet | toteutuneet tunnit |
 | :------| :----------| :------|
-| [vk 07](#Viikko-7) | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | |
+| vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | |
 | [vk 08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | |
 | [vk 09](#Viikko-9) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
 | [vk 10](#Viikko-10) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
@@ -27,14 +27,6 @@ Syksyllä 2020 sykkimisen piti alkaa taas, mutta toisen tutkinnon aloittaminen A
 Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja pakotin itseni ottamaan yhteyttä Saksmaniin, vaikka kandi ei oikeastaan ollut edennyt mihinkään. Tapaamisessa sovimme, että alan koota Hardyn ja Wrightin kirjan φ-funktion alarajan todistuksen pohjalta ns. "lemmalistaa" aputuloksista, joita siinä käytetään. Nyt on kolme viikkoa kulunut ja sitten tuon tapaamisen ajatuksia kandille on uhrattu pyöreät nolla. Jokohan nyt olisi aika hoitaa homma *vihdoinkin* maaliin. 
 
 #### Tarkempi aikataulu ja toteutuma
-
-##### Viikko 7
-
-| päivä | edistys | tunnit |
-| :-----| :-------| :------|
-| 17.2. | Sykkimissuunnitelma jälleen kerran uusiksi | 1 |
-
-*Viikkotavoitteiden toteutuminen:*
 
 ##### Viikko 8
 
