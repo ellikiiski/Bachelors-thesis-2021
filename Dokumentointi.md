@@ -11,12 +11,12 @@
 | :------| :----------| :------|
 | vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | |
 | vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | |
-| [vk 09](#Viikko-9) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
-| [vk 10](#Viikko-10) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
-| [vk 11](#Viikko-11) | ?? | |
-| [vk 12](#Viikko-12) | ?? | |
-| [vk 13](#Viikko-13) | ?? | |
-| [vk 14](#Viikko-14) | ?? | |
+| vk [09](#Viikko-9) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
+| vk [10](#Viikko-10) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
+| vk [11](#Viikko-11) | ?? | |
+| vk [12](#Viikko-12) | ?? | |
+| vk [13](#Viikko-13) | ?? | |
+| vk [14](#Viikko-14) | ?? | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
