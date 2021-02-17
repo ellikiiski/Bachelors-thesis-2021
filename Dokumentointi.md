@@ -18,34 +18,13 @@
 | [vk 13](#Viikko-13) | ?? | |
 | [vk 14](#Viikko-14) | ?? | |
 
-#### Kooste tapahtumista ennen 17.2.2021
+#### Kooste kandin edistymisestä ennen 17.2.2021
 
-Pitää muokkaa viel paremmin muttaa tässä jättömaa:
+Aihe kandityölle on valikoitunut jo kevään 2020 kandiseminaarissa maaliskuussa. Kesää ennen ei kuitenkaan ollut tarkoituksenanikaan edistää tutkielmaa enempää kuin seminaari vaati, ja näin ollen kesän tullessa ei sisältöä ollut yhtään paria määritelmää ja triviaalia ylärajan todistusta enempää. Kesän 2020 piti olla kandintekokesä, mutta niin vain muut riennot veivät ajan ja ajatukset, eikä merkittävää edistystä kesän aikana tapahtunut. No, lähteenä käyttämäni kirjan sain käsiini ja siitä koitin toisinaan saada selkoa.
 
-| viikko | tavoitteet | toteutuneet tunnit |
-| :------| :----------| :------|
-| vk 53 | kandin mieleen palauttaminen ja suunnitelman uusiminen vuodelle 2021, nollaversio | 1 |
-| [vk 1](#Viikko-1) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 2 |
-| [vk 2](#Viikko-2) | kaikkien määritelmien ja aputodistusten kirjoittaminen, fii-funktion ylärajan todistus, fii-funktion arvoja alle neliöjuuri n? | 5 |
-| [vk 3](#Viikko-3) | englanninnos loppuun, fii-funktion arvoja alle neliöjuuri n?, fii-funktion alarajan todistuksen ymmärtäminen, **yhteys Saksmaniin** | 6 |
-| [vk 4](#Viikko-4) | tapaaminen Saksmanin kanssa, fii-funktion alarajan todistuksen perkaamista |  |
+Syksyllä 2020 sykkimisen piti alkaa taas, mutta toisen tutkinnon aloittaminen Aallossa ja ylenpalttinen kurssien haaliminen estivät aikeet lähes tyystin. Myös vuodenvaihteen piti olla se hetki, jolloin loma vaihtuisi ankaraan kandin työstämiseen, mutta jälleen jäi tulos varsin laimeaksi. Tässä vaiheessa turhaiduin kirjoittamaan yhtenään "Eulerin φ-funktio" ja päätin vaihtaa kandityön kielen englantiin. Mikä loistava tapa lykätä itse ajatustyön tekemistä yhä edemmäs.
 
-| päivä | edistys | tunnit |
-| :-----| :-------| :------|
-| 4.1. | Aivojen herättelyä lomahorroksesta ja lukuteorian kertausta | 1 |
-| 7.1. | Vähän lukuteorian kurssimateriaalian vilkuilua, mutta todellisuudessa heikkoa suorittamista | 1 |
-| 14.1. | C.P. kirjoituksen lukemista, kandin kielen vaihtaminen englantiin ja kääntämishommia | 3 |
-| 15.1. | Englanniksi kääntämistä ja Mersenne prime -esimerkin kirjoittaminen | 2 |
-| 18.1. | Englanninnosta eteenpäin | 1 |
-| 19.1. | Englanninnos loppuun, versio 0.1 | 1 |
-| 20.1. | Yritystä päästä jyvälle Hardy-Wrightin todistuksista | 2 |
-| 21.1. | Lähteiden etsimistä neliöjuuri-todistukseen | 1 |
-| 22.1. | Pari potentiaalista lähdettä löydetty, Saksmanille laitettu viestiä | 1 |
-| 28.1. | Tapaaminen Saksmanin kanssa | 1 |
-
-*Tavoitteiden toteutuminen:* Nolla tavoitetta savutettu, surkeaa toimintaa  
-*Tavoitteiden toteutuminen:* Ylärajan todistus done (supremunjuttu pitää tarkistaa), apumääritelmät kirjoitettu, englanninnos aloitettu vaikkei se ollutkaan alunperin tavoitteissa  
-*Tavoitteiden toteutuminen:* Englanninnos ok, Saksmaniin otettu yhteyttä. Vähän edistystä neliöjuuritilanteen kanssa, mutta ei juuri muuta.  
+Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja pakotin itseni ottamaan yhteyttä Saksmaniin, vaikka kandi ei oikeastaan ollut edennyt mihinkään. Tapaamisessa sovimme, että alan koota Hardyn ja Wrightin kirjan φ-funktion alarajan todistuksen pohjalta ns. "lemmalistaa" aputuloksista, joita siinä käytetään. Nyt on kolme viikkoa kulunut ja sitten tuon tapaamisen ajatuksia kandille on uhrattu pyöreät nolla. Jokohan nyt olisi aika hoitaa homma *vihdoinkin* maaliin. 
 
 #### Tarkempi aikataulu ja toteutuma
 
