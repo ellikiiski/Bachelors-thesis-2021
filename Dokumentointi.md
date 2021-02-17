@@ -1,6 +1,7 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 17.2.2021)*  
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 17.2.2021)*
+
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
 
