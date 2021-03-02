@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 17.2.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 2.3.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -10,10 +10,10 @@
 | viikko | tavoitteet | toteutuneet tunnit |
 | :------| :----------| :------|
 | vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1 |
-| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | |
-| vk [09](#Viikko-9) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
-| vk [10](#Viikko-10) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
-| vk [11](#Viikko-11) | ?? | |
+| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0 |
+| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | |
+| vk [10](#Viikko-10) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
+| vk [11](#Viikko-11) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
 | vk [12](#Viikko-12) | ?? | |
 | vk [13](#Viikko-13) | ?? | |
 | vk [14](#Viikko-14) | ?? | |
@@ -32,15 +32,15 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 22.2. |  |  |
+| ei ikinä | yhtään mitään | nolla sekuntia |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* hei mitä helvettiä?
 
 ##### Viikko 9
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 22.2. |  |  |
+| 2.3. |  |  |
 
 *Viikkotavoitteiden toteutuminen:*
 
