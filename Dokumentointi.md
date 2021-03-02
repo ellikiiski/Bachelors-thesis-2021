@@ -34,13 +34,14 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | :-----| :-------| :------|
 | ei ikinä | yhtään mitään | nolla sekuntia |
 
-*Viikkotavoitteiden toteutuminen:* hei mitä helvettiä?
+*Viikkotavoitteiden toteutuminen:* Hei mitä helvettiä?
 
 ##### Viikko 9
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 2.3. |  |  |
+| 2.3. | Kandi-jättömaa tulille (overleaf), todistuksen perkaaminen alulle | 1 |
+| 3.3. |  |  |
 
 *Viikkotavoitteiden toteutuminen:*
 
