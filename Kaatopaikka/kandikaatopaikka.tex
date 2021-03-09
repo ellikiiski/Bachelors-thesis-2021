@@ -3,6 +3,13 @@
 \usepackage{parskip}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}[subsection]{Definition}
+\newtheorem{notation}[subsection]{Notation}
+\newtheorem{agreement}[subsection]{Agreement}
+\newtheorem{theorem}[subsection]{Theorem}
 
 \title{Kandikaatopaikka}
 \author{Elli Kiiski}
@@ -92,5 +99,35 @@ Täten ensimmäinen osa on toidstettu.
 \subsection{Itse todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
 
 Tämä ei lienekään ihan niin iisi keissi.
+
+\section{Tulokaavan todistus}
+
+Eulerin tulokaava arvon $\phi(n)$ laskemiseksi on hyvinkin tärkeä palanen eli todistetaan se nyt suoraan englanniksi niin ei tarvitse erikseen kääntää.
+
+\subsection{Eulers's product formula}
+
+\begin{theorem}{\emph{Euler's product formula}}
+
+\begin{equation*}
+    \phi(n) = n \prod_{p \vert n} (1 - \frac{1}{p})
+\end{equation*}
+
+where $\prod_{p \vert n} (1 - \frac{1}{p})$ means the product over \emph{distinct} primes that divide $n$.
+
+\begin{proof}
+
+Ruokatauko
+
+\end{proof}
+
+\end{theorem}
+
+\section{Mertenin kolmas lause}
+
+Mertenin kolmas lause
+\begin{equation*}
+    \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
+\end{equation*}
+näyttää hyvin paljon siltä, että sitä voisi hyödyntää. Pidetään mielessä ja todistetaan tarvittaessa.
 
 \end{document}
