@@ -41,7 +41,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 2.3.  | Kandi-jättömaa tulille (overleaf), todistuksen perkaaminen alulle | 1 |
+| 2.3.  | Kandikaatopaikka tulille (overleaf), todistuksen perkaaminen alulle | 1 |
 
 *Viikkotavoitteiden toteutuminen:* Juuh elikkäs, no ainakin pääsi perkaaminen alulle.
 
@@ -49,7 +49,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 9.3.  |  |  |
+| 9.3.  | Todistuksen ensimmäisen osan suurpiirteinen perkaaminen kandikaatopaikalle ja sen kopioiminen overleafista tähän repoon | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
 
