@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 2.3.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 9.3.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -11,12 +11,13 @@
 | :------| :----------| :------|
 | vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1 |
 | vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0 |
-| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | |
-| vk [10](#Viikko-10) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
-| vk [11](#Viikko-11) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
-| vk [12](#Viikko-12) | ?? | |
+| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 1 |
+| vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, **yhteys Saksmaniin!!!** Myös tulokaavan todistus | |
+| vk [11](#Viikko-11) | Saksmanin vinkkien mukaan todistukseen perehtymistä | |
+| vk [12](#Viikko-12) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
 | vk [13](#Viikko-13) | ?? | |
 | vk [14](#Viikko-14) | ?? | |
+| vk [15](#Viikko-15) | KANDI VALMIS JA PALAUTETTU | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -40,16 +41,15 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 2.3. | Kandi-jättömaa tulille (overleaf), todistuksen perkaaminen alulle | 1 |
-| 3.3. |  |  |
+| 2.3.  | Kandi-jättömaa tulille (overleaf), todistuksen perkaaminen alulle | 1 |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* Juuh elikkäs, no ainakin pääsi perkaaminen alulle.
 
 ##### Viikko 10
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 22.2. |  |  |
+| 9.3.  |  |  |
 
 *Viikkotavoitteiden toteutuminen:*
 
@@ -71,6 +71,14 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 
 ##### Viikko 13
+
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 22.2. |  |  |
+
+*Viikkotavoitteiden toteutuminen:*
+
+##### Viikko 14
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
