@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Kandikaatopaikka}
+\author{Elli Kiiski}
+\date{\today}
+
+\begin{document}
+{\large
+Elli Kiiski
+\par
+\textbf{2021 Kandikaatopaikka}
+}
+\vspace{0.5cm}
+
+\section{Hardy-Wrightin todistuksen perkaamista}
+
+\textit{G. H. Hardyn} ja \textit{E. M. Wrightin} kirjan \textit{An Introduction to the theory of numbers} sivulla 469 olevan $\phi$-funktion alarajan todistuksen läpikäyntiä.
+
+\subsection{Määrittely: mitä todistetaan}
+
+Aloitetaan määrittelemällä kuvaus
+\begin{equation*}
+    f(n)= \frac{\phi(n)e^\gamma \log\log n}{n},
+\end{equation*}
+missä $\gamma$ on Eulerin vakio.
+
+% Mikä on Eulerin vakio ja mistä se hyppää tähän
+% Mistä myöskään e yhtäkkiä hyppää tähän
+
+Halutaan todistaa, että $\liminf f(n)=1$, mikä on yhtäpitävää sen kanssa, että $\phi$-funktion alaraja on $\frac{n}{e^\gamma \log\log n}$.
+
+\subsection{Määrittely: miten todistetaan}
+
+Riittää löytää funktiot $F_1(t)$ ja $F_2(t)$, joille pätee
+\begin{enumerate}
+\label{ehdot}
+    \item $\lim_{t\rightarrow \infty} F_1(t) = 1$ ja $\lim_{t\rightarrow \infty} F_2(t) = 1$
+    \item $f(n) \geq F_1(\log n)$ kaikilla $n\geq 3$
+    \item $f(n_j) \leq \frac{1}{F_2(j)}$ äärettömällä kasvavalla jonolla $n_2, n_3,...$
+\end{enumerate}
+
+% Miksi tämä riittää??
+% Liittynee majorantti- ja minoranttiperiaatteisiin tms.
+
+Kirjan todistuksessa todistetaan myös sigmafunktion $\sigma(n)$ yläraja ja käytetään sitä hyväksi funktion $F_2$ löytämiseksi. Kysymys kuuluu, että tarvitaanko sigmafunktio välttämättä, että saadaan $\phi$-funktion alaraja todistetuksi. Se on kuitenkin vasta todistuksen toisen osan ongelma, joten jätetään se hetkeksi sikseen.
+
+\subsection{Itse todistus osa 1: $f(n) \geq F_1(\log n)$}
+
+Olkoot $p_1,p_2,...,p_{r-\rho} \leq \log n$ ja $p_{r-\rho+1},...,p_r > \log n$ luvun $n$ alkutekijöitä. Siis luvulla $n$ on yhteensä $r$ alkutekijää, joista $\log n$:ää suurempia on $\rho$ kappaletta.
+
+Nyt
+\begin{equation}
+    (\log n)^\rho < p_{r-\rho+1} \cdot p_{r-\rho+2} \cdot \cdot \cdot p_r \leq n,
+\end{equation}
+mistä seuraa
+\begin{equation}
+    \rho < \frac{\log n}{\log\log n}.
+\end{equation}
+
+Eli $\log n$:ää suurempia alkulukutekijöitä on alle $\frac{\log n}{\log\log n}$ kappaletta.
+Nyt tulokaavaa käyttäen $\phi$-funktion suhde $n$:ään voidaan ilmaista seuraavasti
+\begin{align}
+    \frac{\phi(n)}{n} & = \prod_{i=1}^r(1-\frac{1}{p_i})\\
+    & = \prod_{i=1}^{r-\rho}(1-\frac{1}{p_i}) \prod_{i=r-\rho+1}^r(1-\frac{1}{p_i})\\
+    & \geq \left(\prod_{i=1}^{r-\rho}(1-\frac{1}{p_i})\right) (1-\frac{1}{\log n})^\rho\\
+    & > \left(\prod_{i=1}^{r-\rho}(1-\frac{1}{p_i})\right) (1-\frac{1}{\log n})^\frac{\log n}{\log \log n}.
+\end{align}
+
+Näin ollen voidaan valita
+\begin{equation*}
+    F_1(t)=e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right),
+\end{equation*}
+jolloin
+\begin{align*}
+    F_1(\log n) & = e^\gamma \log \log n \left(1-\frac{1}{\log n}\right)^\frac{\log n}{\log \log n} \prod_{p\leq \log n} \left(1-\frac{1}{p}\right)\\
+    & = e^\gamma \log \log n \left(1-\frac{1}{\log n}\right)^\frac{\log n}{\log \log n} \prod_{i=1}^{r-\rho} \left(1-\frac{1}{p}\right)\\
+    & \leq \frac{\phi(n)}{n} e^\gamma \log\log n = f(n).
+\end{align*}
+
+Kuitenkin funktiolle $F_1$ pätee
+\begin{equation*}
+    \lim_{t \rightarrow \infty} F_1(t) = \lim_{t \rightarrow \infty} e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right) = 1
+\end{equation*}
+(tähän tarvitaan todistus!! kirjassa viitattu todistukseen nro. 429),
+
+Täten ensimmäinen osa on toidstettu.
+
+\subsection{Itse todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
+
+Tämä ei lienekään ihan niin iisi keissi.
+
+\end{document}
