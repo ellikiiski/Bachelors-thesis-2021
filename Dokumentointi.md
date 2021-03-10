@@ -50,6 +50,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 9.3.  | Todistuksen ensimmäisen osan suurpiirteinen perkaaminen kandikaatopaikalle ja sen kopioiminen overleafista tähän repoon | 2 |
+| 10.3. | Euler's product formula todistus | 1 |
 
 *Viikkotavoitteiden toteutuminen:*
 
