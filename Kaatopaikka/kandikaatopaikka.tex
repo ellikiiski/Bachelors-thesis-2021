@@ -109,14 +109,34 @@ Eulerin tulokaava arvon $\phi(n)$ laskemiseksi on hyvinkin tärkeä palanen eli 
 \begin{theorem}{\emph{Euler's product formula}}
 
 \begin{equation*}
-    \phi(n) = n \prod_{p \vert n} (1 - \frac{1}{p})
+    \phi(n) = n \prod_{p \vert n} \left(1 - \frac{1}{p}\right)
 \end{equation*}
 
 where $\prod_{p \vert n} (1 - \frac{1}{p})$ means the product over \emph{distinct} primes that divide $n$.
 
 \begin{proof}
 
-Ruokatauko
+Assume first that $n = p^k$, where $p\in \mathbb{P}$. Now for every $x$, for which $gdc(p^k,x)>1$, holds $x=mp^{k-1}$ for some $m\in \{1,2,...,p^{k-1}\}$.
+
+% Siis lukujen x, joille gcd(n,x) määrä on p^{k-1}
+
+Hence
+\begin{equation*}
+    \phi(n)=\phi(p^k)=p^k-p^{k-1}=p^k-\frac{p^k}{p}=\left(1-\frac{1}{p}\right)p^k=\left(1-\frac{1}{p}\right)n.
+\end{equation*}
+
+Then, in the general case, assume $n=p_1^{k_1} p_2^{k_2} \cdot \cdot \cdot p_r^{k_r}=\prod_{i=1}^r p_i^{k_i}$, where $p_1,p_2,...,p_r$ are distinct primes that divide $n$ and $k_1,k_2,...,k_r$ their powers respectively. 
+
+% Toi "their powers" ei oo hyvä, joku kertaluku tai muu käsite pitäis kaivaa siihen
+
+Now, since $\phi$ is a multiplicative function
+\begin{align*}
+    \phi(n) & = \phi(p_1^{k_1} p_1^{k_1} \cdot \cdot \cdot p_r^{k_r})\\
+    & = \phi(p_1^{k_1})\,\phi(p_2^{k_2}) \cdot \cdot \cdot \phi(p_r^{k_r})\\
+    & = \left(1-\frac{1}{p_1}\right)p_1^{k_1} \left(1-\frac{1}{p_2}\right)p_2^{k_2} \cdot \cdot \cdot \left(1-\frac{1}{p_r}\right)p_r^{k_r}\\
+    & = \prod_{i=1}^r \left(1-\frac{1}{p_i}\right) p_i^{k_i}\\
+    & = n \prod_{p \vert n} \left(1 - \frac{1}{p}\right).
+\end{align*}
 
 \end{proof}
 
