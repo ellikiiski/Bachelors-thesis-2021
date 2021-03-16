@@ -55,7 +55,7 @@ Riittää löytää funktiot $F_1(t)$ ja $F_2(t)$, joille pätee
 
 Kirjan todistuksessa todistetaan myös sigmafunktion $\sigma(n)$ yläraja ja käytetään sitä hyväksi funktion $F_2$ löytämiseksi. Kysymys kuuluu, että tarvitaanko sigmafunktio välttämättä, että saadaan $\phi$-funktion alaraja todistetuksi. Se on kuitenkin vasta todistuksen toisen osan ongelma, joten jätetään se hetkeksi sikseen.
 
-\subsection{Itse todistus osa 1: $f(n) \geq F_1(\log n)$}
+\subsection{Todistus osa 1: $f(n) \geq F_1(\log n)$}
 
 Olkoot $p_1,p_2,...,p_{r-\rho} \leq \log n$ ja $p_{r-\rho+1},...,p_r > \log n$ luvun $n$ alkutekijöitä. Siis luvulla $n$ on yhteensä $r$ alkutekijää, joista $\log n$:ää suurempia on $\rho$ kappaletta.
 
@@ -88,17 +88,30 @@ jolloin
     & \leq \frac{\phi(n)}{n} e^\gamma \log\log n = f(n).
 \end{align*}
 
-Kuitenkin funktiolle $F_1$ pätee
+Kuitenkin funktiolle $F_1$ pätee Mertenin kolmannen lauseen nojalla
 \begin{equation*}
     \lim_{t \rightarrow \infty} F_1(t) = \lim_{t \rightarrow \infty} e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right) = 1
 \end{equation*}
-(tähän tarvitaan todistus!! kirjassa viitattu todistukseen nro. 429),
 
-Täten ensimmäinen osa on toidstettu.
+% Pitää vielä tietysti avata tarkemmin ja ensin todistaa Merten
 
-\subsection{Itse todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
+% Täten ensimmäinen osa on toidstettu
 
-Tämä ei lienekään ihan niin iisi keissi.
+\subsection{Todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
+
+% Tämä ei lienekään ihan niin iisi keissi
+
+Olkoon $n_j=\prod_{p\leq e^j} p^j$, missä $j\geq 2 \in \mathbb{N}$ (?), jolloin maailman hämmentävimmän lauseen (Hardy-Wright thm 414) mukaan (*)
+\begin{equation}
+    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p) = j\vartheta(e^j) \stackrel{*}{\leq} Aje^j
+\end{equation}
+
+ja edelleen
+\begin{equation}
+    \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j
+\end{equation}
+
+Ruokatauko
 
 \section{Tulokaavan todistus}
 
@@ -148,6 +161,6 @@ Mertenin kolmas lause
 \begin{equation*}
     \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
 \end{equation*}
-näyttää hyvin paljon siltä, että sitä voisi hyödyntää. Pidetään mielessä ja todistetaan tarvittaessa.
+tarvitaan alarajan todistuksessa $F_1$-funktion raja-arvon näyttämiseksi.
 
 \end{document}
