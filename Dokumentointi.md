@@ -60,6 +60,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 16.3. | Valmistautumista kanditapaamiseen Saksamanin kanssa | 1 |
+| 16.3. | Kanditapaaminen | 0.5 |
 
 *Viikkotavoitteiden toteutuminen:*
 
