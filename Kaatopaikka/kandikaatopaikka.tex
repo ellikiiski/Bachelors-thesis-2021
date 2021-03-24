@@ -50,10 +50,8 @@ Riittää löytää funktiot $F_1(t)$ ja $F_2(t)$, joille pätee
     \item $f(n_j) \leq \frac{1}{F_2(j)}$ äärettömällä kasvavalla jonolla $n_2, n_3,...$
 \end{enumerate}
 
-% Miksi tämä riittää??
-% Liittynee majorantti- ja minoranttiperiaatteisiin tms.
-
-Kirjan todistuksessa todistetaan myös sigmafunktion $\sigma(n)$ yläraja ja käytetään sitä hyväksi funktion $F_2$ löytämiseksi. Kysymys kuuluu, että tarvitaanko sigmafunktio välttämättä, että saadaan $\phi$-funktion alaraja todistetuksi. Se on kuitenkin vasta todistuksen toisen osan ongelma, joten jätetään se hetkeksi sikseen.
+''Tämä tarkoittaa, että on löydetty funktio $F_1(\log n)$, jonka on sama limes infimum on yksi, mutta funktio on kaikkialla suurempi kuin $f(n)$. Tällöin funktion $f(n)$ limes infimum on enintään yksi. Vastaavasti alapuolen kanssa.''
+% Ilmiselvästi täytyy selittää tuo vielä jotenkin paremmin
 
 \subsection{Todistus osa 1: $f(n) \geq F_1(\log n)$}
 
@@ -89,13 +87,15 @@ jolloin
 \end{align*}
 
 Kuitenkin funktiolle $F_1$ pätee Mertenin kolmannen lauseen nojalla
-\begin{equation*}
-    \lim_{t \rightarrow \infty} F_1(t) = \lim_{t \rightarrow \infty} e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right) = 1
-\end{equation*}
+\begin{align*}
+    \lim_{t \rightarrow \infty} F_1(t) & = \lim_{t \rightarrow \infty} e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right)\\
+    & = \lim_{t \rightarrow \infty} e^\gamma \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} \left(\log t \prod_{p\leq t} \left(1-\frac{1}{p}\right) \right)\\
+    & = \lim_{t \rightarrow \infty} e^\gamma \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} e^{-\gamma}\\
+    & = \lim_{t \rightarrow \infty} \left( 1-\frac{1}{t}\right)^\frac{t}{\log t}\\
+    & = 1
+\end{align*}
 
-% Pitää vielä tietysti avata tarkemmin ja ensin todistaa Merten
-
-% Täten ensimmäinen osa on toidstettu
+Täten funktion $f$ limes infium on korkeintaan 1.
 
 \subsection{Todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
 
@@ -111,7 +111,7 @@ ja edelleen
     \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j
 \end{equation}
 
-Ruokatauko
+Jatketaan tästä pian
 
 \section{Tulokaavan todistus}
 
@@ -155,12 +155,23 @@ Now, since $\phi$ is a multiplicative function
 
 \end{theorem}
 
-\section{Mertenin kolmas lause}
+\section{Merten's (third) theorem}
 
-Mertenin kolmas lause
+\begin{theorem}{\emph{Merten's (third) theorem}}
+
 \begin{equation*}
     \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
 \end{equation*}
-tarvitaan alarajan todistuksessa $F_1$-funktion raja-arvon näyttämiseksi.
+
+where $\gamma$ is the Euler's constant.
+% Eulerin vakio pitänee lisätä johki, tai no katotaan miten se tossa todistuksessa tulee esiin
+
+\begin{proof}
+
+Oh, this seems like a työmaa
+
+\end{proof}
+
+\end{theorem}
 
 \end{document}
