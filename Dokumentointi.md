@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 15.3.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 24.3.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -9,15 +9,15 @@
 
 | viikko | tavoitteet | toteutuneet tunnit |
 | :------| :----------| :------|
-| vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1 |
-| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0 |
-| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 1 |
-| vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, **yhteys Saksmaniin!!!** Myös tulokaavan todistus | 4 |
-| vk [11](#Viikko-11) | Kanditapaaminen Saksmanin kanssa, vinkkien mukaan todistukseen syvemmin perehtymistä | |
-| vk [12](#Viikko-12) | Alarajan todistuksen muotoilu kandityöhön, yhteys Saksmaniin | |
-| vk [13](#Viikko-13) | ?? | |
+| vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1.0 |
+| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0.0 |
+| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 1.0 |
+| vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, yhteys Saksmaniin!!! Myös tulokaavan todistus | 4.0 |
+| vk [11](#Viikko-11) | Kanditapaaminen Saksmanin kanssa, vinkkien mukaan todistukseen syvemmin perehtymistä | 1.5 |
+| vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | |
+| vk [13](#Viikko-13) | Kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | |
 | vk [14](#Viikko-14) | ?? | |
-| vk [15](#Viikko-15) | KANDI VALMIS JA PALAUTETTU | |
+| vk [15](#Viikko-15) | Toivottavasti vika kanditapaaminen. KANDI VALMIS JA PALAUTETTU | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -62,13 +62,13 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 16.3. | Valmistautumista kanditapaamiseen Saksamanin kanssa | 1 |
 | 16.3. | Kanditapaaminen | 0.5 |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* Tunnit jäi vähäisiksi, mutta ihan hyvää edistystä alarajan todistuksen kanssa.
 
 ##### Viikko 12
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 22.2. |  |  |
+| 24.3. | Mertensin lauseeseen tutustumista ja pieniä lisäyksiä | 1 |
 
 *Viikkotavoitteiden toteutuminen:*
 
