@@ -9,10 +9,10 @@
 
 | viikko | tavoitteet | toteutuneet tunnit |
 | :------| :----------| :------|
-| vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1.0 |
-| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0.0 |
-| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 1.0 |
-| vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, yhteys Saksmaniin!!! Myös tulokaavan todistus | 4.0 |
+| vk 07 | Jälleen kerran ns. back on track -alustukset eli viikkosuunnitelmat ja muut uusiksi | 1 |
+| vk [08](#Viikko-8) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 0 |
+| vk [09](#Viikko-9) | Hardy-Wrightin alarajan todistuksen perkaamista ("lemmalistan keruu"), yhteys Saksmaniin | 1 |
+| vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, yhteys Saksmaniin!!! Myös tulokaavan todistus | 4 |
 | vk [11](#Viikko-11) | Kanditapaaminen Saksmanin kanssa, vinkkien mukaan todistukseen syvemmin perehtymistä | 1.5 |
 | vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | 1 |
 | vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | |
