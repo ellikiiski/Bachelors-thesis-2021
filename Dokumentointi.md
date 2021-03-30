@@ -77,7 +77,8 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 29.3. | Yritystä ymmärtää alarajan todistuksen loppu, tähän mennessä kirjoitetun materiaalin kokoamist Saksmania varten. | 3 |
+| 29.3. | Yritystä ymmärtää alarajan todistuksen loppu, tähän mennessä kirjoitetun materiaalin kokoamista Saksmania varten. | 3 |
+| 30.3. | Tähän mennessä kirjoitetun materiaalin kokoamista Saksmania varten, lisäykset vartheta- ja zeta-funktioista. | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
 
