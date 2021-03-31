@@ -80,6 +80,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 29.3. | Yritystä ymmärtää alarajan todistuksen loppu, tähän mennessä kirjoitetun materiaalin kokoamista Saksmania varten. | 3 |
 | 30.3. | Tähän mennessä kirjoitetun materiaalin kokoamista Saksmania varten, lisäykset vartheta- ja zeta-funktioista. | 2 |
 | 30.3. | Kanditapaaminen: [versio 1.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.0.pdf) näytetty Saksmanille | 0.5 |
+| 31.3. | Alarajan todistus vihdoin hoksattu ja aloitettu väsäämään loppuosaa kaatopaikalle. | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
 
