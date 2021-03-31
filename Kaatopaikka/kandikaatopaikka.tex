@@ -103,7 +103,7 @@ Täten funktion $f$ limes infium on korkeintaan 1.
 
 Olkoon $n_j=\prod_{p\leq e^j} p^j$, missä $j\geq 2 \in \mathbb{N}$ (?), jolloin maailman hämmentävimmän lauseen (Hardy-Wright thm 414) mukaan (*)
 \begin{equation}
-    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p) = j\vartheta(e^j) \stackrel{*}{\leq} Aje^j
+    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p = j\vartheta(e^j) \stackrel{*}{\leq} Aje^j
 \end{equation}
 
 ja edelleen
@@ -155,6 +155,25 @@ Now, since $\phi$ is a multiplicative function
 
 \end{theorem}
 
+\section{The zeta-function}
+
+\begin{definition}{The zeta-function}
+
+\begin{equation*}
+    \zeta(s) = \sum_{n=1]^\infty \frac{1}{n^s}}
+\end{equation*}
+
+The zeta-funtion converges, when $s>1$.
+
+\begin{theorem}
+For all $s>1$
+\begin{equation*}
+    \zeta(s) = \prod_p \frac{1}{1-\frac{1}{p^s}}
+\end{equation*}
+\end{theorem}
+
+\end{definition}
+
 \section{Merten's (third) theorem}
 
 \begin{theorem}{\emph{Merten's (third) theorem}}
@@ -173,5 +192,13 @@ Oh, this seems like a työmaa
 \end{proof}
 
 \end{theorem}
+
+\section{Edellisestä versiosta poistettua paskaa}
+
+\subsubsection{Are there such integers $n$ that $\phi(n) < \sqrt{n}$?}
+
+Let's begin with $\sqrt{n}$. Is there such large number $n$ that $\phi(n) < \sqrt{n}$? When checking the values of $\phi(n)$ for smaller $n$, we see that at least with $n=6$ the statement is true, as $\phi(6)=2<\sqrt{6}$. After that, however, the values seem to be consistently above the corresponding squareroot value.
+
+Reasonable guess would be to assume that $\sqrt{n}$ is a lower limit for $\phi(n)$ when $n \rightarrow \infty$. With more precise examination, we see that is indeed the case.
 
 \end{document}
