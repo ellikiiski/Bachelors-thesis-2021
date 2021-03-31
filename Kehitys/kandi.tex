@@ -32,9 +32,9 @@ Elli Kiiski
 }
 \vspace{0.5cm}
 
-\section{Notation and definitions}
+\section{Introduction}
 
-\textcolor{red}{En tiedä onko nämä kaikki tarpeellisia, mutta alotin nyt ihan perusasioista.}
+\textcolor{gray}{Placeholder for some introductory explaining about the subject of this thesis.}
 
 All introduced variables $a, b, c, ...$ are integers, unless stated otherwise. Here the set of natural numbers $\mathbb{N}$ consists of positive integers, meaning $0 \not\in \mathbb{N}$.
 
@@ -46,7 +46,7 @@ Let $a$ and $b$ be such that $b$ is divisible by $a$. This is denoted by $a \ver
 
 \begin{definition}{\emph{Greatest common divisor}}
 
-Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{N}$ with following properties:
+Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. It can be shown that there is a unique $d \in \mathbb{N}$ with following properties:
 
 \begin{enumerate}
  \item $d \vert a$ and $d \vert b$
@@ -55,13 +55,15 @@ Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{
 
 The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by $gcd(a,b) = d$.
 
+However, the existence of the greatest common divisor is non-trivial. Proof can be found in \textit{LeVeque: Fundamentals of Number Theory, chapter 2.1}.
+
 \end{definition}
 
 \begin{definition}{\emph{Prime number}}
 
 Integer $p\in\mathbb{N}$ is a prime, if $p \geq 2$ and for every $k\in\mathbb{N}$ holds that if $k \vert p$ then $k\in{1, p}$. The set of prime numbers is denoted by $\mathbb{P}$.
 
-In other words, all integers greater than than $1$, which are only divisible by themself and $1$, are primes.
+In other words, all integers greater than $1$, which are only divisible by themself and $1$, are primes.
 
 %Toisin sanoen alkulukuja ovat kaikki lukua $1$ suuremmat luonnolliset luvut, jotka ovat jaollisia vain itsellään ja luvulla $1$.
 
@@ -92,6 +94,13 @@ It is set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of int
 \end{definition}
 
 That is, the value of the totient function at $n \in \mathbb{N}$ is the number of co-primes of $n$ smaller than it.
+
+\begin{theorem}
+Euler's totient function is multuplicative.
+\begin{proof}
+\textcolor{gray}{Placeholder for proof.}
+\end{proof}
+\end{theorem}
 
 \begin{theorem}{\emph{Euler's product formula}}
 \label{thm:product}
@@ -161,11 +170,25 @@ where $\gamma$ is the Euler's constant.
 
 \begin{proof}
 
-\textcolor{red}{En ole vielä perehtynyt paljoakaan, mutta todistus Hardyn ja Wrightin kirjassa (theorem 429) näyttää varsin pitkältä...}
+\textcolor{gray}{Placeholder for a sketch of the proof or maybe even the whole proof.}
 
 \end{proof}
 
 \end{theorem}
+
+\begin{definition}{\emph{The $\sigma$-function}}
+
+\begin{equation*}
+    \sigma(n)=\sum_{d\vert n} d\,,
+\end{equation*}
+
+meaning $\sigma(n)$ is the sum of the divisors of $n$.
+\end{definition}
+
+\begin{lemma}
+\textcolor{gray}{Placeholder for a lemma that would explain some things in the proof of the lower limit...}
+\end{lemma}
+
 
 \begin{definition}{\emph{Chebyshev function}}
 \begin{equation*}
@@ -177,11 +200,11 @@ where $x\in\mathbb{R}$ and $p\in\mathbb{P}$.
 
 \begin{lemma}
 \label{lemma:vartheta}
-The function $\vartheta(x)$ is order of $x$, meaning
+For the function $\vartheta(x)$ holds
 \begin{equation*}
-    Ax < \vartheta(x) < Bx\,,
+    \vartheta(x) < Ax\,,
 \end{equation*}
-where $x\geq2\in\mathbb{R}$, $A$ and $B$ are real constants.
+where $x\geq2\in\mathbb{R}$, $A$ is a real constant.
 
 \begin{proof}
 Theorem 414 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
@@ -227,13 +250,19 @@ For every $n \geq 2$
 
 By definition $\phi(n) \leq n$ beacause there are $n$ elements in the set $\{1,2,...,n\}$. Also, for every $n \geq 2$ holds $gcd(n,n) = n \neq 1$. Thus, $\phi(n) \leq n-1$.
 
-On the other hand, according to theorem \ref{thm:phiprime}, $\phi(p) = p-1$ for every $p\in\mathbb{P}$. Because there are infinitely many primes, this means that $n-1$ is, in fact, the limit superior of Euler's totient function.
+On the other hand, according to theorem \ref{thm:phiprime}, $\phi(p) = p-1$ for every $p\in\mathbb{P}$.
+% TÄÄ ON VÄÄRIN SANOA NÄIN
+% Because there are infinitely many primes, this means that $n-1$ is, in fact, the limit superior of Euler's totient function.
+Now, because there are infinitely many primes,
+\begin{equation*}
+    \limsup{\frac{\phi(n)}{n}} = \lim \frac{n-1}{n} = 1\,.
+\end{equation*}
+
+\textcolor{red}{Onkohan yllä oleva ensimmäinen yhtäsuuruusmerkki ihan legit? Myös: pitääkö infinitely many primes perustella?}
 
 \end{proof}
 
 \end{theorem}
-
-\textcolor{red}{Pitäisiköhän ylärajan todistus muotoilla mieluummin vähän formaalimmin ja muotoon $\limsup{\phi(n)}$?}
 
 \subsection{Lower limit of Euler's totient function}
 
@@ -242,7 +271,7 @@ How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answ
 \begin{theorem}{\emph{Lower limit of the totient function}}
 
 \begin{equation*}
-    \liminf{\phi(n)}=\frac{n}{e^\gamma\log\log n}\,,
+    \liminf{\frac{\phi(n)}{n}}=\frac{1}{e^\gamma\log\log n}\,,
 \end{equation*}
 where $\gamma$ is the Euler's constant.
 
@@ -265,7 +294,7 @@ and in the second part that
     f(n_j) \leq \frac{1}{F_2(j)}\text{ for some infinite increasing sequence }n_2, n_3,...
 \end{equation}
 
-Let $p_1,p_2,...,p_{r-\rho} \leq \log n$ and $p_{r-\rho+1},...,p_r > \log n$ be prime factors of $n$. In other words, the number $n$ has $r$ prime factors, $\rho$ of which are greater than $\log n$.
+Let $p_1,p_2,...,p_{r-\rho} \leq \log n$ and $p_{r-\rho+1},...,p_r > \log n$ be the prime factors of $n$. In other words, the number $n$ has $r$ prime factors, $\rho$ of which are greater than $\log n$.
 
 Now
 \begin{equation*}
@@ -322,7 +351,7 @@ Hence
     \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j\,.
 \end{equation*}
 
-\textcolor{red}{En nyt olekaan ihan varma, miten tämän osuuden voisi todistaa ilman sigma-funktiota.}
+\textcolor{red}{Sit hei väännetään tää todistus loppuun eiksje}
 
 \end{proof}
 
