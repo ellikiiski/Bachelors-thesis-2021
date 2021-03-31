@@ -4,11 +4,12 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage[dvipsnames]{xcolor}
 
 \theoremstyle{definition}
 \newtheorem{definition}[subsection]{Definition}
 \newtheorem{notation}[subsection]{Notation}
-\newtheorem{agreement}[subsection]{Agreement}
+\newtheorem{lemma}[subsubsection]{Lemma}
 \newtheorem{theorem}[subsection]{Theorem}
 
 \title{Kandikaatopaikka}
@@ -35,12 +36,11 @@ Aloitetaan määrittelemällä kuvaus
 \end{equation*}
 missä $\gamma$ on Eulerin vakio.
 
-% Mikä on Eulerin vakio ja mistä se hyppää tähän
-% Mistä myöskään e yhtäkkiä hyppää tähän
-
 Halutaan todistaa, että $\liminf f(n)=1$, mikä on yhtäpitävää sen kanssa, että $\phi$-funktion alaraja on $\frac{n}{e^\gamma \log\log n}$.
 
 \subsection{Määrittely: miten todistetaan}
+
+\textcolor{red}{Pitää kirjoittaa kokonaan uusiksi alkusepitykset nyt kun sigma joudutaankin ottamaan käyttöön}
 
 Riittää löytää funktiot $F_1(t)$ ja $F_2(t)$, joille pätee
 \begin{enumerate}
@@ -95,23 +95,82 @@ Kuitenkin funktiolle $F_1$ pätee Mertenin kolmannen lauseen nojalla
     & = 1
 \end{align*}
 
-Täten funktion $f$ limes infium on korkeintaan 1.
+Täten funktion $f$ limes infimum on korkeintaan 1.
 
 \subsection{Todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
 
-% Tämä ei lienekään ihan niin iisi keissi
+Next, to prove the part (\ref{eq:second}), let
+\begin{equation*}
+    n_j=\prod_{p\leq e^j} p^j\text{, where } j\geq 2\,.
+\end{equation*}
 
-Olkoon $n_j=\prod_{p\leq e^j} p^j$, missä $j\geq 2 \in \mathbb{N}$ (?), jolloin maailman hämmentävimmän lauseen (Hardy-Wright thm 414) mukaan (*)
+By the lemma \ref{lemma:vartheta}
+\begin{equation*}
+    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p = j\vartheta(e^j) \leq Aje^j\,.
+\end{equation*}
+
+Hence
 \begin{equation}
-    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p = j\vartheta(e^j) \stackrel{*}{\leq} Aje^j
+\label{eq:lognj}
+    \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j\,.
 \end{equation}
 
-ja edelleen
+Since $n_j$ is the product of the primes smaller than $e^j$ to the power of $j$, by the lemma \ref{lemma:sigma} we have
+\begin{equation*}
+    \sigma(n_j) = \prod_{p\leq e^j} \frac{p^{j+1}-1}{p-1}
+\end{equation*}
+and
 \begin{equation}
-    \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j
+\label{eq:signjpernj}
+    \frac{\sigma(n_j)}{n_j} = \prod_{p\leq e^j} \frac{p^{j+1}-1}{(p-1)p^j} = \prod_{p\leq e^j} \frac{p^{j+1}\left(1-\frac{1}{p^{j+1}}\right)}{p^{j+1}\left(1-\frac{1}{p}\right)} = \prod_{p\leq e^j} \frac{1-\frac{1}{p^{j+1}}}{1-\frac{1}{p}}\,.
 \end{equation}
 
-Jatketaan tästä pian
+Also, by the lemma \ref{lemma:zeta}
+\begin{equation}
+\label{eq:zetaj}
+    \prod_{p\leq e^j}\left(1-\frac{1}{p^{j+1}}\right) > \prod \left(1-\frac{1}{p^{j+1}}\right) = \frac{1}{\zeta(j+1)}\,.
+\end{equation}
+
+Now we can define
+\begin{equation*}
+    F_2(t)=\frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)
+\end{equation*}
+
+because by the results (\ref{eq:lognj}), (\ref{eq:signjpernj}) and (\ref{eq:zetaj})
+
+\begin{align*}
+    F_2(j)& = \frac{1}{e^\gamma\,\zeta(j+1)(A+t+\log j)} \prod_{p\leq e^j} \left(\frac{1}{1-\frac{1}{p}}\right)\\
+    & \leq \frac{1}{e^\gamma\,\log \log n_j} \prod_{p\leq e^j} \frac{1-\frac{1}{p^{j+1}}}{1-\frac{1}{p}}\\
+    & = \frac{\sigma(n_j)}{n_j\,e^\gamma\,\log \log n_j} = f_2(n)\,.
+\end{align*}
+
+\textcolor{red}{HUOM $f_2$ ei määritelty}
+
+\section{Okei, sigma-funktio tarvitaan}
+
+\begin{definition}{\emph{The $\sigma$-function}}
+
+\begin{equation*}
+    \sigma(n)=\sum_{d\vert n} d\,,
+\end{equation*}
+
+meaning $\sigma(n)$ is the sum of the divisors of $n$.
+\end{definition}
+
+\begin{lemma}
+\label{lemma:sigma}
+Sigma-funktion tulokaava
+\end{lemma}
+
+\begin{theorem}
+\begin{equation*}
+    \frac{\phi(n)\,\sigma(n)}{n^2}<1
+\end{equation*}
+
+\begin{proof}
+Theorem 329 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\end{proof}
+\end{theorem}
 
 \section{Tulokaavan todistus}
 
@@ -166,6 +225,7 @@ Now, since $\phi$ is a multiplicative function
 The zeta-funtion converges, when $s>1$.
 
 \begin{theorem}
+\label{lemma:zeta}
 For all $s>1$
 \begin{equation*}
     \zeta(s) = \prod_p \frac{1}{1-\frac{1}{p^s}}
