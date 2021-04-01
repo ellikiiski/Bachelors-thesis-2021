@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.12)  31 MAR 2021 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.12)  1 APR 2021 11:50
 entering extended mode
 **./kandikaatopaikka.tex
 (kandikaatopaikka.tex
@@ -223,19 +223,30 @@ LaTeX Warning: Reference `eq:second' on page 2 undefined on input line 102.
 
 [2]
 
-LaTeX Warning: Reference `lemma:vartheta' on page 3 undefined on input line 107
+LaTeX Warning: Reference `lemma:vartheta' on page 3 undefined on input line 113
 .
 
-[3] [4] [5] [6] (kandikaatopaikka.aux)
+[3]
+
+LaTeX Warning: Reference `thm:mertens' on page 4 undefined on input line 153.
+
+[4]
+Overfull \hbox (9.08412pt too wide) in paragraph at lines 235--236
+[]\OT1/cmr/m/n/10 Then, in the gen-eral case, as-sume $\OML/cmm/m/it/10 n \OT1/
+cmr/m/n/10 = \OML/cmm/m/it/10 p[]p[] [] p[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/i
+t/10 p[]$\OT1/cmr/m/n/10 , where $\OML/cmm/m/it/10 p[]; p[]; :::; p[]$
+ []
+
+[5] [6] [7] (kandikaatopaikka.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3300 strings out of 480790
- 43761 string characters out of 2895393
- 295469 words of memory out of 3000000
- 19296 multiletter control sequences out of 15000+200000
+ 3302 strings out of 480790
+ 43788 string characters out of 2895393
+ 295479 words of memory out of 3000000
+ 19298 multiletter control sequences out of 15000+200000
  540248 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,10n,37p,825b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -262,9 +273,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/kiisk/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/kiisk/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b>
-Output written on kandikaatopaikka.pdf (6 pages, 217476 bytes).
+Output written on kandikaatopaikka.pdf (7 pages, 219832 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -99,7 +99,13 @@ Täten funktion $f$ limes infimum on korkeintaan 1.
 
 \subsection{Todistus osa 2: $f(n_j) \leq \frac{1}{F_2(j)}$}
 
-Next, to prove the part (\ref{eq:second}), let
+Next, to prove the part (\ref{eq:second}), let's define
+\begin{equation*}
+    g(n)=\frac{\sigma(n)}{n\,e^\gamma \log\log n}
+\end{equation*}
+and show that $g(n_j) \geq F_2(j)$ for an infinite increasing sequence. By theorem \ref{thm:sigmafii} the desired result will follow.
+
+Let
 \begin{equation*}
     n_j=\prod_{p\leq e^j} p^j\text{, where } j\geq 2\,.
 \end{equation*}
@@ -136,15 +142,36 @@ Now we can define
     F_2(t)=\frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)
 \end{equation*}
 
-because by the results (\ref{eq:lognj}), (\ref{eq:signjpernj}) and (\ref{eq:zetaj})
+because by combining the results (\ref{eq:lognj}), (\ref{eq:signjpernj}) and (\ref{eq:zetaj})
 
 \begin{align*}
-    F_2(j)& = \frac{1}{e^\gamma\,\zeta(j+1)(A+t+\log j)} \prod_{p\leq e^j} \left(\frac{1}{1-\frac{1}{p}}\right)\\
+    F_2(j)& = \frac{1}{e^\gamma\,\zeta(j+1)(A+j+\log j)} \prod_{p\leq e^j} \left(\frac{1}{1-\frac{1}{p}}\right)\\
     & \leq \frac{1}{e^\gamma\,\log \log n_j} \prod_{p\leq e^j} \frac{1-\frac{1}{p^{j+1}}}{1-\frac{1}{p}}\\
-    & = \frac{\sigma(n_j)}{n_j\,e^\gamma\,\log \log n_j} = f_2(n)\,.
+    & = \frac{\sigma(n_j)}{n_j\,e^\gamma\,\log \log n_j} = g(n_j)\,.
 \end{align*}
 
-\textcolor{red}{HUOM $f_2$ ei määritelty}
+By the Merten's third theorem (theorem \ref{thm:mertens})
+\begin{align*}
+    \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
+    & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,\log e^t}{e^\gamma\,\zeta(t+1)(A+t+\log t)}\\
+    & = \lim_{t \rightarrow \infty} \frac{t}{\zeta(t+1)(A+t+\log t)}\\
+    & = \lim_{t \rightarrow \infty} \frac{t}{A+t+\log t}\\
+    & = 1\,.
+\end{align*}
+
+By the theorem \ref{thm:sigmafii}
+\begin{equation*}
+    f(n)\,g(n) = \frac{\phi(n)\,e^\gamma \log\log n}{n} \cdot \frac{\sigma(n)}{n\,e^\gamma \log\log n} = \frac{\phi(n)\sigma(n)}{n^2}<1
+\end{equation*}
+
+and since $g(n_j) \geq F_2(j)$
+
+\begin{equation*}
+    f(n_j)\leq \frac{1}{F_2(j)}\,.
+\end{equation*}
+
+
+Viel semmonen johtopäätös
 
 \section{Okei, sigma-funktio tarvitaan}
 
@@ -159,10 +186,18 @@ meaning $\sigma(n)$ is the sum of the divisors of $n$.
 
 \begin{lemma}
 \label{lemma:sigma}
-Sigma-funktion tulokaava
+Let $n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}$ be the prime factorization of $n$, where $p_1,p_2,...,p_r$ are distinct primes. Then
+\begin{equation*}
+    \sigma(n)=\prod_{i=1}^r \frac{p_i^{k_i+1}-1}{p_i-1}\,.
+\end{equation*}
+
+\begin{proof}
+Theorem 275 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\end{proof}
 \end{lemma}
 
 \begin{theorem}
+\label{thm:sigmafii}
 \begin{equation*}
     \frac{\phi(n)\,\sigma(n)}{n^2}<1
 \end{equation*}
@@ -197,7 +232,7 @@ Hence
     \phi(n)=\phi(p^k)=p^k-p^{k-1}=p^k-\frac{p^k}{p}=\left(1-\frac{1}{p}\right)p^k=\left(1-\frac{1}{p}\right)n.
 \end{equation*}
 
-Then, in the general case, assume $n=p_1^{k_1} p_2^{k_2} \cdot \cdot \cdot p_r^{k_r}=\prod_{i=1}^r p_i^{k_i}$, where $p_1,p_2,...,p_r$ are distinct primes that divide $n$ and $k_1,k_2,...,k_r$ their powers respectively. 
+Then, in the general case, assume $n=p_1^{k_1} p_2^{k_2} \cdots p_r^{k_r}=\prod_{i=1}^r p_i^{k_i}$, where $p_1,p_2,...,p_r$ are distinct primes that divide $n$ and $k_1,k_2,...,k_r$ their powers respectively. 
 
 % Toi "their powers" ei oo hyvä, joku kertaluku tai muu käsite pitäis kaivaa siihen
 
