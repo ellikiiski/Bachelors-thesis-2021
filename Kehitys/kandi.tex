@@ -38,6 +38,8 @@ Elli Kiiski
 
 All introduced variables $a, b, c, ...$ are integers, unless stated otherwise. Here the set of natural numbers $\mathbb{N}$ consists of positive integers, meaning $0 \not\in \mathbb{N}$.
 
+\textcolor{red}{LÄHDE näille kaikille määritelmille}
+
 \begin{notation}{\emph{Divisibility}}
 
 Let $a$ and $b$ be such that $b$ is divisible by $a$. This is denoted by $a \vert b$.
@@ -88,14 +90,13 @@ Euler's totient function is a multiplicative number theoretic function...
 \begin{definition}{\emph{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
 
 It is set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
-
-%Toisin sanoen Eulerin $\phi$-funktion arvo luonnollisella luvulla $n$ on sitä pienempien luonnolisten lukujen määrä, jotka ovat alkulukuja sen suhteen.
+\textcolor{red}{LÄHDE}
 
 \end{definition}
 
 %That is, the value of the totient function at $n \in \mathbb{N}$ is the number of co-primes of $n$ smaller than it.
 
-That is, the value of $\phi(n)$ is the number of co-primes of $n$ up to $n$.
+That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ up to $n$.
 
 \textcolor{red}{Tuo sanallinen selitys on yhä hyvin onneton.}
 
@@ -114,12 +115,11 @@ Euler's totient function is multuplicative.
 \end{equation*}
 
 where $\prod_{p \vert n} \left(1 - \frac{1}{p}\right)$ means the product over \emph{distinct} primes that divide $n$.
+\textcolor{red}{LÄHDE}
 
 \begin{proof}
 
 Assume first that $n = p^k$, where $p\in \mathbb{P}$. Now for every $x$, for which $gdc(p^k,x)>1$, holds $x=mp^{k-1}$ for some $m\in \{1,2,...,p^{k-1}\}$.
-
-% Siis lukujen x, joille gcd(n,x) määrä on p^{k-1}
 
 Hence
 \begin{equation*}
@@ -148,6 +148,7 @@ Now, since $\phi$ is a multiplicative function
 \begin{equation*}
     \text{For every } p \in \mathbb{P} \text{ holds } \phi(p) = p-1\,.
 \end{equation*}
+\textcolor{red}{LÄHDE (tarviiko näin triviaalille?)}
 
 \begin{proof}
 
@@ -163,6 +164,7 @@ Let $n\in\mathbb{P}$. Now the only prime that divides $n$ is $n$ itself. Hence b
 \section{Merten's theorem and other lemmas}
 
 Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit.
+\textcolor{red}{LÄHDE kaikille näille}
 
 \begin{theorem}{\emph{Merten's (third) theorem}}
 \label{thm:mertens}
@@ -180,13 +182,19 @@ where $\gamma$ is the Euler's constant.
 
 \end{theorem}
 
-\begin{definition}{\emph{The $\sigma$-function}}
+\begin{definition}{\emph{The Euler's constant}}
+
+The Euler's constant $\gamma$ is the limit of the difference of the harmonic series and natural logarithm. It equals approximately $\gamma\approx 0.57722$. More detailed consideration is outside of the scope of this thesis.
+\textcolor{red}{LÄHDE}
+\end{definition}
+
+\begin{definition}{\emph{The sigma-function}}
 
 \begin{equation*}
     \sigma(n)=\sum_{d\vert n} d\,,
 \end{equation*}
 
-meaning $\sigma(n)$ is the sum of the divisors of $n$.
+meaning the value of $\sigma(n)$ is the sum of the divisors of $n$.
 \end{definition}
 
 \begin{lemma}
@@ -281,6 +289,7 @@ Now, because there are infinitely many primes,
 \begin{equation*}
     \limsup{\frac{\phi(n)}{n}} = \lim \frac{n-1}{n} = 1\,.
 \end{equation*}
+\textcolor{red}{LÄHDE}
 
 \textcolor{red}{Onkohan yllä oleva ensimmäinen yhtäsuuruusmerkki ihan legit? Myös: pitääkö infinitely many primes perustella?}
 
@@ -290,7 +299,7 @@ Now, because there are infinitely many primes,
 
 \subsection{Lower limit of Euler's totient function}
 
-How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answer. However, the following lower limit exists.
+How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answer. However, it can be shown that the value of $\phi(n)$ is proportional to $\frac{n}{\log\log n}$. The rest of this paper will cover the proof of the exact limit inferior of the totient function.
 
 \begin{theorem}{\emph{Lower limit of the totient function}}
 
@@ -298,8 +307,6 @@ How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answ
     \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,,
 \end{equation*}
 where $\gamma$ is the Euler's constant.
-
-\textcolor{red}{Pitäisiköhän Eulerin vakiosta puhua jossain kohtaa enemmän? Ainakin voisi pikaisesti kertoa mikä se on, ettei se vaan ilmesty jostain.}
 
 \begin{proof}
 
@@ -376,16 +383,15 @@ Let
 
 By the lemma \ref{lemma:vartheta}
 \begin{equation*}
-    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p = j\,\vartheta(e^j) \leq A\,j\,e^j\,.
+    \log n_j = \log \prod_{p\leq e^j} p^j = j \log \prod_{p\leq e^j} p = j\,\vartheta(e^j) \leq A\,j\,e^j\,,
 \end{equation*}
+where $A$ is a real constant.
 
 Hence
 \begin{equation*}
 \label{eq:lognj}
     \log \log n_j = \log Aje^j = \log A + \log j + \log e^j = \log A + \log j + j\,.
 \end{equation*}
-
-\textcolor{red}{Tuon vakion A kanssa pitää viel diilaa jotenkin (ainakin mainita et se on vakio). Ei oo myöskään hyvä et se on kirjaimena A myöhemmin todistuksessa jolloin siitä on hävinnyt log edestä.}
 
 Since $n_j$ is the product of all primes smaller than $e^j$ to the power of $j$, by the lemma \ref{lemma:sigma} we have
 \begin{equation*}
@@ -403,29 +409,33 @@ Also, by the lemma \ref{lemma:zeta}
 
 Now we can define
 \begin{equation*}
-    F_2(t)=\frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)
+    F_2(t)=\frac{1}{e^\gamma\,\zeta(t+1)(B+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\,,
 \end{equation*}
+where $B=\log A$ is a suitable real constant.
 
-because by combining the results above
+This is, by combining the results above
 \begin{align*}
-    F_2(j)& = \frac{1}{e^\gamma\,\zeta(j+1)(A+j+\log j)} \prod_{p\leq e^j} \left(\frac{1}{1-\frac{1}{p}}\right)\\
+    F_2(j)& = \frac{1}{e^\gamma\,\zeta(j+1)(B+j+\log j)} \prod_{p\leq e^j} \left(\frac{1}{1-\frac{1}{p}}\right)\\
     & \leq \frac{1}{e^\gamma\,\log \log n_j} \prod_{p\leq e^j} \frac{1-\frac{1}{p^{j+1}}}{1-\frac{1}{p}}\\
     & = \frac{\sigma(n_j)}{n_j\,e^\gamma\,\log \log n_j} = g(n_j)\,.
 \end{align*}
 
 By the Merten's third theorem (theorem \ref{thm:mertens})
+
+\begin{equation*}
+    \lim_{t \rightarrow \infty} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right) = \lim_{t \rightarrow \infty} \frac{1}{\prod_{p\leq e^t} \left(1-\frac{1}{p}\right)} = \left(\frac{e^{-\gamma}}{\log e^t}\right)^{-1} = e^\gamma\,t
+\end{equation*}
+
+and hence
 \begin{align*}
-    \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
-    & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(A+t+\log t)} \cdot \frac{1}{\prod_{p\leq e^t} \left(1-\frac{1}{p}\right)}\\
-    & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,\log e^t}{e^\gamma\,\zeta(t+1)(A+t+\log t)}\\
-    & = \lim_{t \rightarrow \infty} \frac{t}{\zeta(t+1)(A+t+\log t)}\\
-    & = \lim_{t \rightarrow \infty} \frac{t}{A+t+\log t}\\
+    \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(B+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
+    & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,t}{e^\gamma\,\zeta(t+1)(B+t+\log t)}\\
+    & = \lim_{t \rightarrow \infty} \frac{t}{\zeta(t+1)(B+t+\log t)}\\
+    & = \lim_{t \rightarrow \infty} \frac{t}{B+t+\log t}\\
     & = 1\,.
 \end{align*}
 
-\textcolor{red}{Tuo eka välivaihe näyttää kyllä hyvin tyhmältä, mutta en sitten tiedä jos siihen ei laita mitään niin tajuuko siitä mistä nuo seuraavat tulee.}
-
-\textcolor{red}{Myös zeta-funktion raja-arvo pitää käsitellä! Ja muista A.}
+\textcolor{red}{Zeta-funktion raja-arvo pitää käsitellä!}
 
 By the theorem \ref{thm:sigmafii}
 \begin{equation*}
