@@ -1,0 +1,5 @@
+function phin = totientfunction(n)
+phin = [1];
+for i=2:n
+    
+end
