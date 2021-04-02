@@ -84,6 +84,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 1.4.  | Alarajan todistus conclusionia ja tarkistusta vaille "valmis". | 1 |
 | 1.4.  | Alarajan todistuksen loppu ja sigmafunktio lisätty (puutteineen ja huomoineen) kandiin. | 1 |
 | 2.4.  | Punaisten huomioiden selvittelyä. [Versio 1.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.1.pdf). | 1 |
+| 2.4.  | Pelleilyä MATLABilla. | 1 |
 
 *Viikkotavoitteiden toteutuminen:*
 
