@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 29.3.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 5.4.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -15,8 +15,8 @@
 | vk [10](#Viikko-10) | Ja vielä kerran sama kuin viime viikon tavoite, yhteys Saksmaniin!!! Myös tulokaavan todistus | 4 |
 | vk [11](#Viikko-11) | Kanditapaaminen Saksmanin kanssa, vinkkien mukaan todistukseen syvemmin perehtymistä | 1.5 |
 | vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | 1 |
-| vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | |
-| vk [14](#Viikko-14) | ?? | |
+| vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | 11.5 |
+| vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | |
 | vk [15](#Viikko-15) | Toivottavasti vika kanditapaaminen. KANDI VALMIS JA PALAUTETTU | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
@@ -86,7 +86,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 2.4.  | Punaisten huomioiden selvittelyä. [Versio 1.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.1.pdf). | 1 |
 | 2.4.  | Pelleilyä MATLABilla. | 1 |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* Vihdoinkin kunnon duunia, hyvin edistyi, vaikkei Mertensin todistukseen vielä päästykään.
 
 ##### Viikko 14
 
