@@ -102,7 +102,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 12.4. |  |  |
+| 12.4. | Lähteiden selvittelyä, LeVequeen tutustumista, perhanan multiplikatiivisuustodistus uuteen uskoon ja vihdoin valmiiksi | 5 |
 
 *Viikkotavoitteiden toteutuminen:*
 
