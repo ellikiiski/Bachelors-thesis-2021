@@ -207,6 +207,65 @@ Theorem 329 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{proof}
 \end{theorem}
 
+\section{Multiplikatiivisuustodistus}
+
+Tarttetaan alkuun modulomääritelmät ja muut (jippii lisää määriteltävää ja todistettavaa)
+
+\begin{definition}{\emph{Congruence}}
+
+Let $m \not = 0$. We say that $a$ is congruent to $b$ modulo $m$ if $m\vert (a-b)$.\\It it denoted by
+\begin{equation*}
+    a \equiv b \pmod{m}\,.
+\end{equation*}
+\end{definition}
+
+\begin{lemma}
+Joku lemma on varmaan tarpeen
+\end{lemma}
+
+\begin{theorem}
+Euler's totient function is multiplicative:
+\begin{equation*}
+    gcd(m,n)=1 \quad\Rightarrow\quad \phi(mn)=\phi(m)\phi(n)\,.
+\end{equation*}
+
+\begin{proof}
+
+(Theorem 59+60 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.)
+
+Assume $gcd(m,n)=1$ and $a\in\{1,2,\dots,m\}$ and $b\in\{1,2,\dots,n\}$.
+
+%First, let's show that $bm+an$ runs through a complete set of residues $\pmod mn$.
+
+Let $C$ be a set containing all the numbers of the form $bm+an$. Since $m$ and $n$ are co-prime and $a$ and $b$ run through a complete set of residues (mod $m$) and (mod $n$) respectively, there is exactly $mn$ numbers in the set $C$.
+
+Let $b_1m+a_1n \in C$ and $b_2m+a_2n \in C$ be congruent to each other modulo $mn$. Now
+\begin{equation*}
+    b_1m+a_1n \equiv b_2m+a_2n \pmod{mn}
+\end{equation*}
+then
+\begin{equation*}
+    b_1m \equiv b_2m \pmod{m} \quad \text{and} \quad a_1n \equiv a_2n \pmod{n}
+\end{equation*}
+and furthermore
+\begin{equation*}
+    b_1 \equiv b_2 \pmod{m} \quad \text{and} \quad a_1 \equiv a_2 \pmod{n}\,.
+\end{equation*}
+This yields $a_1 = a_2$ and $b_1 = b_2$, since $a$ and $b$ \textcolor{red}{En osaa sanoo tätä että a ja b sisältää menee vaan yhden kerran kaikki jäännökset läpi}.
+Thus all of the $mn$ numbers in $C$ are incongruent to each other and therefore $C$ forms a complete residue system modulo $mn$.
+
+Now
+\begin{align*}
+    gcd(bm+an,mn)=1 \quad & \Leftrightarrow \quad gcd(bm+an,m)=1\, \text{ and } \,gcd(bm+an,n)=1\\
+    & \Leftrightarrow \quad gcd(an,m)=1\, \text{ and } \,gcd(bm,n)=1\\
+    & \Leftrightarrow \quad gcd(a,m)=1\, \text{ and } \,gcd(b,n)=1\,,
+\end{align*}
+meaning 
+
+\end{proof}
+
+\end{theorem}
+
 \section{Tulokaavan todistus}
 
 Eulerin tulokaava arvon $\phi(n)$ laskemiseksi on hyvinkin tärkeä palanen eli todistetaan se nyt suoraan englanniksi niin ei tarvitse erikseen kääntää.
