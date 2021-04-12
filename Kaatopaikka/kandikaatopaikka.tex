@@ -262,6 +262,33 @@ Now
 \end{align*}
 meaning 
 
+\textcolor{red}{TÄÄ TODISTUS JOUTAA ROSKIIN}
+
+\end{proof}
+
+PAREMPI TODISTUS (EHKÄ)
+\begin{proof}
+Assume $m>1$, $n>1$ and $gcd(m,n)=1$. Consider the array
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{ccccc}
+        $0$ & $1$ & \dots & $m-2$ & $m-1$ \\
+        $m$ & $m+1$ & \dots & $m+(m-2)$ & $m+(m-1)$\\
+        \vdots & \vdots & \vdots & \vdots & \vdots\\
+        $(n-2)m$ & $(n-2)m+1$ & \dots & $(n-2)m+(m-2)$ & $(n-2)m+(m-1)$\\
+        $(n-1)m$ & $(n-1)m+1$ & \dots & $(n-1)m+(m-2)$ & $(n-1)m+(m-1)$
+    \end{tabular}
+\end{table}
+which consists of integers from $0$ to $mn-1$, forming a complete residue system (mod $mn$).
+
+Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(n)$ columns containing only co-primes to $m$ and the rest containing none of them.
+
+Now consider the co-prime columns. Every column forms a complete residue system (mod $n$) (\textcolor{blue}{LeVeque: chapter 3.2, theorem 3.5, p. 52}), meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
+
+On the other hand, since $gcd(m,n)=1$, an integer $k$ is co-prime to $mn$ if and only if both $gcd(m,k)=1$ and $gcd(n,k)=1$. Hence there are $\phi(m)\phi(n)$ numbers relatively prime to $mn$. Thus by definition $\phi(mn)=\phi(m)\phi(n)$.
+
+The case $m=1$ or $n=1$ is trivial, since $\phi(1)=1$ and thus $\phi(mn)=\phi(m)\phi(n)$.
+
 \end{proof}
 
 \end{theorem}
