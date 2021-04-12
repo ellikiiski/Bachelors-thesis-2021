@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 5.4.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 12.4.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -16,8 +16,9 @@
 | vk [11](#Viikko-11) | Kanditapaaminen Saksmanin kanssa, vinkkien mukaan todistukseen syvemmin perehtymistä | 1.5 |
 | vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | 1 |
 | vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | 11.5 |
-| vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | |
-| vk [15](#Viikko-15) | Toivottavasti vika kanditapaaminen. KANDI VALMIS JA PALAUTETTU | |
+| vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | 3 |
+| vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. | |
+| vk [16](#Viikko-16) | Kandin viimeistely ja palautus. | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -92,14 +93,23 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 5.4. | Multiplikatiivisuustodistusen väsäystä | 2 |
+| 5.4. | Multiplikatiivisuustodistuksen väsäystä | 2 |
+| 11.4. | Lisää multiplikatiivisuustodistuksen väsäystä | 1 |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* No en kyllä saanut edes multiplikatiivisuutta vielä todistettua loppuun. Camoooon.
 
-##### Viikko 14
+##### Viikko 15
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 22.2. |  |  |
+| 12.4. |  |  |
+
+*Viikkotavoitteiden toteutuminen:*
+
+##### Viikko 16
+
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 19.4. |  |  |
 
 *Viikkotavoitteiden toteutuminen:*
