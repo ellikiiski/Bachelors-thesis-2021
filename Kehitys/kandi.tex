@@ -18,10 +18,9 @@
 \date{2021}
 
 \theoremstyle{definition}
-\newtheorem{definition}[subsubsection]{Definition}
-\newtheorem{notation}[subsubsection]{Notation}
-\newtheorem{lemma}[subsubsection]{Lemma}
-\newtheorem{theorem}[subsubsection]{Theorem}
+\newtheorem{definition}[subsection]{Definition}
+\newtheorem{lemma}[subsection]{Lemma}
+\newtheorem{theorem}[subsection]{Theorem}
 
 \begin{document}
 
@@ -40,15 +39,15 @@ All introduced variables $a, b, c, ...$ are integers, unless stated otherwise. H
 
 \textcolor{red}{LÄHDE näille kaikille määritelmille}
 
-\begin{notation}{\emph{Divisibility}}
+\begin{definition}{\emph{Divisibility}}
 
-Let $a$ and $b$ be such that $b$ is divisible by $a$. This is denoted by $a \vert b$.
+If $b=ka$ for some integer $k$, $b$ is divisible by $a$. This is denoted by $a \vert b$.
 
-\end{notation}
+\end{definition}
 
-\begin{definition}{\emph{Greatest common divisor}}
+\begin{theorem}{\emph{Greatest common divisor}}
 
-Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. It can be shown that there is a unique $d \in \mathbb{N}$ with following properties:
+Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{N}$ with following properties:
 
 \begin{enumerate}
  \item $d \vert a$ and $d \vert b$
@@ -57,15 +56,17 @@ Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. It can be shown that there is a u
 
 The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by $gcd(a,b) = d$.
 
-However, the existence of the greatest common divisor is non-trivial. Proof can be found in \textit{LeVeque: Fundamentals of Number Theory, chapter 2.1}.
+\begin{proof}
+\textcolor{blue}{LÄHDE} W. J. LeVeque: Fundamentals of Number Theory, chapter 2.1, theorem 2.1
+\end{proof}
 
-\end{definition}
+\end{theorem}
 
 \begin{definition}{\emph{Prime number}}
 
 Integer $p\in\mathbb{N}$ is a prime, if $p \geq 2$ and for every $k\in\mathbb{N}$ holds that if $k \vert p$ then $k\in{1, p}$. The set of prime numbers is denoted by $\mathbb{P}$.
 
-In other words, all integers greater than $1$, which are only divisible by themself and $1$, are primes.
+In other words, all integers greater than $1$, only divisible by themself and $1$, are primes.
 
 %Toisin sanoen alkulukuja ovat kaikki lukua $1$ suuremmat luonnolliset luvut, jotka ovat jaollisia vain itsellään ja luvulla $1$.
 
@@ -89,19 +90,25 @@ Euler's totient function is a multiplicative number theoretic function...
 
 \begin{definition}{\emph{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
 
+\textcolor{blue}{Hardy-Wright: chapter 5.5, p.63}
+
 It is set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
-\textcolor{red}{LÄHDE}
 
 \end{definition}
 
 %That is, the value of the totient function at $n \in \mathbb{N}$ is the number of co-primes of $n$ smaller than it.
 
-That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ up to $n$.
+That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ less or equal to $n$.
 
 \textcolor{red}{Tuo sanallinen selitys on yhä hyvin onneton.}
 
 \begin{theorem}
-Euler's totient function is multuplicative.
+\textcolor{blue}{Hardy-Wright: chapter 5.5, theorem 60, p. 64}
+
+Euler's totient function is multiplicative:
+\begin{equation*}
+    gcd(m,n)=1 \quad\Rightarrow\quad \phi(mn)=\phi(m)\phi(n)\,.
+\end{equation*}
 \begin{proof}
 \textcolor{gray}{Placeholder for proof.}
 \end{proof}
@@ -110,12 +117,14 @@ Euler's totient function is multuplicative.
 \begin{theorem}{\emph{Euler's product formula}}
 \label{thm:product}
 
+\textcolor{blue}{Hardy-Wright: chapter 5.5, theorem 62, p. 64}\\
+\textcolor{red}{Oisko jossain parempi lähde}
+
 \begin{equation*}
     \phi(n) = n \prod_{p \vert n} \left(1 - \frac{1}{p}\right)
 \end{equation*}
 
 where $\prod_{p \vert n} \left(1 - \frac{1}{p}\right)$ means the product over \emph{distinct} primes that divide $n$.
-\textcolor{red}{LÄHDE}
 
 \begin{proof}
 
@@ -143,12 +152,11 @@ Now, since $\phi$ is a multiplicative function
 
 \end{theorem}
 
-\begin{theorem}{\emph{Totient function and primes}}
+\begin{lemma}{\emph{Totient function and primes}}
 \label{thm:phiprime}
 \begin{equation*}
     \text{For every } p \in \mathbb{P} \text{ holds } \phi(p) = p-1\,.
 \end{equation*}
-\textcolor{red}{LÄHDE (tarviiko näin triviaalille?)}
 
 \begin{proof}
 
@@ -159,15 +167,18 @@ Let $n\in\mathbb{P}$. Now the only prime that divides $n$ is $n$ itself. Hence b
 
 \end{proof}
 
-\end{theorem}
+\end{lemma}
 
 \section{Merten's theorem and other lemmas}
 
-Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit.
-\textcolor{red}{LÄHDE kaikille näille}
+Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit. Since all of the results of this chapter serve mostly as tools, proof for may of the is left untouched.
 
 \begin{theorem}{\emph{Merten's (third) theorem}}
 \label{thm:mertens}
+
+\textcolor{blue}{Hardy-Wright: chapter 22.8, theorem 429, p. 466}
+\textcolor{red}{Oisko parempi lähde, jossa simppelimpi todistus}
+
 \begin{equation*}
     \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
 \end{equation*}
@@ -182,13 +193,18 @@ where $\gamma$ is the Euler's constant.
 
 \end{theorem}
 
-\begin{definition}{\emph{The Euler's constant}}
+\begin{definition}{\emph{Euler-Mascheroni constant}}
 
-The Euler's constant $\gamma$ is the limit of the difference of the harmonic series and natural logarithm. It equals approximately $\gamma\approx 0.57722$. More detailed consideration is outside of the scope of this thesis.
-\textcolor{red}{LÄHDE}
+\textcolor{blue}{Wolfram MathWorld: Euler-Mascheroni constant}
+\textcolor{red}{Onkohan tarpeeks legit lähde}
+
+The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the harmonic series and natural logarithm. It equals approximately $\gamma\approx 0.57722$. More detailed consideration is outside of the scope of this thesis.
+
 \end{definition}
 
 \begin{definition}{\emph{The sigma-function}}
+
+\textcolor{blue}{Hardy-Wright: chapter 16.7, p. 310}
 
 \begin{equation*}
     \sigma(n)=\sum_{d\vert n} d\,,
@@ -205,7 +221,7 @@ Let $n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}$ be the prime factorization of $n$, wh
 \end{equation*}
 
 \begin{proof}
-Theorem 275 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\textcolor{blue}{LÄHDE} Theorem 275 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{proof}
 \end{lemma}
 
@@ -216,12 +232,15 @@ Theorem 275 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{equation*}
 
 \begin{proof}
-Theorem 329 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\textcolor{blue}{LÄHDE} Theorem 329 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{proof}
 \end{theorem}
 
 
 \begin{definition}{\emph{Chebyshev function}}
+
+\textcolor{blue}{Hardy-Wright: chapter 22.1, p. 451}
+
 \begin{equation*}
     \vartheta(x)=\sum_{p\leq x} \log p = \log \prod_{p\leq x} p\,,
 \end{equation*}
@@ -238,11 +257,13 @@ For the function $\vartheta(x)$ holds
 where $x\geq2\in\mathbb{R}$, $A$ is a real constant.
 
 \begin{proof}
-Theorem 414 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\textcolor{blue}{LÄHDE} Theorem 414 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{proof}
 \end{lemma}
 
 \begin{definition}{\emph{Riemann zeta-function}}
+
+\textcolor{blue}{Hardy-Wright: chapter 17.2, p. 320}
 
 \begin{equation*}
     \zeta(s)=\sum_{n=1}^\infty \frac{1}{n^s}\,,
@@ -257,7 +278,7 @@ For all $s>1\in\mathbb{R}$,
     \zeta(s)=\prod_p \frac{1}{1-\frac{1}{p^s}}\,.
 \end{equation*}
 \begin{proof}
-Theorem 280 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+\textcolor{blue}{LÄHDE} Theorem 280 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{proof}
 \end{lemma}
 
@@ -272,6 +293,8 @@ For example, let $n = 2^p - 1 \in \mathbb{P}$ be so called Mersenne prime, meani
 The maximum value of $\phi(n)$ given $n$ is easy to define by the theorem \ref{thm:phiprime}.
 
 \begin{theorem}{\emph{Upper limit of the totient function}}
+
+\textcolor{blue}{Hardy-Wright: chapter 18.4, theorem 326, p. 352}
 
 For every $n \geq 2$ holds $\phi(n) \leq n-1$ and
 \begin{equation*}
@@ -289,7 +312,6 @@ Now, because there are infinitely many primes,
 \begin{equation*}
     \limsup{\frac{\phi(n)}{n}} = \lim \frac{n-1}{n} = 1\,.
 \end{equation*}
-\textcolor{red}{LÄHDE}
 
 \textcolor{red}{Onkohan yllä oleva ensimmäinen yhtäsuuruusmerkki ihan legit? Myös: pitääkö infinitely many primes perustella?}
 
@@ -303,12 +325,16 @@ How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answ
 
 \begin{theorem}{\emph{Lower limit of the totient function}}
 
+\textcolor{blue}{Hardy-Wright: chapter 18.4, theorem 328, p. 352}
+
 \begin{equation*}
     \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,,
 \end{equation*}
 where $\gamma$ is the Euler's constant.
 
 \begin{proof}
+
+\textcolor{blue}{Hardy-Wright: chapter 22.9, p. 467}
 
 Let's prove the claim by showing $\liminf{f(n)} = 1$, when
 \begin{equation*}
@@ -458,8 +484,6 @@ and equivalently
 \begin{equation*}
     \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,.
 \end{equation*}
-
-\textcolor{red}{Pitää kyllä tehdä vielä "inequality check" eli tsekkaa aidot ja epäaidot epäyhtäsuuruudet, ihan vaan mielenrauhan vuoksi.}
 
 \end{proof}
 
