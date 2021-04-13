@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 12.4.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 13.4.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!*
@@ -17,8 +17,8 @@
 | vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | 1 |
 | vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | 11.5 |
 | vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | 3 |
-| vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. | |
-| vk [16](#Viikko-16) | Kandin viimeistely ja palautus. | |
+| vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava.| |
+| vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -104,6 +104,8 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | :-----| :-------| :------|
 | 12.4. | Lähteiden selvittelyä, LeVequeen tutustumista, perhanan multiplikatiivisuustodistus uuteen uskoon ja vihdoin valmiiksi | 5 |
 | 12.4. | Multip.todistus mukaan kandiin ja lähteiden järkkäämistä ja muuta säätöä | 2 |
+| 13.4. | Fii(n)Sigma(n)/n^2<1 todistus plus näennäistä valmistautumista tapaamiseen | 1 |
+| 13.4. | Kanditapaaminen: [versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf). | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
 
