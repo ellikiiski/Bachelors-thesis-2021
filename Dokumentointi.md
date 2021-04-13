@@ -105,7 +105,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 12.4. | Lähteiden selvittelyä, LeVequeen tutustumista, perhanan multiplikatiivisuustodistus uuteen uskoon ja vihdoin valmiiksi | 5 |
 | 12.4. | Multip.todistus mukaan kandiin ja lähteiden järkkäämistä ja muuta säätöä | 2 |
 | 13.4. | Fii(n)Sigma(n)/n^2<1 todistus plus näennäistä valmistautumista tapaamiseen | 1 |
-| 13.4. | Kanditapaaminen: [versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf). | 2 |
+| 13.4. | Kanditapaaminen: [versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf). | 0.5 |
 
 *Viikkotavoitteiden toteutuminen:*
 
