@@ -105,7 +105,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 12.4. | Lähteiden selvittelyä, LeVequeen tutustumista, perhanan multiplikatiivisuustodistus uuteen uskoon ja vihdoin valmiiksi | 5 |
 | 12.4. | Multip.todistus mukaan kandiin ja lähteiden järkkäämistä ja muuta säätöä | 2 |
 | 13.4. | Fii(n)Sigma(n)/n^2<1 todistus plus näennäistä valmistautumista tapaamiseen | 1 |
-| 13.4. | Kanditapaaminen: [versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf) vilautettu Saksmanille. | 0.5 |
+| 13.4. | Kanditapaaminen: [versio 1.2](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.2.pdf) vilautettu Saksmanille. | 0.5 |
 | 18.4. | Mertensin ymmärtämisen yrittämistä ja lähdeviittausten kanssa tappelua | 2 |
 
 *Viikkotavoitteiden toteutuminen:* Ihan jees, käytännössä puuttuu enää Mertens, lähdeviittaukset ja välipaasaukset (ja ehkä haluisin viel todistaa pari pikkujuttua). Saksman ei kuitenkaan ottanut vielä kandia luettavaksi.
@@ -115,6 +115,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 19.4. | Perkeleen lähdeviittausten kanssa tappelua, vihdoin sain kuntoon | 2 |
-| 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. [Versio 2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf). | 6 |
+| 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. [Versio 1.3](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.3.pdf). Tuli muutettua versionumerointiakin vähän jälkikäteen sniikisti. | 6 |
 
 *Viikkotavoitteiden toteutuminen:*
