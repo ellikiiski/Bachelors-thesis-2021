@@ -115,6 +115,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 19.4. | Perkeleen lähdeviittausten kanssa tappelua, vihdoin sain kuntoon | 2 |
-| 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. Versio [2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf). | 6 |
+| 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. [Versio 2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf). | 6 |
 
 *Viikkotavoitteiden toteutuminen:*
