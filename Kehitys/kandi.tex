@@ -33,17 +33,21 @@ Elli Kiiski
 
 \section{Introduction}
 
-\textcolor{gray}{Placeholder for some introductory explaining about the subject of this thesis.}
+In number theory Euler's totient function is used pops up when considering divisibility, congruences and residue systems. \textcolor{red}{AAAAAA EN OSAA PUHUAAAA} \textcolor{gray}{Anyway tähän vielä paasausta}
 
-All introduced variables $a, b, c, ...$ are integers, unless stated otherwise. Here the set of natural numbers $\mathbb{N}$ consists of positive integers, meaning $0 \not\in \mathbb{N}$.
+Therefore, it is essential to go through the basic definitions concerning mentioned areas before even introducing the totient function itself.
 
-\begin{definition}{\emph{Divisibility}}
+All introduced variables $a, b, c, ...$ are integers, unless stated otherwise. Here the set of natural numbers $\mathbb{N}$ consists of positive integers, meaning $0 \not\in \mathbb{N}$. Also, the notation $[x]$ is used to denote the integer part of a real number $x$.
 
-If $b=ka$ for some integer $k$, $b$ is divisible by $a$. This is denoted by $a \vert b$.
+\begin{definition}
+\textit{Divisibility}
+
+If $b=ka$ for some integer $k$, $b$ is divisible by $a$. This is denoted by $a \,\vert\, b$.
 
 \end{definition}
 
-\begin{theorem}{\emph{Greatest common divisor}}
+\begin{theorem}
+\textit{Greatest common divisor} \cite{LeVeque}
 
 Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{N}$ with following properties:
 
@@ -55,47 +59,55 @@ Let $a \in \mathbb{N}$ and $b \in \mathbb{N}$. There is a unique $d \in \mathbb{
 The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by $gcd(a,b) = d$.
 
 \begin{proof}
-\textcolor{blue}{LeVeque: thm 2.1, chp 2.1, p. 31}
+Theorem is proved in \cite{LeVeque} as theorem 2.1 in chapter 2.1 on page 31.
+%\textcolor{blue}{LeVeque: thm 2.1, chp 2.1, p. 31}
+\textcolor{red}{Oh god en osaa viitata tällasessa plz help}
 \end{proof}
 \end{theorem}
 
-\begin{definition}\emph{Congruence}
+\begin{definition}
+\textit{Congruence}
 
 Let $m\not=0$. If $m\vert(a-b)$, we say $a$ is congruent to $b$ modulo $m$. It is denoted by $a\equiv b \pmod{m}$.
 \end{definition}
 
-\begin{definition}\emph{Complete residue system}
-\textcolor{red}{Joku hyvä määritelmä, joka ei aiheuta tarpeita yhä uusille määritelmille.}
+\begin{definition}
+\textit{Complete residue system (mod m)}
+
+The set $a_0,a_1,\dots,a_{m-1}$ forms a complete residue system if
+\begin{equation*}
+    a_i \equiv i \pmod{m}
+\end{equation*}f
+or all $i\in\{0,1,\dots,m-1\}$.
 \end{definition}
 
-\begin{definition}{\emph{Prime number}}
+\begin{definition}
+\textit{Prime number}
 
-Integer $p\in\mathbb{N}$ is a prime, if $p \geq 2$ and for every $k\in\mathbb{N}$ holds that if $k \vert p$ then $k\in{1, p}$. The set of prime numbers is denoted by $\mathbb{P}$.
+Integer $p\in\mathbb{N}$ is a prime, if $p \geq 2$ and for every $k\in\mathbb{N}$ holds that if $k \,\vert\, p$ then $k\in\{1, p\}$. The set of prime numbers is denoted by $\mathbb{P}$.
 
-In other words, all integers greater than $1$, only divisible by themself and $1$, are primes.
-
-%Toisin sanoen alkulukuja ovat kaikki lukua $1$ suuremmat luonnolliset luvut, jotka ovat jaollisia vain itsellään ja luvulla $1$.
+%In other words, all integers greater than $1$, only divisible by themself and $1$, are primes.
 
 \end{definition}
 
-\begin{definition}{\emph{Co-prime}}
+\begin{definition}
+\textit{Co-prime}
 
 If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relatively primes.
-
 \end{definition}
 
 \begin{definition}{\emph{Multiplicative number theoretic function}}
 
-Function $f: \mathbb{N} \rightarrow \mathbb{R}$ is called number theoretic function. It is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
+Function $f\colon \mathbb{N} \rightarrow \mathbb{R}$ is called number theoretic function. It is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
 
 \end{definition}
 
 \section{Euler's totient function and its properties}
 
-Euler's totient function is a multiplicative number theoretic function...
+Now that we have revised some of the basic concepts in number theory, let us introduce Euler's totient function itself. It is a number theoretic function describing, by how many positive integers a given number is, or to be exact is not, divisible. We start by formally defining the function and then showing a few of its properties.
 
-\begin{definition}{\emph{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}}
-
+\begin{definition}
+\textit{Euler's totient function $\phi: \mathbb{N} \rightarrow \mathbb{N}$}
 %\textcolor{blue}{Hardy-Wright: chapter 5.5, p. 63}
 
 It is set that $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a \in \{1,2,...,n\}$, for which $gcd(a,n) = 1$.
@@ -108,8 +120,7 @@ That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ less 
 
 \begin{theorem}
 %\textcolor{blue}{Hardy-Wright: chapter 5.5, theorem 60, p. 64}
-
-Euler's totient function is multiplicative:
+Euler's totient function is multiplicative, i.e.
 \begin{equation*}
     gcd(m,n)=1 \quad\Rightarrow\quad \phi(mn)=\phi(m)\phi(n)\,.
 \end{equation*}
@@ -132,7 +143,9 @@ which consists of integers from $0$ to $mn-1$, forming a complete residue system
 
 Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them. (\textcolor{blue}{lähde?})
 
-Now consider the co-prime columns. Every column forms a complete residue system (mod $n$) (\textcolor{blue}{LeVeque: thm. 3.5, chp. 3.2, p. 52}), meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
+Now consider the co-prime columns. Every column forms a complete residue system (mod $n$)
+%(\textcolor{blue}{LeVeque: thm. 3.5, chp. 3.2, p. 52})
+\cite{LeVeque}, meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
 
 On the other hand, since $gcd(m,n)=1$, an integer $k$ is co-prime to $mn$ if and only if both $gcd(m,k)=1$ and $gcd(n,k)=1$ are true. Hence there are $\phi(m)\phi(n)$ numbers relatively prime to $mn$. Thus by definition $\phi(mn)=\phi(m)\phi(n)$.
 
@@ -141,6 +154,8 @@ The case $m=1$ or $n=1$ is trivial, since $\phi(1)=1$ and hence $\phi(mn)=\phi(m
 \end{proof}
 
 \end{theorem}
+
+The definition of Euler's totient function is rather verbal, making it somewhat inconvenient to handle in computation. Fortunately, there is a simple formula to calculate the value as a product involving primes that divide $n$.
 
 \begin{theorem}{\emph{Euler's product formula}}
 \label{thm:product}
@@ -180,6 +195,8 @@ Now, since $\phi$ is a multiplicative function
 
 \end{theorem}
 
+When it comes to primes, the value of the totient function is easy to deduce. By definition, primes are not divisible by any other number than themself and one, yielding the following lemma.
+
 \begin{lemma}
 \label{thm:phiprime}
 For every $p \in \mathbb{P}$ holds $\phi(p) = p-1$\,.
@@ -199,7 +216,14 @@ Let $n\in\mathbb{P}$. Now the only prime that divides $n$ is $n$ itself. Hence b
 
 Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit. Since all of the results of this chapter serve mainly as tools, proof for many of them is not elaborated.
 
-\begin{theorem}{\emph{Mertens' theorem} (\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})}
+\subsection{Mertens' theorem}
+
+The most important (and trickiest at the same time) of these is the Mertens' theorem, from which the mysterious $\gamma$ pops up.
+\textcolor{red}{Okei jätän näiden sepustutamisen siiheksi kun on se todistus ees valmis}
+
+\begin{theorem}
+\textit{Mertens' theorem} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})
 \label{thm:mertens}
 
 \begin{equation*}
@@ -216,7 +240,7 @@ where $\gamma$ is the Euler's constant.
 
 \end{theorem}
 
-\begin{definition}{\emph{Euler-Mascheroni constant} (\textcolor{blue}{Wolfram MathWorld: Euler-Mascheroni constant} (\textcolor{red}{kelpaakohan lähteeksi}))}
+\begin{definition}{\emph{Euler-Mascheroni constant} (\textcolor{blue}{Wolfram MathWorld: Euler-Mascheroni constant} (\textcolor{red}{Jätän vielä sikseen kunnes todistus on laadittu}))}
 
 The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the harmonic series and natural logarithm,
 \begin{equation*}
@@ -226,7 +250,11 @@ The constant appears in the Mertens' theorem and later in the lower limit of the
 
 \end{definition}
 
-\begin{definition}{\emph{The sigma-function} (\textcolor{blue}{Hardy-Wright: chp. 16.7, p. 310})}
+\subsection{Other relevant functions}
+
+\begin{definition}
+\textit{The sigma function} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: chp. 16.7, p. 310})
 
 \begin{equation*}
     \sigma(n)=\sum_{d\vert n} d\,,
@@ -247,7 +275,8 @@ also denoted by
 \end{equation*}
 
 \begin{proof}
-\textcolor{blue}{Hardy-Wright: thm. 275, chp. 16.7, p. 311 }.
+\cite{HardyWright} \textcolor{red}{Handlaa nää}
+%\textcolor{blue}{Hardy-Wright: thm. 275, chp. 16.7, p. 311 }.
 \end{proof}
 \end{lemma}
 
@@ -256,6 +285,7 @@ also denoted by
 \begin{equation*}
     \frac{\phi(n)\,\sigma(n)}{n^2}<1
 \end{equation*}
+\cite{HardyWright} \textcolor{red}{Öhh mites tää kantsis}
 
 \begin{proof}
 By the Euler's product formula and lemma \ref{lemma:sigma} we get
@@ -276,7 +306,9 @@ Equivivalently
 \end{lemma}
 
 
-\begin{definition}{\emph{Chebyshev function} (\textcolor{blue}{Hardy-Wright: chp. 22.1, p. 451})}
+\begin{definition}
+\textit{Chebyshev function} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: chp. 22.1, p. 451})
 
 \begin{equation*}
     \vartheta(x)=\sum_{p\leq x} \log p = \log \prod_{p\leq x} p\,,
@@ -294,17 +326,31 @@ For the function $\vartheta(x)$ holds
 where $x\geq2\in\mathbb{R}$, $A$ is a real constant.
 
 \begin{proof}
-\textcolor{blue}{Hardy-Wright: thm. 414, chp. 22.2, p. 453}.
+\cite{HardyWright} \textcolor{red}{Handlaa nää}
+%\textcolor{blue}{Hardy-Wright: thm. 414, chp. 22.2, p. 453}.
 \end{proof}
 \end{lemma}
 
-\begin{definition}{\emph{Riemann zeta-function} (\textcolor{blue}{Hardy-Wright: chp. 17.2, p. 320})}
+\begin{definition}
+\textit{Riemann zeta function} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: chp. 17.2, p. 320})
 
 \begin{equation*}
     \zeta(s)=\sum_{n=1}^\infty \frac{1}{n^s}\,,
 \end{equation*}
 where $s\in\mathbb{R}$.
 \end{definition}
+
+\begin{theorem}
+\textit{Limit of zeta function}
+\label{thm:zeta}
+\begin{equation}
+    \lim_{s\rightarrow\infty} \zeta(s) = 1\,.
+\end{equation}
+\begin{proof}
+\textcolor{red}{ETSI JOSTAIN}
+\end{proof}
+\end{theorem}
 
 \begin{lemma}
 \label{lemma:zeta}
@@ -313,23 +359,30 @@ For all $s>1\in\mathbb{R}$,
     \zeta(s)=\prod_p \frac{1}{1-\frac{1}{p^s}}\,.
 \end{equation*}
 \begin{proof}
-\textcolor{blue}{Hardy-Wright: thm. 280, chp. 17.2, p. 320}.
+\cite{HardyWright} \textcolor{red}{Handlaa nää}
+%\textcolor{blue}{Hardy-Wright: thm. 280, chp. 17.2, p. 320}.
 \end{proof}
 \end{lemma}
 
 \section{The limits of Euler's totient function}
 
-As shown before, there is an exact formula, the Euler's product formula, for the rather verbally defined totient function $\phi(n)$. Though, using it requires factorization of $n$, which makes it difficult to estimate its size as $n$ gets bigger.
+Finally reaching the point, in which we are equipped to start getting into the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula gives the totient function a more computable form. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
 
-For example, let $n = 2^p - 1 \in \mathbb{P}$ be so called Mersenne prime, meaning also $p \in \mathbb{P}$. By theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$. Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
+Let us amuse ourselves with an example \cite{Pomerance}: let $n = 2^p - 1 \in \mathbb{P}$ be so called Mersenne prime, meaning also $p \in \mathbb{P}$.
 
-We start by proving the fairly obvious upper limit and then dive into a detailed proof of the lower limit.
+By theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
+
+Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
+
+All this said, next we will prove the exact limits of the totient function, starting with the fairly obvious upper limit and then diving into a detailed proof of the lower limit.
 
 \subsection{Upper limit of Euler's totient function}
 
 The maximum value of $\phi(n)$ given $n$ is easy to define with theorem \ref{thm:phiprime}.
 
-\begin{theorem}{\emph{Upper limit of the totient function} (\textcolor{blue}{Hardy-Wright: thm. 326, chp. 18.4, p. 352})}
+\begin{theorem}
+\textit{Upper limit of the totient function} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: thm. 326, chp. 18.4, p. 352})
 
 For every $n \geq 2$ holds $\phi(n) \leq n-1$ and
 \begin{equation*}
@@ -354,9 +407,13 @@ Now, because there are infinitely many primes (\textcolor{blue}{lähde?}),
 
 \subsection{Lower limit of Euler's totient function}
 
-How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answer. However, it can be shown that the value of $\phi(n)$ is proportional to $\frac{n}{\log\log n}$. The rest of this paper will cover the proof of the exact limit inferior of the totient function.
+How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answer. However, it can be shown that the value of $\phi(n)$ is proportional to $\frac{n}{\log\log n}$. The rest of this paper will cover the proof of the exact limit inferior of the totient function, following the proof of theorem $328$
+%from \textit{Hardy \& Wright: Introduction to the Theory of Numbers},
+in \cite{HardyWright} chapter 22.9, p. 467. \textcolor{red}{Myös tässä nyt joku järki viittaamiseen}
 
-\begin{theorem}{\emph{Lower limit of the totient function} (\textcolor{blue}{Hardy-Wright: thm. 328, chp. 18.4, p. 352})}
+\begin{theorem}
+\textit{Lower limit of the totient function} \cite{HardyWright}
+%(\textcolor{blue}{Hardy-Wright: thm. 328, chp. 18.4, p. 352})
 
 \begin{equation*}
     \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,,
@@ -365,10 +422,7 @@ where $\gamma$ is the Euler's constant.
 
 \begin{proof}
 
-%\textcolor{blue}{Hardy-Wright: chapter 22.9, p. 467}
-We follow here the proof of theorem $328$ from \textit{Hardy \& Wright: Introduction to the Theory of Numbers}, chapter 22.9, p. 467.
-
-Let's prove the claim by showing $\liminf{f(n)} = 1$, when
+Let us prove the claim by showing $\liminf{f(n)} = 1$, when
 \begin{equation*}
     f(n)= \frac{\phi(n)\,e^\gamma \log\log n}{n}\,,
 \end{equation*}
@@ -428,7 +482,7 @@ and by the Mertens' theorem (theorem \ref{thm:mertens})
 Now we have proved the part (\ref{eq:first}) and showed that
 $\liminf{f(n)}\geq 1$.
 
-Next, to prove the part (\ref{eq:second}), let's define
+Next, to prove the part (\ref{eq:second}), let us define
 \begin{equation*}
     g(n)=\frac{\sigma(n)}{n\,e^\gamma \log\log n}
 \end{equation*}
@@ -484,7 +538,7 @@ By the Mertens' third theorem (theorem \ref{thm:mertens})
     \lim_{t \rightarrow \infty} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right) = \lim_{t \rightarrow \infty} \frac{1}{\prod_{p\leq e^t} \left(1-\frac{1}{p}\right)} = \left(\frac{e^{-\gamma}}{\log e^t}\right)^{-1} = e^\gamma\,t
 \end{equation*}
 
-and hence
+and hence, keeping theorem \ref{thm:zeta} in mind
 \begin{align*}
     \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(B+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
     & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,t}{e^\gamma\,\zeta(t+1)(B+t+\log t)}\\
@@ -492,8 +546,6 @@ and hence
     & = \lim_{t \rightarrow \infty} \frac{t}{B+t+\log t}\\
     & = 1\,.
 \end{align*}
-
-\textcolor{red}{Zeta-funktion raja-arvo pitää käsitellä!}
 
 By the theorem \ref{thm:sigmafii}
 \begin{equation*}
@@ -523,6 +575,5 @@ and equivalently
 
 \nocite{*}
 \printbibliography
-
 
 \end{document}
