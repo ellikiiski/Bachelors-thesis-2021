@@ -17,7 +17,7 @@
 | vk [12](#Viikko-12) | Alarajan todistus loppuun nojaten Mertenin lauseeseen ja muihin myöhemmin todistettaviin lauseisiin | 1 |
 | vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | 11.5 |
 | vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | 3 |
-| vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava.| |
+| vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava.| 10.5 |
 | vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
@@ -106,13 +106,14 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 12.4. | Multip.todistus mukaan kandiin ja lähteiden järkkäämistä ja muuta säätöä | 2 |
 | 13.4. | Fii(n)Sigma(n)/n^2<1 todistus plus näennäistä valmistautumista tapaamiseen | 1 |
 | 13.4. | Kanditapaaminen: [versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf) vilautettu Saksmanille. | 0.5 |
+| 18.4. | Mertensin ymmärtämisen yrittämistä ja lähdeviittausten kanssa tappelua | 2 |
 
-*Viikkotavoitteiden toteutuminen:*
+*Viikkotavoitteiden toteutuminen:* Ihan jees, käytännössä puuttuu enää Mertens, lähdeviittaukset ja välipaasaukset (ja ehkä haluisin viel todistaa pari pikkujuttua). Saksman ei kuitenkaan ottanut vielä kandia luettavaksi.
 
 ##### Viikko 16
 
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 19.4. |  |  |
+| 19.4. | Perkeleen lähdeviittausten kanssa tappelua, vihdoin sain kuntoon | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
