@@ -188,7 +188,11 @@ meaning $\sigma(n)$ is the sum of the divisors of $n$.
 \label{lemma:sigma}
 Let $n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}$ be the prime factorization of $n$, where $p_1,p_2,...,p_r$ are distinct primes. Then
 \begin{equation*}
-    \sigma(n)=\prod_{i=1}^r \frac{p_i^{k_i+1}-1}{p_i-1}\,.
+    \sigma(n)=\prod_{i=1}^r \frac{p_i^{k_i+1}-1}{p_i-1}\,,
+\end{equation*}
+also denoted by
+\begin{equation*}
+    \sigma(n) = \prod_{p\vert n} \frac{p^{k+1}-1}{p-1}\,.
 \end{equation*}
 
 \begin{proof}
@@ -203,7 +207,21 @@ Theorem 275 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
 \end{equation*}
 
 \begin{proof}
-Theorem 329 in \textit{Hardy \& Wright: Introduction to the Theory of Numbers}.
+By the Euler's product formula and lemma \ref{lemma:sigma} we get
+\begin{align*}
+    \phi(n)\,\sigma(n) & = n\prod_{p\vert n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\vert n} \frac{p^{k+1}-1}{p-1}\\
+    & = n\prod_{p\vert n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\vert n} p^k \cdot \prod_{p\vert n} \frac{p-\frac{1}{p^k}}{p-1}\\
+    & = n\prod_{p\vert n}\left(1-\frac{1}{p}\right) \cdot n \prod_{p\vert n}\frac{1-\frac{1}{p^{k+1}}}{1-\frac{1}{p}}\\
+    & = n^2 \prod_{p\vert n} \left( \frac{1-\frac{1}{p^{k+1}}}{1-\frac{1}{p}} - \frac{1-\frac{1}{p^{k+1}}}{p-1}\right)\\
+    & = n^2 \prod_{p\vert n} \frac{p-1-\frac{1}{p^k}+\frac{1}{p^{k+1}}}{p-1}\\
+    & = n^2 \prod_{p\vert n} \frac{p-1-(p-1)\frac{1}{p^{k+1}})}{p-1}\\
+    & = n^2 \prod_{p\vert n} \left(1-\frac{1}{p^{k+1}}\right) < n^2\,.
+\end{align*}
+Equivivalently
+\begin{equation*}
+    \frac{\phi(n)\,\sigma(n)}{n^2}<1\,.
+\end{equation*}
+
 \end{proof}
 \end{theorem}
 
@@ -335,7 +353,7 @@ Now, since $\phi$ is a multiplicative function
 
 \end{theorem}
 
-\section{The zeta-function}
+\section{Funktioita ja muita}
 
 \begin{definition}{The zeta-function}
 
@@ -355,9 +373,88 @@ For all $s>1$
 
 \end{definition}
 
-\section{Merten's (third) theorem}
+\begin{definition}
+Von Mangoldt function
 
-\begin{theorem}{\emph{Merten's (third) theorem}}
+Let $p\in\mathbb{P}$ and $k\geq1$.
+\begin{equation*}
+    \Lambda(n) =
+    \begin{cases}
+    \log p \quad \text{if } n=p^k\\
+    0 \quad\quad\,\,\, \text{othewise}\,.
+    \end{cases}
+\end{equation*}
+\end{definition}
+
+\begin{theorem}
+\label{thm:lambdaf}
+\begin{equation*}
+    \sum_{d\vert n} \Lambda(d) = \log n\,.
+\end{equation*}
+\begin{proof}
+Let us denote $n=\prod p^k$. Now, by definition, we have
+\begin{equation*}
+    \sum_{d\vert n} \Lambda(d) = \sum_{p^k\vert n} \log p\,.
+\end{equation*}
+We notice that as the sum runs through all combinations of primes $p$ and positive integer powers $k$ such that $p^k\vert n$, each $\log p$ occurs $k$ times. Hence
+\begin{equation*}
+    \sum_{p^k\vert n} \log p = \sum a \log p = \sum \log p^a = \log \prod p^a = \log n\,.
+\end{equation*}
+\end{proof}
+\end{theorem}
+
+\begin{lemma}
+\begin{equation*}
+    \sum_{n\leq x} \frac{\Lambda(n)}{n} = \log x + O(1)\,.
+\end{equation*}
+\begin{proof}
+By theorem \ref{thm:lambdaf} we can deduce
+\begin{equation*}
+    \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\vert n} \Lambda(d) =
+\end{equation*}
+\textcolor{red}{Hiffaispa mikä homma ääää}
+\end{proof}
+\end{lemma}
+
+\section{Merten's theorem}
+
+\begin{lemma}
+\label{lemma:mertenapu}
+If $c_1, c_2,\dots$ is a sequence of real numbers such that $c_i=0$ for $i<2$ and
+\begin{equation*}
+    C(t) = \sum_{n\leq t} c_n
+\end{equation*}
+and $f(t)$ has continuous derivative for $t \geq 2 \in \mathbb{R}$, then
+\begin{equation*}
+    \sum_{n\leq x} c_n\,f(n) = C(x)\,f([x])-\int_2^x C(t)\,f'(t)\,dt\,.
+\end{equation*}
+
+\begin{proof}
+First we observe that $C(t) = C(n)$ and $f(n)=f([t])$, when $n\leq t\leq n+1$.
+
+We have
+\begin{align*}
+    \sum_{n\leq x} c_n\,f(n) & = c_1\,f(1) + c_2\,f(2) + \dots + c_n\,f(n)\\
+    & =  C(1)\,f(1) + (C(2)-C(1))\,f(2) + \dots + (C(n)-C(n-1))\,f(n)\\
+    & = C(1)\,(f(1)-f(2)) + C(2)\,(f(2)-f(3)) + \dots\\
+    & \quad + C(n-1)\,(f(n-1)-f(n)) + C(n)\,f(n)\\
+    & = \sum_{n\leq x-1} C(n)\,(f(n)-f(n+1)) + \underbrace{C(n)\,f(n)}_\text{$C(x)\,f([x])$}\,.
+\end{align*}
+
+On the other hand, since $f(t)$ is continuously differentiable when $t\geq2$ and $C(t)=0$ elsewhere, we have
+\begin{equation*}
+     C(n)\,(f(n)-f(n+1)) = \int_{n+1}^n C(t)\,f'(t)\,dt = -\int_n^{n+1} C(t)\,f'(t)\,dt\,.
+\end{equation*}
+Finally, by combining these we get
+\begin{align*}
+    \sum_{n\leq x} c_n\,f(n) & = C(x)\,f([x]) + \sum_{n\leq x-1} C(n)\,(f(n)-f(n+1))\\
+    & = C(x)\,f([x])-\int_2^x C(t)\,f'(t)\,dt\,.
+\end{align*}
+
+\end{proof}
+\end{lemma}
+
+\begin{theorem}{\emph{Merten's theorem}}
 
 \begin{equation*}
     \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
@@ -368,7 +465,33 @@ where $\gamma$ is the Euler's constant.
 
 \begin{proof}
 
-Oh, this seems like a työmaa
+In this proof we show that 
+\begin{equation*}
+    \lim_{n\rightarrow\infty} \left(\sum_{p\leq n}\left(\frac{1}{p}\right) - \log\log n + B\right) = 0\,,
+\end{equation*}
+which is know as Mertens' second theorem. The final form follows from theorem 428 in Hardy-Wright
+\begin{equation*}
+    B = \gamma + \sum_{p\leq n} \left(\log \left(1-\frac{1}{p}\right)+\frac{1}{p}\right)\,,
+\end{equation*}
+proof of which is outside of the scope of this thesis.
+
+Let us use the lemma \ref{lemma:mertenapu} with the sequence, where $c_p=\frac{\log p}{p}$ with prime indices and $c_n=0$ otherwise.
+
+Now we have
+\begin{equation*}
+    C(x) = \sum_{p\leq x} \frac{\log p}{p} = \log x + O(1)\,.
+\end{equation*}
+
+\textcolor{red}{TODISTUS TOKALLE YHTÄSUURUUSMERKILLE PUUTTUU}
+
+Now, with $f(t)=\frac{1}{\log t}$, as $x\rightarrow\infty$, we get
+\begin{align*}
+    \sum_{p\leq x} \frac{1}{p} & = \sum_{p\leq x} \frac{c_p}{f(p)}\\
+    & = \frac{C(x)}{\log [x]} + \int_2^x \frac{C(t)}{t\log^2 t}\,dt\\
+    & = \frac{\log x + O(1)}{\log [x]} + \int_2^x \frac{\log t + O(1)}{t\log^2 t}\,dt\\
+    & = 1 + \int_2^x \frac{dt}{t \log t} + \frac{O(1)}{\log x} + \int_2^x \frac{O(1)}{t \log^2 t}\,dt\\
+    & = 1 + \log\log x - \log\log 2 + \frac{O(1)}{\log x} + \int_2^x \frac{O(1)}{t \log^2 t}\,dt
+\end{align*}
 
 \end{proof}
 
