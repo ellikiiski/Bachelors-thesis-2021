@@ -29,7 +29,7 @@ Department of Mathematics and Statistics}
 
 \hrule height2pt
 \vspace{5mm}
-Matemaattisten tieteiden kandiohjelma \\[2mm]
+Bachelor's Programme in Mathematical Sciences \\[2mm]
 Supervisor: Eero Saksman
 \hfill
 \today
@@ -42,11 +42,11 @@ Supervisor: Eero Saksman
 \pagenumbering{arabic}
 \section{Introduction}
 
-In number theory Euler's totient function is used pops up when considering divisibility, congruences and residue systems. \textcolor{red}{AAAAAA EN OSAA PUHUAAAA} \textcolor{gray}{Anyway tähän vielä paasausta}
+\textcolor{gray}{Tähän mun pitää keksiä joku alkusepitys varmaan}
 
-Therefore, it is essential to go through the basic definitions concerning mentioned areas before even introducing the totient function itself.
+It is beneficial to go through the basic definitions concerning the essential areas before even introducing the totient function itself.
 
-All introduced variables $a, b, c, \dots$ are integers, unless stated otherwise. Here the set of natural numbers $\N$ consists of positive integers, meaning $0 \not\in \N$. Also, the notation $[x]$ is used to denote the integer part of a real number $x$.
+All introduced variables $a, b, c, \dots$ are integers, unless stated otherwise. Here the set of natural numbers $\N$ consists of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $[x]$ is used to denote the integer part and $\{x\}$ the remaining part of a real number $x$. In other words, $x=[x]+\{x\}$.
 
 \begin{definition}
 Divisibility
@@ -56,7 +56,7 @@ If $b=ka$ for some integer $k$, $b$ is divisible by $a$. This is denoted by $a \
 \end{definition}
 
 \begin{theorem}
-Greatest common divisor \cite{LeVeque}
+Greatest common divisor \cite{LeVeque:gcd}
 
 Let $a \in \N$ and $b \in \N$. There is a unique $d \in \N$ with following properties:
 
@@ -68,9 +68,8 @@ Let $a \in \N$ and $b \in \N$. There is a unique $d \in \N$ with following prope
 The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by $gcd(a,b) = d$.
 
 \begin{proof}
-Theorem is proved in \cite{LeVeque} as theorem 2.1 in chapter 2.1 on page 31.
+\cite{LeVeque:gcd}
 %\textcolor{blue}{LeVeque: thm 2.1, chp 2.1, p. 31}
-\textcolor{red}{Oh god en osaa viitata tällasessa plz help}
 \end{proof}
 \end{theorem}
 
@@ -108,7 +107,7 @@ If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relatively primes.
 \begin{definition}
 Multiplicative number theoretic function
 
-Function $f\colon \N \rightarrow \mathbb{R}$ is called number theoretic function. It is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
+Function $f\colon \N \rightarrow \R$ is called number theoretic function. It is multiplicative if $f(ab) = f(a)f(b)$ when $gcd(a, b)=1$.
 
 \end{definition}
 
@@ -151,11 +150,11 @@ Assume $m>1$, $n>1$ and $gcd(m,n)=1$. Consider the array
 
 which consists of integers from $0$ to $mn-1$, forming a complete residue system (mod $mn$).
 
-Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them. (\textcolor{blue}{lähde?})
+Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them. %(\textcolor{blue}{lähde?})
 
 Now consider the co-prime columns. Every column forms a complete residue system (mod $n$)
 %(\textcolor{blue}{LeVeque: thm. 3.5, chp. 3.2, p. 52})
-\cite{LeVeque}, meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
+\cite{LeVeque:multip}, meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
 
 On the other hand, since $gcd(m,n)=1$, an integer $k$ is co-prime to $mn$ if and only if both $gcd(m,k)=1$ and $gcd(n,k)=1$ are true. Hence there are $\phi(m)\phi(n)$ numbers relatively prime to $mn$. Thus by definition $\phi(mn)=\phi(m)\phi(n)$.
 
@@ -223,18 +222,165 @@ Let $n\in\Prime$. Now the only prime that divides $n$ is $n$ itself. Hence by th
 \end{lemma}
 
 \section{Relevant functions and lemmas}
+\label{apujutut}
 
-Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit. Since all of the results of this chapter serve mainly as tools, proof for many of them is not elaborated.
+Building up to the order of the totient function, we must introduce few functions and theorems that are used in the proof of the lower limit. Since all of the results of this chapter serve mainly as tools, proof for some of them is not elaborated.
 
 \subsection{Mertens' theorem}
 
-The most important (and trickiest at the same time) of these is the Mertens' theorem, from which the mysterious $\gamma$ pops up.
-\textcolor{red}{Okei jätän näiden sepustutamisen siiheksi kun on se todistus ees valmis}
+The most important of these is the Mertens' theorem. However, we prove some helpful lemmas before the proof of the theorem itself. First, we introduce $\Lambda$-function, sum of which has some useful properties keeping an eye on the Mertens' theorem.
+
+\begin{definition}
+Von Mangoldt $\Lambda$-function
+
+Let $p\in\Prime$ and $k\geq1$.
+\begin{equation*}
+    \Lambda(n) =
+    \begin{cases}
+    \log p \quad \text{if } n=p^k\\
+    0 \quad\quad\,\,\, \text{othewise}\,.
+    \end{cases}
+\end{equation*}
+\end{definition}
 
 \begin{theorem}
-Mertens' theorem \cite{HardyWright}
+\label{thm:lambdaf}
+\begin{equation*}
+    \sum_{d\vert n} \Lambda(d) = \log n\,.
+\end{equation*}
+\begin{proof}
+Let us denote $n=\prod p^k$. Now, by definition, we have
+\begin{equation*}
+    \sum_{d\vert n} \Lambda(d) = \sum_{p^k\vert n} \log p\,.
+\end{equation*}
+We notice that as the sum runs through all combinations of primes $p$ and positive integer powers $k$ such that $p^k\,\vert\, n$, each $\log p$ occurs $k$ times. Hence
+\begin{equation*}
+    \sum_{p^k\vert n} \log p = \sum a \log p = \sum \log p^a = \log \prod p^a = \log n\,.
+\end{equation*}
+\end{proof}
+\end{theorem}
+
+\begin{lemma}
+\label{lemma:lambdadd}
+\begin{equation*}
+    \sum_{n\leq x} \frac{\Lambda(n)}{n} = \log x + O(1)\,.
+\end{equation*}
+\begin{proof}
+First, we have a weak form of so called Striling's formula \cite{Goldmakher}
+\begin{align*}
+    \sum_{n\leq x} \log n & = \int_1^x \log t\,d[t]\\
+    & = [x]\log x - [x] - \log 1 + 1\\
+    & = x\log x - \{x\}\log x - x + \{x\} + 1\\
+    & = x\log x - x + O(\log x)\,.
+\end{align*}
+
+On the other hand, by theorem \ref{thm:lambdaf} we can deduce
+\begin{equation*}
+    \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\vert n} \Lambda(d) = \sum_{d\leq x} \Lambda(d)\,\left[\frac{x}{d}\right] = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))\,,
+\end{equation*}
+where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ \cite{Goldmakher}.
+
+Now we have
+\begin{equation*}
+    x\log x - x + O(\log x) = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))
+\end{equation*}
+yielding \cite{Goldmakher} the desired result
+\begin{equation*}
+    \log x + O(1) = \sum_{d\leq x} \frac{\Lambda(d)}{d}\,,
+\end{equation*}
+when divided by $x$.
+\end{proof}
+\end{lemma}
+
+The following lemma presents a convenient way to combine sum of a sequence and continuous function, which will be useful later.
+
+\begin{lemma}
+\label{lemma:mertenapu}
+\cite{HW:mertens}
+If $c_1, c_2,\dots$ is a sequence of real numbers such that $c_i=0$ for $i<2$ and
+\begin{equation*}
+    C(t) = \sum_{n\leq t} c_n
+\end{equation*}
+and $f(t)$ has continuous derivative for $t \geq 2 \in \R$, then
+\begin{equation*}
+    \sum_{n\leq x} c_n\,f(n) = C(x)\,f([x])-\int_2^x C(t)\,f'(t)\,dt\,.
+\end{equation*}
+
+\begin{proof}
+First we notice that $C(n) = C(t)$ and $f(n)=f([t])$, when $n\leq t < n+1$.
+
+We have
+\begin{align*}
+    \sum_{n\leq x} c_n\,f(n) & = c_1\,f(1) + c_2\,f(2) + \dots + c_n\,f(n)\\
+    & =  C(1)\,f(1) + (C(2)-C(1))\,f(2) + \dots + (C(n)-C(n-1))\,f(n)\\
+    & = C(1)\,(f(1)-f(2)) + C(2)\,(f(2)-f(3)) + \dots\\
+    & \quad + C(n-1)\,(f(n-1)-f(n)) + C(n)\,f(n)\\
+    & = \sum_{n\leq x-1} C(n)\,(f(n)-f(n+1)) + \underbrace{C(n)\,f(n)}_\text{$C(x)\,f([x])$}\,.
+\end{align*}
+
+On the other hand, since $f(t)$ is continuously differentiable when $t\geq2$ and $C(t)=0$ elsewhere, we have
+\begin{equation*}
+     C(n)\,(f(n)-f(n+1)) = \int_{n+1}^n C(t)\,f'(t)\,dt = -\int_n^{n+1} C(t)\,f'(t)\,dt\,.
+\end{equation*}
+Finally, by combining these we get
+\begin{align*}
+    \sum_{n\leq x} c_n\,f(n) & = C(x)\,f([x]) + \sum_{n\leq x-1} C(n)\,(f(n)-f(n+1))\\
+    & = C(x)\,f([x])-\int_2^x C(t)\,f'(t)\,dt\,.
+\end{align*}
+
+\end{proof}
+\end{lemma}
+
+Next we present two of Mertens' theorems. The third theorem is the one actually used later on, however, we settle for only thoroughly prooving the second. This is, the proof of the third, the part where a mysterious constant $\gamma$ pops up, would unfortunately steal too much space from the actual subject of this thesis.
+
+\begin{theorem}
+Mertens' second theorem \cite{Goldmakher}
 %(\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})
-\label{thm:mertens}
+\label{thm:mertens32}
+
+For some constant $B$,
+\begin{equation*}
+    %\lim_{n\rightarrow\infty} \left(\sum_{p\leq n}\left(\frac{1}{p}\right) - \log\log n + B\right) = 0\,,
+    \sum_{p\leq n}\left(\frac{1}{p}\right) = \log\log n + B + O\left(\frac{1}{\log n}\right)\,.
+\end{equation*}
+
+\begin{proof}
+Let us use the lemma \ref{lemma:mertenapu} with a sequence, where $c_p=\frac{\log p}{p}$ with prime indices and $c_n=0$ otherwise. Now we have $C(n) = \sum_{p\leq n} \frac{\log p}{p}$.
+
+We observe that
+\begin{align*}
+    \sum_{d\leq n} \frac{\Lambda(d)}{d} & = \sum_k \sum_{p^k\leq n} \frac{\log p}{p^k}\\
+    & = \sum_{p\leq n} \frac{\log p}{p} + \sum_{p\leq \sqrt{n}} \frac{\log p}{p^2} + \sum_{p\leq \sqrt[3]{n}} \frac{\log p}{p^3} + \dots\\
+    & < \sum_{p\leq n} \frac{\log p}{p} + \sum_p \left(\frac{1}{p^2}+\frac{1}{p^3}+\dots\right)\,\log p\\
+    & = \sum_{p\leq n} \frac{\log p}{p} + \sum_p \frac{\log p}{p(p-1)}\\
+    & < \sum_{p\leq n} \frac{\log p}{p} + \underbrace{ \sum_{m\geq2}^\infty \frac{\log m}{m(m-1)}}_\text{constant $A$}\\
+    & = C(n) + A\,.
+\end{align*}
+Now, since $A$ is a constant, we get
+\begin{equation*}
+    C(n) = \sum_{p\leq n} \frac{\log p}{p} = \sum_{d\leq n} \frac{\Lambda(d)}{d} + O(1) = \log n + O(1)
+\end{equation*}
+by lemma \ref{lemma:lambdadd}.
+
+Now, with $f(t)=\frac{1}{\log t}$, we get
+\begin{align*}
+    \sum_{p\leq n} \frac{1}{p} & = \sum_{p\leq n} \frac{c_p}{f(p)}\\
+    & = \frac{C(n)}{\log n} + \int_2^n \frac{C(t)}{t\log^2 t}\,dt\\
+    & = \frac{\log n + O(1)}{\log n} + \int_2^n \frac{\log t + O(1)}{t\log^2 t}\,dt\\
+    & = 1 + \frac{O(1)}{\log n} + \int_2^n \frac{dt}{t \log t} + \int_2^n \frac{O(1)}{t \log^2 t}\,dt\\
+    & = 1 + O\left(\frac{1}{\log n}\right) + \log\log n - \log\log 2 + \int_2^\infty \frac{O(1)}{t \log^2 t}\,dt - \int_n^\infty \frac{O(1)}{t \log^2 t}\,dt\\
+    & = \log\log n + \underbrace{\left(\int_2^\infty \frac{O(1)}{t \log^2 t}\,dt + 1 - \log \log 2\right)}_\text{constant $B$} + O\left(\frac{1}{\log n}\right)\,,
+\end{align*}
+proving the claim.
+
+\end{proof}
+
+\end{theorem}
+
+\begin{theorem}
+Mertens' third theorem \cite{HW:mertens}
+%(\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})
+\label{thm:mertens3}
 
 \begin{equation*}
     \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
@@ -243,14 +389,31 @@ Mertens' theorem \cite{HardyWright}
 where $\gamma$ is the Euler's constant.
 
 \begin{proof}
+To reach the form of Mertens' third theorem, can be shown \cite{HW:mertens} that the constant
+\begin{equation*}
+    B = \gamma + \sum_{p\leq n} \left(\log \left(1-\frac{1}{p}\right)+\frac{1}{p}\right)\,,
+\end{equation*}
+where $\gamma$ is the Euler-Masheroni constant.
 
-\textcolor{gray}{Placeholder for a sketch of the proof.}
+However, in its extent the proof would expand outside of the scope of this thesis. Let us take the value of $B$ as given and deduce
+\begin{align*}
+\sum_{p\leq n} \frac{1}{p} & = \log\log n + \gamma + \sum_{p\leq n} \left(\log \left(1-\frac{1}{p}\right)+\frac{1}{p}\right) + O\left(\frac{1}{\log n}\right)\\
+0 & = \log\log n + \gamma + \sum_{p\leq n} \log \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log n}\right)\\
+0 & = \log\log n + \gamma + \log \prod_{p\leq n} \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log n}\right)\\
+1 & = \log n \cdot e^\gamma \cdot \prod_{p\leq n} \left(1-\frac{1}{p}\right) \cdot \textcolor{red}{O(1)} \quad \text{???}\\
+e^{-\gamma} & = \log n \prod_{p\le n} \left(1-\frac{1}{p}\right) \quad \text{???}
+\end{align*}
 
+Hence
+\begin{equation*}
+    \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}\,.
+\end{equation*}
 \end{proof}
 
 \end{theorem}
 
-\begin{definition}{\emph{Euler-Mascheroni constant} (\textcolor{blue}{Wolfram MathWorld: Euler-Mascheroni constant} (\textcolor{red}{Jätän vielä sikseen kunnes todistus on laadittu}))}
+\begin{remark}
+About the Euler-Mascheroni constant. \cite{gamma}
 
 The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the harmonic series and natural logarithm,
 \begin{equation*}
@@ -258,12 +421,12 @@ The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the
 \end{equation*}
 The constant appears in the Mertens' theorem and later in the lower limit of the totient function, yet more detailed consideration goes beyond the scope of this thesis.
 
-\end{definition}
+\end{remark}
 
 \subsection{Other relevant functions}
 
 \begin{definition}
-The sigma function \cite{HardyWright}
+The sigma function \cite{HW:sigma}
 %(\textcolor{blue}{Hardy-Wright: chp. 16.7, p. 310})
 
 \begin{equation*}
@@ -285,17 +448,17 @@ also denoted by
 \end{equation*}
 
 \begin{proof}
-\cite{HardyWright} \textcolor{red}{Handlaa nää}
+\cite{HW:sigma}
 %\textcolor{blue}{Hardy-Wright: thm. 275, chp. 16.7, p. 311 }.
 \end{proof}
 \end{lemma}
 
 \begin{lemma}
 \label{thm:sigmafii}
+\cite{HW:phisigma}
 \begin{equation*}
     \frac{\phi(n)\,\sigma(n)}{n^2}<1
 \end{equation*}
-\cite{HardyWright} \textcolor{red}{Öhh mites tää kantsis}
 
 \begin{proof}
 By the Euler's product formula and lemma \ref{lemma:sigma} we get
@@ -317,13 +480,13 @@ Equivivalently
 
 
 \begin{definition}
-Chebyshev function \cite{HardyWright}
+Chebyshev function \cite{HW:vartheta}
 %(\textcolor{blue}{Hardy-Wright: chp. 22.1, p. 451})
 
 \begin{equation*}
     \vartheta(x)=\sum_{p\leq x} \log p = \log \prod_{p\leq x} p\,,
 \end{equation*}
-where $x\in\mathbb{R}$ and $p\in\Prime$.
+where $x\in\R$ and $p\in\Prime$.
 
 \end{definition}
 
@@ -333,43 +496,32 @@ For the function $\vartheta(x)$ holds
 \begin{equation*}
     \vartheta(x) < Ax\,,
 \end{equation*}
-where $x\geq2\in\mathbb{R}$, $A$ is a real constant.
+where $x\geq2\in\R$, $A$ is a real constant.
 
 \begin{proof}
-\cite{HardyWright} \textcolor{red}{Handlaa nää}
+\cite{HW:vartheta}
 %\textcolor{blue}{Hardy-Wright: thm. 414, chp. 22.2, p. 453}.
 \end{proof}
 \end{lemma}
 
 \begin{definition}
-Riemann zeta function \cite{HardyWright}
+Riemann zeta function \cite{HW:zeta}
 %(\textcolor{blue}{Hardy-Wright: chp. 17.2, p. 320})
 
 \begin{equation*}
     \zeta(s)=\sum_{n=1}^\infty \frac{1}{n^s}\,,
 \end{equation*}
-where $s\in\mathbb{R}$.
+where $s\in\R$.
 \end{definition}
-
-\begin{theorem}
-Limit of zeta function
-\label{thm:zeta}
-\begin{equation}
-    \lim_{s\rightarrow\infty} \zeta(s) = 1\,.
-\end{equation}
-\begin{proof}
-\textcolor{red}{ETSI JOSTAIN}
-\end{proof}
-\end{theorem}
 
 \begin{lemma}
 \label{lemma:zeta}
-For all $s>1\in\mathbb{R}$, 
+For all $s>1\in\R$, 
 \begin{equation*}
     \zeta(s)=\prod_p \frac{1}{1-\frac{1}{p^s}}\,.
 \end{equation*}
 \begin{proof}
-\cite{HardyWright} \textcolor{red}{Handlaa nää}
+\cite{HW:zeta}
 %\textcolor{blue}{Hardy-Wright: thm. 280, chp. 17.2, p. 320}.
 \end{proof}
 \end{lemma}
@@ -378,10 +530,10 @@ For all $s>1\in\mathbb{R}$,
 
 Finally reaching the point, in which we are equipped to start getting into the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula gives the totient function a more computable form. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
 
-Let us amuse ourselves with a quick example \cite{Pomerance}.
+Let us amuse ourselves with a quick example.
 
 \begin{example}
-Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$. By theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
+\cite{Pomerance} Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$. By theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
 
 Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
 \end{example}
@@ -394,7 +546,7 @@ All this in our mind, next we will prove the exact limits of the totient functio
 The maximum value of $\phi(n)$ given $n$ is easy to define with theorem \ref{thm:phiprime}.
 
 \begin{theorem}
-Upper limit of the totient function \cite{HardyWright}
+Upper limit of the totient function \cite{HW:theproof}
 %(\textcolor{blue}{Hardy-Wright: thm. 326, chp. 18.4, p. 352})
 
 For every $n \geq 2$ holds $\phi(n) \leq n-1$ and
@@ -409,7 +561,7 @@ By definition, $\phi(n) \leq n$ beacause there are $n$ elements in the set $\{1,
 On the other hand, according to theorem \ref{thm:phiprime}, $\phi(p) = p-1$ for every $p\in\Prime$.
 % TÄÄ ON VÄÄRIN SANOA NÄIN
 % Because there are infinitely many primes, this means that $n-1$ is, in fact, the limit superior of Euler's totient function.
-Now, because there are infinitely many primes (\textcolor{blue}{lähde?}),
+Now, because there are infinitely many primes %(\textcolor{blue}{lähde?}),
 \begin{equation*}
     \limsup{\frac{\phi(n)}{n}} = \lim \frac{n-1}{n} = 1\,.
 \end{equation*}
@@ -422,10 +574,10 @@ Now, because there are infinitely many primes (\textcolor{blue}{lähde?}),
 
 How small $\phi(n)$ can be as $n$ grows, is much less trivial a question to answer. However, it can be shown that the value of $\phi(n)$ is proportional to $\frac{n}{\log\log n}$. The rest of this paper will cover the proof of the exact limit inferior of the totient function, following the proof of theorem $328$
 %from \textit{Hardy \& Wright: Introduction to the Theory of Numbers},
-in \cite{HardyWright} chapter 22.9, p. 467. \textcolor{red}{Myös tässä nyt joku järki viittaamiseen}
+in \cite{HW:theproof}.
 
 \begin{theorem}
-Lower limit of the totient function \cite{HardyWright}
+Lower limit of the totient function \cite{HW:phisigma}
 %(\textcolor{blue}{Hardy-Wright: thm. 328, chp. 18.4, p. 352})
 
 \begin{equation*}
@@ -483,7 +635,7 @@ because by the inequality above
     F_1(\log n) & = e^\gamma \log \log n \left(1-\frac{1}{\log n}\right)^\frac{\log n}{\log \log n} \prod_{p\leq \log n} \left(1-\frac{1}{p}\right)\\
     & \leq \frac{\phi(n)}{n} e^\gamma \log\log n = f(n)
 \end{align*}
-and by the Mertens' theorem (theorem \ref{thm:mertens})
+and by the Mertens' theorem (theorem \ref{thm:mertens3})
 \begin{align*}
     \lim_{t \rightarrow \infty} F_1(t) & = \lim_{t \rightarrow \infty} e^\gamma \log t \left(1-\frac{1}{t}\right)^\frac{t}{\log t} \prod_{p\leq t} \left(1-\frac{1}{p}\right)\\
     & = \lim_{t \rightarrow \infty} e^\gamma \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} \left(\log t \prod_{p\leq t} \left(1-\frac{1}{p}\right) \right)\\
@@ -545,13 +697,13 @@ This is, by combining the results above
     & = \frac{\sigma(n_j)}{n_j\,e^\gamma\,\log \log n_j} = g(n_j)\,.
 \end{align*}
 
-By the Mertens' third theorem (theorem \ref{thm:mertens})
+By the Mertens' third theorem (theorem \ref{thm:mertens3})
 
 \begin{equation*}
     \lim_{t \rightarrow \infty} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right) = \lim_{t \rightarrow \infty} \frac{1}{\prod_{p\leq e^t} \left(1-\frac{1}{p}\right)} = \left(\frac{e^{-\gamma}}{\log e^t}\right)^{-1} = e^\gamma\,t
 \end{equation*}
 
-and hence, keeping theorem \ref{thm:zeta} in mind
+and since $\zeta(t+1)\rightarrow 1$ when $t\rightarrow\infty$ \cite{HW:theproof}, we now have
 \begin{align*}
     \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(B+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
     & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,t}{e^\gamma\,\zeta(t+1)(B+t+\log t)}\\
