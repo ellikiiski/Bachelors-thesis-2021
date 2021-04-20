@@ -116,5 +116,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | :-----| :-------| :------|
 | 19.4. | Perkeleen lähdeviittausten kanssa tappelua, vihdoin sain kuntoon | 2 |
 | 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. [Versio 1.3](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.3.pdf). Tuli muutettua versionumerointiakin vähän jälkikäteen sniikisti. | 6 |
+| 20.4. | Kansilehti ja muotoiluhommia sekä Mertens-sykkimistä tai ainakin yrittämistä | 5 |
 
 *Viikkotavoitteiden toteutuminen:*
