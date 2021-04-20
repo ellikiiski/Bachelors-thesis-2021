@@ -404,15 +404,35 @@ We notice that as the sum runs through all combinations of primes $p$ and positi
 \end{theorem}
 
 \begin{lemma}
+\label{lemma:lambdadd}
 \begin{equation*}
     \sum_{n\leq x} \frac{\Lambda(n)}{n} = \log x + O(1)\,.
 \end{equation*}
 \begin{proof}
-By theorem \ref{thm:lambdaf} we can deduce
+First, we have a week form of so called Striling's formula
+\begin{align*}
+    \sum_{n\leq x} \log n & = \int_1^x \log t\,d[t]\\
+    & = [x]\log x - [x] - \log 1 + 1\\
+    & = x\log x - \{x\}\log x - x + \{x\} + 1\\
+    & = x\log x - x + O(\log x)\,.
+\end{align*}
+
+On the other hand, by theorem \ref{thm:lambdaf} we can deduce
 \begin{equation*}
-    \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\vert n} \Lambda(d) =
+    \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\vert n} \Lambda(d) = \sum_{d\leq x} \Lambda(d)\,\left[\frac{x}{d}\right] = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))\,,
 \end{equation*}
-\textcolor{red}{Hiffaispa mikä homma ääää}
+where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ \cite{HardyWright}.
+
+Now we have
+\begin{equation*}
+    x\log x - x + O(\log x) = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))
+\end{equation*}
+yielding \cite{Goldmakher} the desired result
+\begin{equation*}
+    \log x + O(1) = \sum_{d\leq x} \frac{\Lambda(d)}{d}\,,
+\end{equation*}
+when divided by $x$.
+
 \end{proof}
 \end{lemma}
 
@@ -465,33 +485,58 @@ where $\gamma$ is the Euler's constant.
 
 \begin{proof}
 
-In this proof we show that 
+We start by showing that for some constant $B$
 \begin{equation*}
-    \lim_{n\rightarrow\infty} \left(\sum_{p\leq n}\left(\frac{1}{p}\right) - \log\log n + B\right) = 0\,,
+    %\lim_{n\rightarrow\infty} \left(\sum_{p\leq n}\left(\frac{1}{p}\right) - \log\log n + B\right) = 0\,,
+    \sum_{p\leq n}\left(\frac{1}{p}\right) = \log\log n + B + O\left(\frac{1}{\log x}\right)
 \end{equation*}
-which is know as Mertens' second theorem. The final form follows from theorem 428 in Hardy-Wright
+which is also know as Mertens' second theorem.
+
+Let us use the lemma \ref{lemma:mertenapu} with a sequence, where $c_p=\frac{\log p}{p}$ with prime indices and $c_n=0$ otherwise. Now we have $C(x) = \sum_{p\leq x} \frac{\log p}{p}$.
+
+We observe that
+\begin{align*}
+    \sum_{n\leq x} \frac{\Lambda(n)}{n} & = \sum_k \sum_{p^k\leq x} \frac{\log p}{p^k}\\
+    & = \sum_{p\leq x} \frac{\log p}{p} + \sum_{p\leq \sqrt{x}} \frac{\log p}{p^2} + \sum_{p\leq \sqrt[3]{x}} \frac{\log p}{p^3} + \dots\\
+    & < \sum_{p\leq x} \frac{\log p}{p} + \sum_p \left(\frac{1}{p^2}+\frac{1}{p^3}+\dots\right)\,\log p\\
+    & = \sum_{p\leq x} \frac{\log p}{p} + \sum_p \frac{\log p}{p(p-1)}\\
+    & < \sum_{p\leq x} \frac{\log p}{p} + \underbrace{ \sum_{n\geq2}^\infty \frac{\log n}{n(n-1)}}_\text{constant $A$}\\
+    & = C(x) + A\,.
+\end{align*}
+Now, since $A$ is a constant, we get
+\begin{equation*}
+    C(x) = \sum_{p\leq x} \frac{\log p}{p} = \sum_{n\leq x} \frac{\Lambda(n)}{n} + O(1) = \log x + O(1)
+\end{equation*}
+by lemma \ref{lemma:lambdadd}.
+
+Now, with $f(t)=\frac{1}{\log t}$, we get
+\begin{align*}
+    \sum_{p\leq x} \frac{1}{p} & = \sum_{p\leq x} \frac{c_p}{f(p)}\\
+    & = \frac{C(x)}{\log x} + \int_2^x \frac{C(t)}{t\log^2 t}\,dt\\
+    & = \frac{\log x + O(1)}{\log x} + \int_2^x \frac{\log t + O(1)}{t\log^2 t}\,dt\\
+    & = 1 + \frac{O(1)}{\log x} + \int_2^x \frac{dt}{t \log t} + \int_2^x \frac{O(1)}{t \log^2 t}\,dt\\
+    & = 1 + O\left(\frac{1}{\log x}\right) + \log\log x - \log\log 2 + \int_2^\infty \frac{O(1)}{t \log^2 t}\,dt - \int_x^\infty \frac{O(1)}{t \log^2 t}\,dt\\
+    & = \log\log x + \underbrace{\left(\int_2^\infty \frac{O(1)}{t \log^2 t}\,dt + 1 - \log \log 2\right)}_\text{constant $B$} + O\left(\frac{1}{\log x}\right)
+\end{align*}
+
+To reach the final form of Mertens' theorem, can be shown \cite{HardyWright} that
 \begin{equation*}
     B = \gamma + \sum_{p\leq n} \left(\log \left(1-\frac{1}{p}\right)+\frac{1}{p}\right)\,,
 \end{equation*}
-proof of which is outside of the scope of this thesis.
+where $\gamma$ is the Euler-Masheroni constant.
 
-Let us use the lemma \ref{lemma:mertenapu} with the sequence, where $c_p=\frac{\log p}{p}$ with prime indices and $c_n=0$ otherwise.
-
-Now we have
-\begin{equation*}
-    C(x) = \sum_{p\leq x} \frac{\log p}{p} = \log x + O(1)\,.
-\end{equation*}
-
-\textcolor{red}{TODISTUS TOKALLE YHTÄSUURUUSMERKILLE PUUTTUU}
-
-Now, with $f(t)=\frac{1}{\log t}$, as $x\rightarrow\infty$, we get
+However, in its extent the proof would expand outside of the scope of this thesis. Let us take the value of $B$ as given and deduce
 \begin{align*}
-    \sum_{p\leq x} \frac{1}{p} & = \sum_{p\leq x} \frac{c_p}{f(p)}\\
-    & = \frac{C(x)}{\log [x]} + \int_2^x \frac{C(t)}{t\log^2 t}\,dt\\
-    & = \frac{\log x + O(1)}{\log [x]} + \int_2^x \frac{\log t + O(1)}{t\log^2 t}\,dt\\
-    & = 1 + \int_2^x \frac{dt}{t \log t} + \frac{O(1)}{\log x} + \int_2^x \frac{O(1)}{t \log^2 t}\,dt\\
-    & = 1 + \log\log x - \log\log 2 + \frac{O(1)}{\log x} + \int_2^x \frac{O(1)}{t \log^2 t}\,dt
+\sum_{p\leq n} \frac{1}{p} & = \log\log x + \gamma + \sum_{p\leq n} \left(\log \left(1-\frac{1}{p}\right)+\frac{1}{p}\right) + O\left(\frac{1}{\log x}\right)\\
+0 & = \log\log x + \gamma + \sum_{p\leq n} \log \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log x}\right)\\
+0 & = \log\log x + \gamma + \log \prod_{p\leq n} \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log x}\right)\\
+1 & = \log x + e^\gamma + \prod_{p\leq n} \left(1-\frac{1}{p}\right) + O(1)
 \end{align*}
+
+\textcolor{red}{HÄH miks tuolta ei nyt tuukaan ulos mertens heeeelp}
+
+\textcolor{red}{KAIKKIALLA MERTENSIIN LIITTYVÄSSÄ ON NYT VIELÄ ÄKSÄT JA ÄNNÄT JA DEET SEKAISIN!!!!!}
+
 
 \end{proof}
 
