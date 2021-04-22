@@ -118,7 +118,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 19.4. | Mertensin todistaminen ihan ok mallille. Lähdeviittausten ja välipaasaasausten väsäämistä. [Versio 1.3](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-1.3.pdf). Tuli muutettua versionumerointiakin vähän jälkikäteen sniikisti. | 6 |
 | 20.4. | Kansilehti ja muotoiluhommia sekä Mertens-sykkimistä tai ainakin yrittämistä | 5 |
 | 20.4. | Mertens melkein kondiksessa (O-hommelit vielä vähän niin ja näin) ja koko kandi ihan ok, ehkä läpilukemisen jälkeen kehtaa lähettää Saksmanille. | 3 |
-| 21.4. | Kandi siihen kuntoon, että kehtasi pistää luettavaksi ohjaajalle. [Versio 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf) lähetetty Saksmanille. | 1 |
-| 21.4. | Kanditapaaminen | 1 |
+| 21.4. | Kandi siihen kuntoon, että kehtasi pistää luettavaksi ohjaajalle. | 1 |
+| 21.4. | Kanditapaaminen. [Version 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf) läpikäyntiä. | 1 |
 
 *Viikkotavoitteiden toteutuminen:*
