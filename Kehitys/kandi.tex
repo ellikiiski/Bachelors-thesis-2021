@@ -46,7 +46,7 @@ Supervisor: Eero Saksman
 
 It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself.
 
-All introduced variables $a, b, c, \dots$ are integers, unless stated otherwise. Here the set of natural numbers $\N$ consists of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
+The variables $k$, $m$, $n$ and $p$ are usually natural numbers, $p$ denoting particularly a prime number. Here the set of natural numbers $\N$ consists of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
 
 \begin{definition}
 Divisibility
@@ -113,7 +113,7 @@ Function $f\colon \N \rightarrow \R$ is called number theoretic function. It is 
 
 \section{Euler's totient function and its properties}
 
-Now that we have revised some of the basic concepts in number theory, let us introduce Euler's totient function itself. \textcolor{red}{It is a number theoretic function describing with how many positive integers a given number has (or to be exact, has not) common divisors.} We start by formally defining the function and then showing a few of its properties.
+Now that we have revised some of the basic concepts in number theory, let us introduce Euler's totient function (also known as Euler's $\phi$-function) itself. It is a number theoretic function that counts the positive co-primes of a given number that are less or equal to it. We start by formally defining the function and then showing a few of its properties.
 
 \begin{definition}
 Euler's totient function $\phi: \N \rightarrow \N$
@@ -123,9 +123,7 @@ We set $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a
 
 \end{definition}
 
-%That is, the value of the totient function at $n \in \N$ is the number of co-primes of $n$ smaller than it.
-
-That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ less or equal to $n$.
+%That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ less or equal to $n$.
 
 \begin{theorem}
 %\textcolor{blue}{Hardy-Wright: chapter 5.5, theorem 60, p. 64}
@@ -231,7 +229,17 @@ In order to determine the order of growth of the totient function, we must intro
 
 \subsection{Mertens' theorems}
 
-The most important of the results is the Mertens' third theorem. We still need some lemmas before the proof of the theorem itself. First, we introduce the $\Lambda$-function, the partial sum of which has some useful properties keeping an eye on the Mertens' theorems.
+The most important of the results is the Mertens' third theorem. We still need some lemmas before the proof of the theorem itself. First, we introduce few functions. The $O$-function, defined formally below, describes the behavior of the limit of another function.
+
+\begin{definition}
+O-function
+
+Let $x$ be a real variable tending to infinity and $f(x)$ and $g(x)$ be functions of $x$. We say $f(x)=O(g(x))$, if $\vert f(x) \vert < Ag(x)$ for some constant $A$.
+\end{definition}
+
+For example $8x=O(x)$ and $\sin{x}=O(1)$. We can also do calculations with the function, for example $O(x)+O(1)=O(x)$ and $O(x)\cdot O(x) = O(x^2)$.
+
+Next up is the $\Lambda$-function, the partial sum of which has some useful properties keeping an eye on the Mertens' theorems.
 
 \begin{definition}
 Von Mangoldt $\Lambda$-function
@@ -272,8 +280,8 @@ We notice that as the sum runs through all combinations of primes $p$ and positi
 First, we have a weak form of so called Stirling's formula \cite{Goldmakher}
 \begin{align*}
     \sum_{n\leq x} \log n & = \int_1^x \log t\,d\lfloor t\rfloor\\
-    & \text{\textcolor{red}{ei oo }} \lfloor x\rfloor\log x - \lfloor x\rfloor + 1 \quad \text{\textcolor{red}{!!!!}}\\
-    & = x\log x - \{x\}\log x - x + \{x\} + 1\\
+    & = \lfloor x\rfloor\log x - \int_1^x \frac{\lfloor t \rfloor}{t}\,dt\\
+    & = x\log x - \{x\}\log x - x + 1 + \int_1^x \frac{\{t\}}{t}\,dt\\
     & = x\log x - x + O(\log x)\,.
 \end{align*}
 
@@ -281,21 +289,47 @@ On the other hand, by Theorem \ref{thm:lambdaf} we can deduce
 \begin{equation*}
     \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\,\vert\, n} \Lambda(d) = \sum_{d\leq x} \Lambda(d)\,\left\lfloor \frac{x}{d}\right\rfloor = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))\,,
 \end{equation*}
-where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ \cite{Goldmakher}.
+where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ as defined before.
 
 Now we have
 \begin{equation*}
     x\log x - x + O(\log x) = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))
 \end{equation*}
-yielding the desired result
+and when we divide the equation by $x$, we get the result
 \begin{equation*}
     \log x + O(1) = \sum_{d\leq x} \frac{\Lambda(d)}{d}\,,
 \end{equation*}
-when divided by $x$.
+since $\frac{O(\psi(x))}{x}=O(1)$ by Lemma \ref{lemma:cheb}.
 \end{proof}
 \end{lemma}
 
-The following lemma presents a convenient way to combine sum of a sequence and continuous function, which will be useful later.
+It is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Let us also introduce another similar function, the $\vartheta$-function, as we will need it too.
+
+\begin{definition}
+Chebyshev functions $\vartheta$ and $\psi$
+
+\begin{align*}
+     \vartheta(x) & = \sum_{p\leq x} \log p = \log \prod_{p\leq x} p\\
+    \psi(x) & = \sum_{p^m\leq x} \log p = \sum_{n\leq x} \Lambda(n)
+\end{align*}
+\end{definition}
+
+\begin{lemma}
+\label{lemma:cheb}
+\begin{equation*}
+    \psi(x) = O(x) \quad\text{and}\quad \vartheta(x)=O(x)
+\end{equation*}
+i.e.
+\begin{equation*}
+    \psi(x) < Ax \quad\text{and}\quad \vartheta(x) < Ax
+\end{equation*}
+for some constant A.
+\begin{proof}
+This is proved in \textit{An introduction to the Theory of Numbers} \cite{HardyWright} as Theorem 414 (ch. 22.2, p. 453).
+\end{proof}
+\end{lemma}
+
+The following lemma, so called Abel's partial summation formula, presents a convenient way to combine a partial sum of a sequence and a continuous function, which will be useful later.
 
 \begin{lemma}
 \label{lemma:abelsum}
@@ -389,11 +423,11 @@ Mertens' third theorem \emph{\cite{HardyWright}}
 \label{thm:mertens3}
 
 \begin{equation*}
-    \log n \prod_{p\le n} \left(1-\frac{1}{p}\right) = e^{-\gamma}\,\left(1+O\left(\frac{1}{\log n}\right)\right)\,, \textcolor{red}{ ????}
+    e^{-\gamma} = \log n \prod_{p\le n} \left(1-\frac{1}{p}\right)\,\left(1+O\left(\frac{1}{\log n}\right)\right)
 \end{equation*}
-especially
+and especially
 \begin{equation*}
-    \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}
+    \lim_{n \rightarrow \infty} \log n \prod_{p\leq n} \left(1-\frac{1}{p}\right) = e^{-\gamma}\,,
 \end{equation*}
 
 where $\gamma$ is the Euler-Mascheroni constant.
@@ -443,17 +477,17 @@ The constant appears in the Mertens' third theorem and later in the lower limit 
 
 \end{remark}
 
-\subsection{Other relevant functions}
+\subsection{$\sigma$- and $\zeta$-functions}
+
+The $\sigma$-function is also a number theoretical and quite closely related to the $\phi$-function itself, as we will soon see. The value of $\sigma(n)$ is the sum of the divisors of $n$, or formally defined as below.
 
 \begin{definition}
-The sigma function \emph{\cite{HardyWright}}
+The sigma function
 %(\textcolor{blue}{Hardy-Wright: chp. 16.7, p. 310})
 
 \begin{equation*}
-    \sigma(n)=\sum_{d\,\vert\, n} d\,,
+    \sigma(n)=\sum_{d\,\vert\, n} d
 \end{equation*}
-
-meaning the value of $\sigma(n)$ is the sum of the divisors of $n$.
 \end{definition}
 
 \begin{lemma}
@@ -497,34 +531,10 @@ Equivivalently
 \end{proof}
 \end{lemma}
 
+We also need briefly the $\zeta$-function later.
 
 \begin{definition}
-Chebyshev $\vartheta$-function \emph{\cite{HardyWright}}
-%(\textcolor{blue}{Hardy-Wright: chp. 22.1, p. 451})
-
-\begin{equation*}
-    \vartheta(x)=\sum_{p\leq x} \log p = \log \prod_{p\leq x} p\,,
-\end{equation*}
-where $x\in\R$ and $p\in\Prime$.
-
-\end{definition}
-
-\begin{lemma}
-\label{lemma:vartheta}
-For the function $\vartheta(x)$ holds
-\begin{equation*}
-    \vartheta(x) < Ax\,,
-\end{equation*}
-where $x\geq2\in\R$, $A$ is a real constant.
-
-\begin{proof}
-This is proved in \textit{An introduction to the Theory of Numbers} \cite{HardyWright} as Theorem 414 (ch. 22.2, p. 453).
-%\textcolor{blue}{Hardy-Wright: thm. 414, chp. 22.2, p. 453}.
-\end{proof}
-\end{lemma}
-
-\begin{definition}
-Riemann zeta function \emph{\cite{HardyWright}}
+Riemann $\zeta$-function \emph{\cite{HardyWright}}
 %(\textcolor{blue}{Hardy-Wright: chp. 17.2, p. 320})
 
 \begin{equation*}
