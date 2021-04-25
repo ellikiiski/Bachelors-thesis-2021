@@ -101,7 +101,7 @@ Integer $p\in\N$ is a prime, if $p \geq 2$ and for every $k\in\N$ holds that if 
 \begin{definition}
 Co-prime
 
-If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relatively primes.
+If $gcd(a,b) = 1$, $a$ and $b$ are called co-primes or relative primes.
 \end{definition}
 
 \begin{definition}
@@ -124,6 +124,13 @@ We set $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a
 \end{definition}
 
 %That is, the value of $\phi(n)$ is the number of positive co-primes of $n$ less or equal to $n$.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width =120mm]{kuva1-phifunc.eps}
+    \caption{Graph of Euler's totient function when $n\in\{1,2,\dots,100\}$}.
+    \label{fig:k1}
+\end{figure}
 
 \begin{theorem}
 %\textcolor{blue}{Hardy-Wright: chapter 5.5, theorem 60, p. 64}
@@ -761,10 +768,15 @@ and equivalently
 \begin{equation*}
     \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,.
 \end{equation*}
-
 \end{proof}
-
 \end{theorem}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width =120mm]{kuva2-philimits.eps}
+    \caption{Upper and lower bound of Euler's totient function with small and relatively large $n$. We see that the lower bound only holds when $n\rightarrow\infty$.}
+    \label{fig:k2}
+\end{figure}
 
 \clearpage
 \nocite{*}
