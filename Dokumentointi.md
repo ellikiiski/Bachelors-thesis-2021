@@ -18,7 +18,9 @@
 | vk [13](#Viikko-13) | Maanantaina edellisen viikon tavoite kiinni. Tiistaina kanditapaaminen Saksmanin kanssa, siihen mennessä eka versio kandista lähtetty hälle arvioitavaksi. Mertensin ja muiden aputodistusten väsäämistä ohjeiden mukaan. | 11.5 |
 | vk [14](#Viikko-14) | Multiplikatiivisuuden ja vartheta(x)<Ax todistus. Mertensin lauseeseen simppelimmän todistuksen etsintä. Lähteet about kuntoon. | 3 |
 | vk [15](#Viikko-15) | Maanantaina edellisen viikon tavoite kiinni (ei ekä kerkee vartheta(x)<Ax todistus). Tiistaina kanditapaaminen: selvitä loppuviikkojen aikataulu, onko mahdollista valmistua 29.4.? Versio 2 Saksmanille ja kirjallisten kommenttien pyytäminen. Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava.| 10.5 |
-| vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | |
+| vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | 24 |
+| vk [17](#Viikko-17) | Maanantaina kanditapaaminen. **Kandi valmiiksi!** Korjaukset Saksmanin neuvojen mukaan ja tekstit valmiiksi tiistai-iltaan mennessä. Lähetys Marialle oikoluettavaksi. Lähteiden ja viittausten viilaus. Kypsyysnäyte. | |
+| vk [18](#Viikko-18) | Maanantaina kanditapaaminen. Viimeiset korajukset viimeisten kommenttien mukaan. **Kandin palautus!** | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -121,5 +123,22 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 21.4. | Kandi siihen kuntoon, että kehtasi pistää luettavaksi ohjaajalle. | 1 |
 | 21.4. | Kanditapaaminen. [Version 2.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.0.pdf) läpikäyntiä. | 1 |
 | 22.4. | Korjaamista kommenttien perusteella. | 2 |
+| 25.4. | Loput korjaukset + kuvaajat. | 4 |
+
+
+*Viikkotavoitteiden toteutuminen:* Kandi ei ole vielä ihan lopullisessa kunnossaan, mutta hyvää edistystä. Eiköhän se ens viikolla ala olemaan valmis!
+
+##### Viikko 17
+
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 26.4. | Kanditapaaminen. [Version 2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf) läpikäyntiä. | 1 |
 
 *Viikkotavoitteiden toteutuminen:*
+
+##### Viikko 18
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 3.5.  |  |  |
+
+*No, palautitko kandin?*
