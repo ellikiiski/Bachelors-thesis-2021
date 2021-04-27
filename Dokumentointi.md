@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 22.4.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 26.4.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 *Sisun alta pois ei enää kerkiä, mutta kandin on oltava palautettu vappuun mennessä!*
@@ -133,6 +133,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 26.4. | Kanditapaaminen. [Version 2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf) läpikäyntiä. | 1 |
+| 26.4. | Helpoimmat korjaukset tehty, muut pistetty punafontilla ylös tekstin sekaan. | 2 |
 
 *Viikkotavoitteiden toteutuminen:*
 
