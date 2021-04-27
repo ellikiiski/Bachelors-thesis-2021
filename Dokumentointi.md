@@ -134,6 +134,8 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | :-----| :-------| :------|
 | 26.4. | Kanditapaaminen. [Version 2.1](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-2.1.pdf) läpikäyntiä. | 1 |
 | 26.4. | Helpoimmat korjaukset tehty, muut pistetty punafontilla ylös tekstin sekaan. | 2 |
+| 27.4. | Muutama korjaus lisää, zeta(s)->1 todistus omasta päästä. | 2 |
+
 
 *Viikkotavoitteiden toteutuminen:*
 
