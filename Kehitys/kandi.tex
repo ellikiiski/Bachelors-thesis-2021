@@ -42,11 +42,13 @@ Supervisor: Eero Saksman
 \pagenumbering{arabic}
 \section{Introduction}
 
-\textcolor{red}{Tähän pitää keksiä joku alkusepitys todellakin, KEKSI}
+Euler's totient function, also know as Euler's $\phi$-function, is one of the most fundamental functions in number theory. It is used broadly within the field and unlike most concepts in number theory, the totient function even has a significant practical application, namely the RSA encryption system.
 
-It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself.
+The totient function is also interesting as such, since its values differ quite unpredictable as it grows. That is why the growth rate of the Euler's totient function is the question, on which will be concentrating in this thesis.
 
-\textcolor{red}{Paremmat setit kiitos, MUOTOILE} The variables $k$, $m$, $n$ and $p$ are usually natural numbers, $p$ denoting particularly a prime number. Here the set of natural numbers $\N$ consists of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
+To talk about the notation, the variables $k$, $m$, $n$ and $p$ denote usually natural numbers, $p$ being particularly a prime number. We define the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
+
+It is also beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. Let us do just that.
 
 \begin{definition}
 Divisibility
@@ -94,7 +96,7 @@ Prime number
 
 Integer $p\in\N$ is a prime, if $p \geq 2$ and if $k\in\N$ it holds that $k \,\vert\, p$ implies $k\in\{1, p\}$. The set of prime numbers is denoted by $\Prime$.
 
-It is well known that there are infinitely many primes.
+It is a well known result that there are infinitely many primes.
 
 %In other words, all integers greater than $1$, only divisible by themself and $1$, are primes.
 
@@ -115,7 +117,7 @@ Function $f\colon \N \rightarrow \R$ is called number theoretic function. It is 
 
 \section{Euler's totient function and its properties}
 
-Now that we have revised some of the basic concepts in number theory, let us introduce Euler's totient function (also known as Euler's $\phi$-function) itself. It is a number theoretic function that counts the positive co-primes of a given number that are less or equal to it. We start by formally defining the function and then showing a few of its properties.
+Now that we have revised some of the basic concepts in number theory, let us introduce Euler's totient function itself. It is a number theoretic function that counts the positive co-primes of a given number that are less or equal to it. We start by formally defining the function and then showing a few of its properties.
 
 \begin{definition}
 Euler's totient function $\phi: \N \rightarrow \N$
@@ -159,7 +161,7 @@ Assume $m>1$, $n>1$ and $\gcd(m,n)=1$. Consider the array
 
 which consists of integers from $0$ to $mn-1$ forming a complete residue system (mod $mn$).
 
-Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them. \textcolor{red}{Tarviiks tää nyt jotain lähdettä vai ei, PÄÄTÄ}
+Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them.
 
 Next consider the co-prime columns. Every column forms a complete residue system (mod $n$)
 %(\textcolor{blue}{LeVeque: thm. 3.5, chp. 3.2, p. 52})
@@ -222,8 +224,6 @@ For every $p \in \Prime$ holds $\phi(p) = p-1$\,.
 
 \begin{proof}
 
-\textcolor{red}{Vois lisää nopee suoranki todistuksen, LISÄÄ}
-
 Let $n\in\Prime$. We observe that the only prime that divides $n$ is $n$ itself. Hence by the Euler's product formula
 \begin{equation*}
     \phi(n) = n \prod_{p \,\vert\, n} \left(1 - \frac{1}{p}\right) = n\left(1-\frac{1}{n}\right) = n-1\,.
@@ -236,11 +236,11 @@ Let $n\in\Prime$. We observe that the only prime that divides $n$ is $n$ itself.
 \section{Helpful functions and results}
 \label{apujutut}
 
-In order to determine the order of growth of the totient function, we must introduce a few functions and auxiliary results that are used in the proof of the lower limit. Since all of the results of this chapter serve mainly as tools, we do not give details for some of them.
+In order to determine the order of growth of the totient function, we must introduce a few functions and auxiliary results that are used in a proof later on. Since all of the results of this chapter serve mainly as tools, we do not give details for some of them.
 
 \subsection{Mertens' theorems}
 
-The most important of the results is the Mertens' third theorem. We still need some lemmas before the proof of the theorem itself. First, we introduce few functions. The $O$-function, defined formally below, relative size of two expressions.
+The most important of the results is the Mertens' third theorem. We still need some lemmas before the proof of the theorem itself. First, we introduce few functions. The $O$-function, defined formally below, describes the relative size of two expressions.
 
 \begin{definition}
 O-function
@@ -290,14 +290,21 @@ We notice that as the sum runs through all combinations of primes $p$ and positi
 \begin{proof}
 First, we have a weak form of so called Stirling's formula \cite{Goldmakher}
 
-\textcolor{red}{Ei tästä ees ymmärrä mitä tässä tapahtuu, TODISTUS UUTEEN USKOON}
-
+We observe that
 \begin{align*}
-    \sum_{n\leq x} \log n & = \int_1^x \log t\,d\lfloor t\rfloor\\
-    & = \lfloor x\rfloor\log x - \int_1^x \frac{\lfloor t \rfloor}{t}\,dt\\
-    & = x\log x - \{x\}\log x - x + 1 + \int_1^x \frac{\{t\}}{t}\,dt\\
-    & = x\log x - x + O(\log x)\,.
+    \left\vert \log n - \int_{n-1}^n \log t \,dt \right\vert & = \vert \log n - n\log n -\log (n-1) + n\log (n-1) +1 \vert \\
+    & = \int_{n-1}^n \log \left(\frac{n}{t}\right) \,dt = \int_{n-1}^n \log \left(1+\frac{n-t}{t}\right)\\
+    & \leq \int_{n-1}^n \frac{n-t}{t} \,dt = n\log \left(1+\frac{1}{n-1}\right) - 1\\
+    & \leq n\left(\frac{1}{n-1}\right) - 1 = \frac{1}{n-1}\,,
 \end{align*}
+from which we get
+\begin{align*}
+    \left\vert \sum_{n\leq x} \log n - \int_1^x \log t \,dt \right\vert \leq \sum_{2\leq n\leq x} \frac{1}{n-1} = O(\log x)\,.
+\end{align*}
+ Hence
+ \begin{equation*}
+     \sum_{n\leq x} \log n = \int_1^x \log t\,dt + O(\log x) = x\log x - x + O(\log x)\,.
+ \end{equation*}
 
 On the other hand, by Theorem \ref{thm:lambdaf} we can deduce
 \begin{equation*}
@@ -317,7 +324,7 @@ since $\frac{O(\psi(x))}{x}=O(1)$ by Lemma \ref{lemma:cheb} below.
 \end{proof}
 \end{lemma}
 
-It is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Let us also introduce another similar function, the $\vartheta$-function, as we will need it too.
+It is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Along with it, let us also introduce another similar function, the $\vartheta$-function, as we will need it soon too.
 
 \begin{definition}
 Chebyshev functions $\vartheta$ and $\psi$
@@ -513,7 +520,8 @@ Let $n=p_1^{k(p_1)}p_2^{k(p_2)}\cdots p_r^{k(p_r)}$ be the prime factorization o
 \end{equation*}
 
 \begin{proof}
-\textcolor{red}{Ei ois varmaan vaikea todistaa, KOITAS} The proof is fairly easy and it can be found in \textit{An introduction to the Theory of Numbers} \cite{HardyWright} as Theorem 275 (ch. 16.7, p. 311).
+
+The proof is fairly easy and it can be found in \textit{An introduction to the Theory of Numbers} \cite{HardyWright} as Theorem 275 (ch. 16.7, p. 311).
 %\textcolor{blue}{Hardy-Wright: thm. 275, chp. 16.7, p. 311 }.
 \end{proof}
 \end{lemma}
@@ -585,9 +593,9 @@ Altogether,
 \end{proof}
 \end{lemma}
 
-\section{The limits of Euler's totient function}
+\section{The growth rate of Euler's totient function}
 
-Finally reaching the point, in which we are equipped to start dealing with the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula prsents the totient function in a more computable form. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
+Finally reaching the point, in which we are equipped to start dealing with the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula prsents the totient function in a more computable form than the mere definition. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
 
 Let us amuse ourselves with a quick example.
 
@@ -694,10 +702,15 @@ and by the Mertens' third theorem (Theorem \ref{thm:mertens3})
     & = \lim_{t \rightarrow \infty} e^\gamma \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} \left(\log t \prod_{p\leq t} \left(1-\frac{1}{p}\right) \right)\\
     & = \lim_{t \rightarrow \infty} e^\gamma \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} e^{-\gamma}\\
     & = \lim_{t \rightarrow \infty} \left( 1-\frac{1}{t}\right)^\frac{t}{\log t}\\
+    & = \lim_{t \rightarrow \infty} \frac{(t-1)^\frac{t}{\log t}}{t^\frac{t}{\log t}}\\
     & = 1\,.
 \end{align*}
 
-\textcolor{red}{The last limit was seen by observing that... LISÄÄ}
+The last limit was seen by observing that $t^{\frac{t}{\log t}} = e^t$.
+
+\begin{equation*}
+    \lim_{t \rightarrow \infty} \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} = \lim_{t \rightarrow \infty} \frac{(t-1)^\frac{t}{\log t}}{t^\frac{t}{\log t}}
+\end{equation*}
 
 Now we have proved the part (\ref{eq:first}) and showed that
 $\liminf{f(n)}\geq 1$.
