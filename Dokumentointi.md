@@ -4,7 +4,7 @@
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 <del><em>Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!</em></del>  
-<del><em>Sisun alta pois ei enää kerkiä, mutta kandin on oltava palautettu vappuun mennessä!<em></del>  
+<del><em>Sisun alta pois ei enää kerkiä, mutta kandin on oltava palautettu vappuun mennessä!</em></del>  
 Nopee nyt se kandi valmiiksi, että voi nauttia kesäilloista töiden jälkeen eikä murehtia YHÄ kandia!
 
 #### Viikkoaikataulu
