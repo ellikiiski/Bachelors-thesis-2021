@@ -23,7 +23,7 @@
 | vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | 24 |
 | vk [17](#Viikko-17) | Maanantaina kanditapaaminen. **Kandi valmiiksi!** Korjaukset Saksmanin neuvojen mukaan ja tekstit valmiiksi tiistai-iltaan mennessä. Lähetys Marialle oikoluettavaksi. Lähteiden ja viittausten viilaus. Kypsyysnäyte. | 8 |
 | vk [18](#Viikko-18) | Maanantaina kanditapaaminen. Viimeiset korajukset viimeisten kommenttien mukaan. **Kandin palautus!** | 0 |
-| vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi!** | |
+| vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
