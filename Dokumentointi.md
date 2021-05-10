@@ -152,6 +152,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 ##### Viikko 19
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 10.5. |  |  |
+| 10.5. | Välihöpinät viilausta vaille valmiiksi. | 1 |
 
 *No, palautitko kandin?*
