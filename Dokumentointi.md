@@ -23,7 +23,9 @@
 | vk [16](#Viikko-16) | Todistettavaa: Mertensin lause!!, varthetahomma, sigmafunktion tulokaava. Myös zetafunktion raja-arvo. Tiistaina about lopullinen versio Saksmanille, keskiviikkona tapaaminen. | 24 |
 | vk [17](#Viikko-17) | Maanantaina kanditapaaminen. **Kandi valmiiksi!** Korjaukset Saksmanin neuvojen mukaan ja tekstit valmiiksi tiistai-iltaan mennessä. Lähetys Marialle oikoluettavaksi. Lähteiden ja viittausten viilaus. Kypsyysnäyte. | 8 |
 | vk [18](#Viikko-18) | Maanantaina kanditapaaminen. Viimeiset korajukset viimeisten kommenttien mukaan. **Kandin palautus!** | 0 |
-| vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | |
+| vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | 2 |
+| vk [20](#Viikko-19) | Jos nyt vaan lukisit sen kandin läpi ja korjaisit pari juttuu niin pääsisit tästäkin riesasta. | 0 |
+| vk [21](#Viikko-19) | HUOH, samat sanat. | |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -153,5 +155,20 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 10.5. | Välihöpinät viilausta vaille valmiiksi. | 1 |
+| 11.5. | Kypsyysnäytteen väsäämistä. | 1 |
 
-*No, palautitko kandin?*
+*No, palautitko kandin?* NO EN! Sama laulu.
+
+##### Viikko 20
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| ei ikinä | yhtään mitään | nolla sekuntia |
+
+*No, palautitko kandin?* Arvaa.
+
+##### Viikko 19
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 24.5. | Läpilukemista. | 1 |
+
+*No, palautitko kandin?* 
