@@ -170,5 +170,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 24.5. | Läpilukemista. | 1 |
+| 27.5. | Korjaamista, hiomista. Oiskohan tää nyt jo pian valmis. | 2 |
 
 *No, palautitko kandin?* 
