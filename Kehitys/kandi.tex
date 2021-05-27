@@ -39,16 +39,33 @@ Supervisor: Eero Saksman
 \thispagestyle{empty}
 \clearpage
 
+\thispagestyle{empty}
+\section*{Summary in Finnish}
+
+\begin{otherlanguage}{finnish}
+
+Lukuteoriassa Eulerin $\phi$-funktio on merkittävä kuvaus, joka kertoo eräällä taval\-la kokonaislukujen jaollisuudesta. Lukuteoreettisena funktiona se kuvaa luonnollisia lukuja toisiksi luonnollisiksi luvuiksi siten, että sen arvo luvulla $n$ on sellaisten positiivisten kokonaislukujen määrä, jotka ovat sitä pienempiä ja joilla ei ole ykköstä suurempia yhteisiä tekijöitä sen kanssa.
+
+Tässä kandidaatintutkielmassa keskitytään tarkastelemaan, millaisia arvoja Eulerin $\phi$-funktio voi saada hyvin suurilla luvuilla. Eritysen kiinnostavaa on, kuinka pieniä nämä arvot voivat olla suhteessa mielivaltaiseen lukuun $n$. Aloitamme teeman käsittelyn lukuteorian peruskäsitteistä ja jatkamme usean määritelmän ja aputuloksen kautta kohti $\phi$-funktion kasvuvauhdin alarajan todistusta, johon kaikki kulminoituu. Kyseinen todistus osoittautui kirjoitusvaiheessa yllättävän monikerroksiseksi ja vaati täten kokonaisen osan pelkälle avustavien funktioiden ja lemmojen esittelylle.
+
+Eulerin $\phi$-funktio saa suurimmat arvonsa alkuluvuilla. Tämä on paitsi intuitiivista, on myös varsin triviaalia todistaa, että jokaisella alkuluvulla $p$ funtkio saa arvon $\phi(p)=p-1$. Pienimpien arvojen löytäminen ja niiden suuruuden määrittäminen sen sijaan ei ole lainkaan yhtä suoraviivaista. Joistakin selvästi monilla luvuilla jaollisista luvuista kuten $24$ on toki helppo huomata, että $\phi$-funktion arvo kyseisessä kohdassa lienee varsin pieni. Arvon suhteellisen suuruuden määrittäminen kuitenkin vaikeutuu, kun siirrytään tarkastelemaan yhä suurempia lukuja.
+
+Tämän tutkielman rakenne on seuraavanlainen. Johdannossa kerrataan tärkeimpiä lukuteorian käsitteitä ja seuraavassa luvussa esitellään itse $\phi$-funktio muutamine ominaisuuksineen. Tämän jälkeen jatketaan tarvittavien aputulosten parissa. Oikeastaan vasta viimeisessä luvussa päästään tutkielman otsikon aiheeseen, kun käsittelyyn otetaan $\phi$- funktion kasvuvauhti. Lukijan on siis kärsivällisesti maltettava pysyä mukana aivan loppuun saakka.
+
+\end{otherlanguage}
+
+\clearpage
+
 \pagenumbering{arabic}
 \section{Introduction}
 
 Euler's totient function, also know as Euler's $\phi$-function, is one of the most fundamental functions in number theory. It is used broadly within the field and unlike most concepts in number theory, the totient function even has a significant practical application, namely the RSA encryption system.
 
-The totient function is also interesting as such, since its values differ quite unpredictable as it grows. That is why the growth rate of the Euler's totient function is the question, on which will be concentrating in this thesis.
+The totient function is also interesting as such, since its values differ quite unpredictable as it grows. That is why the growth rate (i.e. the order) of the Euler's totient function is the question, on which will be concentrating in this thesis.
 
-To talk about the notation, the variables $k$, $m$, $n$ and $p$ denote usually natural numbers, $p$ being particularly a prime number. We define the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. Also, in chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
+To talk about the notation, the variables ($a$, $b$, $k$, $m$, $n$, $p$ etc.) denote integers if not stated otherwise. Particularly $p$ is always a prime number. Also, wdefine the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. In chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
 
-It is also beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. Let us do just that.
+It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. Hence, let us do just that.
 
 \begin{definition}
 Divisibility
@@ -71,7 +88,6 @@ The number $d$ is called the greatest common divisor of $a$ and $b$, denoted by 
 
 \begin{proof}
 This is proved in \textit{Fundamentals of Number theory} \cite{LeVeque} as Theorem 2.1 (ch. 2.1, p. 31).
-%\textcolor{blue}{LeVeque: thm 2.1, chp 2.1, p. 31}
 \end{proof}
 \end{theorem}
 
@@ -94,7 +110,7 @@ for all $i\in\{0,1,\dots,m-1\}$.
 \begin{definition}
 Prime number
 
-Integer $p\in\N$ is a prime, if $p \geq 2$ and if $k\in\N$ it holds that $k \,\vert\, p$ implies $k\in\{1, p\}$. The set of prime numbers is denoted by $\Prime$.
+Integer $p\in\N$ is a prime, if $p \geq 2$ and for all $k\in\N$ it holds that $k \,\vert\, p$ implies $k\in\{1, p\}$. The set of prime numbers is denoted by $\Prime$.
 
 It is a well known result that there are infinitely many primes.
 
@@ -132,7 +148,7 @@ We set $\phi(1) = 1$. For all $n \geq 2$, $\phi(n)$ is the number of integers $a
 \begin{figure}[!htb]
     \centering
     \includegraphics[width =120mm]{kuva1-phifunc.eps}
-    \caption{Graph of Euler's totient function when $n\in\{1,2,\dots,100\}$}.
+    \caption{Graph of Euler's totient function when $n\in\{1,2,\dots,100\}$.}
     \label{fig:k1}
 \end{figure}
 
@@ -163,11 +179,9 @@ which consists of integers from $0$ to $mn-1$ forming a complete residue system 
 
 Clearly, each row of the array forms a complete residue system (mod $m$) and all the elements of any column are congruent to each other (mod $m$). Now there are two types of columns: $\phi(m)$ columns containing only co-primes to $m$ and the rest containing none of them.
 
-Next consider the co-prime columns. Every column forms a complete residue system (mod $n$)
-%(\textcolor{blue}{LeVeque: thm. 3.5, chp. 3.2, p. 52})
-\cite[Thm. 3.5]{LeVeque}, meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
+Next consider the co-prime columns. Every column forms a complete residue system (mod $n$) \cite[Thm. 3.5]{LeVeque}, meaning each includes $\phi(n)$ elements co-prime to $n$. Counting $\phi(n)$ elements from all the $\phi(m)$ columns we get in total $\phi(m)\phi(n)$ numbers that are relatively prime to both $m$ and $n$.
 
-On the other hand, since $\gcd(m,n)=1$, an integer $k$ is co-prime to $mn$ if and only if both $\gcd(m,k)=1$ and $\gcd(n,k)=1$ are true. Hence there are $\phi(m)\phi(n)$ numbers relatively prime to $mn$. Thus by definition $\phi(mn)=\phi(m)\phi(n)$.
+On the other hand, since $\gcd(m,n)=1$, an integer $k$ is co-prime to $mn$ if and only if both $\gcd(m,k)=1$ and $\gcd(n,k)=1$ are true. Hence there are $\phi(m)\phi(n)$ numbers relatively prime to $mn$. Thus, by definition $\phi(mn)=\phi(m)\phi(n)$.
 
 The case $m=1$ or $n=1$ is trivial, since $\phi(1)=1$ and hence $\phi(mn)=\phi(m)\phi(n)$.
 
@@ -175,7 +189,7 @@ The case $m=1$ or $n=1$ is trivial, since $\phi(1)=1$ and hence $\phi(mn)=\phi(m
 
 \end{theorem}
 
-The definition of Euler's totient function is rather verbal, making it somewhat inconvenient to handle in computation. Fortunately, there is a simple formula to calculate the value as a product involving primes that divide $n$.
+As seen above, the definition of Euler's totient function is rather verbal, making it somewhat inconvenient to handle in computation. Fortunately, there is a simple formula to calculate the value as a product involving primes that divide $n$.
 
 \begin{theorem}
 Euler's product formula
@@ -192,7 +206,7 @@ where $\prod_{p \,\vert\, n} \left(1 - \frac{1}{p}\right)$ stands for the produc
 
 \begin{proof}
 
-Assume first that $n = p^k$, where $p\in \Prime$. Integers $x$, for which $gdc(p^k,x)>1$, are exactly the numbers $x=mp$ where $m\in \{1,2,\dots,p^{k-1}\}$.
+Assume first that $n = p^k$, where $p\in \Prime$. Integers $b$, for which $\gcd(p^k,b)>1$, are exactly the numbers $b=mp$ where $m\in \{1,2,\dots,p^{k-1}\}$.
 
 Hence
 \begin{equation*}
@@ -224,7 +238,9 @@ For every $p \in \Prime$ holds $\phi(p) = p-1$\,.
 
 \begin{proof}
 
-Let $n\in\Prime$. We observe that the only prime that divides $n$ is $n$ itself. Hence by the Euler's product formula
+Let $n\in\Prime$. There are $n$ elements in the set $\{1,2,\dots,n\}$, only $1$ and $n$ of which, by the definition of a prime number, divide $n$. Since also $\gcd(1,n)=1$, there is only one number that is not coprime to $n$, namely $n$ itself. Hence, $\phi(n)=n-1$.
+
+We could arrive to the same conclusion with Euler's product formula. That is, by making the same observation that the only prime that divides $n$ is $n$ itself. We get
 \begin{equation*}
     \phi(n) = n \prod_{p \,\vert\, n} \left(1 - \frac{1}{p}\right) = n\left(1-\frac{1}{n}\right) = n-1\,.
 \end{equation*}
@@ -236,16 +252,16 @@ Let $n\in\Prime$. We observe that the only prime that divides $n$ is $n$ itself.
 \section{Helpful functions and results}
 \label{apujutut}
 
-In order to determine the order of growth of the totient function, we must introduce a few functions and auxiliary results that are used in a proof later on. Since all of the results of this chapter serve mainly as tools, we do not give details for some of them.
+In order to determine the order of growth of the totient function, we must introduce a few functions and auxiliary results that are used in a proof later on. Since the results of this chapter serve mainly as tools, we do not give details for all of them.
 
 \subsection{Mertens' theorems}
 
-The most important of the results is the Mertens' third theorem. We still need some lemmas before the proof of the theorem itself. First, we introduce few functions. The $O$-function, defined formally below, describes the relative size of two expressions.
+The most important of the results is the Mertens' third theorem. Though, we still need some lemmas before the proof of the theorem itself. First we introduce few functions: the $O$-function, defined formally below, describes the relative size of two expressions.
 
 \begin{definition}
 O-function
 
-Let $x$ be a real variable tending to infinity and $f(x)$ and $g(x)$ be functions of $x$. We say $f(x)=O(g(x))$, if $\vert f(x) \vert < Ag(x)$ for some constant $A$.
+Let $x$ be a real variable tending to infinity and $f(x)$ and $g(x)$ be functions of $x$. We say $f(x)=O(g(x))$, if $\vert f(x) \vert < A\,g(x)$ for some constant $A$.
 \end{definition}
 
 For example $8x=O(x)$ and $\sin{x}=O(1)$. We can also do calculations with the function, for example $O(x)+O(1)=O(x)$ and $O(x)\cdot O(x) = O(x^2)$.
@@ -271,13 +287,13 @@ Let $p\in\Prime$ and $k\geq1$.
     \sum_{d\,\vert\, n} \Lambda(d) = \log n\,.
 \end{equation*}
 \begin{proof}
-Let us denote $n=\prod p^k$. Now, by definition, we have
+Let us denote $n=\prod p^k$. By definition, we have
 \begin{equation*}
     \sum_{d\,\vert\, n} \Lambda(d) = \sum_{p^k\,\vert\, n} \log p\,.
 \end{equation*}
 We notice that as the sum runs through all combinations of primes $p$ and positive integer powers $k$ such that $p^k\,\vert\, n$, each $\log p$ occurs $k$ times. Hence
 \begin{equation*}
-    \sum_{p^k\,\vert\, n} \log p = \sum a \log p = \sum \log p^a = \log \prod p^a = \log n\,.
+    \sum_{p^k\,\vert\, n} \log p = \sum k \log p = \sum \log p^k = \log \prod p^k = \log n\,.
 \end{equation*}
 \end{proof}
 \end{theorem}
@@ -288,7 +304,7 @@ We notice that as the sum runs through all combinations of primes $p$ and positi
     \sum_{n\leq x} \frac{\Lambda(n)}{n} = \log x + O(1)\,.
 \end{equation*}
 \begin{proof}
-First, we have a weak form of so called Stirling's formula \cite{Goldmakher}
+First, we have a weak form of so called Stirling's formula
 
 We observe that
 \begin{align*}
@@ -324,7 +340,7 @@ since $\frac{O(\psi(x))}{x}=O(1)$ by Lemma \ref{lemma:cheb} below.
 \end{proof}
 \end{lemma}
 
-It is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Along with it, let us also introduce another similar function, the $\vartheta$-function, as we will need it soon too.
+As we did in the previous proof, it is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Along with it, let us also introduce another similar function, the $\vartheta$-function, as we will need it soon too.
 
 \begin{definition}
 Chebyshev functions $\vartheta$ and $\psi$
@@ -354,16 +370,18 @@ The following lemma, so called Abel's partial summation formula, presents a conv
 
 \begin{lemma}
 \label{lemma:abelsum}
-Abel's partial summation formula \emph{\cite{HardyWright}}
+Abel's partial summation formula
 
 If $c_1, c_2,\dots$ is a sequence of real numbers such that $c_i=0$ for $i<2$ and
 \begin{equation*}
     C(t) = \sum_{n\leq t} c_n
 \end{equation*}
-and $f(t)$ has continuous derivative for $t \geq 2 \in \R$, then
+and function $f(t)$ has continuous derivative for $t \geq 2 \in \R$, then
 \begin{equation*}
     \sum_{n\leq x} c_n\,f(n) = C(x)\,f(\lfloor x\rfloor)-\int_2^x C(t)\,f'(t)\,dt\,.
 \end{equation*}
+
+\clearpage
 
 \begin{proof}
 First we notice that $C(n) = C(t)$ and $f(n)=f(\lfloor t\rfloor)$, when $n\leq t < n+1$.
@@ -379,7 +397,7 @@ We have
 
 On the other hand, since $f(t)$ is continuously differentiable when $t\geq2$ and $C(t)=0$ elsewhere, we have
 \begin{equation*}
-     C(n)\,(f(n)-f(n+1)) = \int_{n+1}^n C(t)\,f'(t)\,dt = -\int_n^{n+1} C(t)\,f'(t)\,dt\,.
+     C(n)\,(f(n)-f(n+1)) = -\int_n^{n+1} C(t)\,f'(t)\,dt\,.
 \end{equation*}
 Finally, by combining these we get
 \begin{align*}
@@ -390,16 +408,15 @@ Finally, by combining these we get
 \end{proof}
 \end{lemma}
 
-Next we present two of Mertens' theorems. The third theorem is the one we actually use later on, however, we settle for thoroughly proving only the second. That is, the proof of the third (the part where a mysterious constant $\gamma$ pops up) would unfortunately steal too much space from the actual subject of this thesis.
+Next we present two of Mertens' theorems. The third theorem is the one we will actually use later on, however, we settle for thoroughly proving only the second. That is, the proof of the third (the part where a mysterious constant $\gamma$ pops up) would unfortunately steal too much space from the actual subject of this thesis.
 
 \begin{theorem}
-Mertens' second theorem \emph{\cite{Goldmakher}}
+Mertens' second theorem
 %(\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})
 \label{thm:mertens32}
 
 For some constant $B$,
 \begin{equation*}
-    %\lim_{n\rightarrow\infty} \left(\sum_{p\leq n}\left(\frac{1}{p}\right) - \log\log n + B\right) = 0\,,
     \sum_{p\leq n}\frac{1}{p} = \log\log n + B + O\left(\frac{1}{\log n}\right)\,.
 \end{equation*}
 
@@ -440,7 +457,7 @@ proving the claim.
 \end{theorem}
 
 \begin{theorem}
-Mertens' third theorem \emph{\cite{HardyWright}}
+Mertens' third theorem
 %(\textcolor{blue}{Hardy-Wright: thm. 429, chp. 22.8, p. 466})
 \label{thm:mertens3}
 
@@ -471,13 +488,13 @@ or equivalently
     0 & = \log\log n + \gamma + \sum_{p\leq n} \log \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log n}\right)\\
     & = \log\log n + \gamma + \log \prod_{p\leq n} \left(1-\frac{1}{p}\right) + O\left(\frac{1}{\log n}\right)
 \end{align*}
-Thus, since $e^{O\left(\frac{1}{\log n}\right)}=1+O\left(\frac{1}{\log n}\right)$ \cite[p. 9]{Rosen}
+Thus, since $e^{O\left(\frac{1}{\log n}\right)}=1+O\left(\frac{1}{\log n}\right)$ \cite[p. 9]{Rosen}, we get
 \begin{equation*}
     1 = \log n \cdot e^\gamma \cdot \prod_{p\leq n} \left(1-\frac{1}{p}\right) \cdot \left(1+O\left(\frac{1}{\log n}\right)\right)
 \end{equation*}
 and finally
 \begin{equation*}
-    e^{-\gamma} = \log n \prod_{p\le n} \left(1-\frac{1}{p}\right) \left(1+O\left(\frac{1}{\log n}\right)\right)
+    e^{-\gamma} = \log n \prod_{p\le n} \left(1-\frac{1}{p}\right) \left(1+O\left(\frac{1}{\log n}\right)\right)\,.
 \end{equation*}
 
 Hence
@@ -489,9 +506,9 @@ Hence
 \end{theorem}
 
 \begin{remark}
-About the Euler-Mascheroni constant. \emph{\cite{gamma}}
+About the Euler-Mascheroni constant.
 
-The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the harmonic series and natural logarithm,
+The Euler-Mascheroni constant $\gamma$ equals the limit of the difference of the harmonic series and natural logarithm \emph{\cite{gamma}},
 \begin{equation*}
     \gamma=\lim_{n\rightarrow\infty} \left(\sum_{k=1}^n \frac{1}{k} - \log n\right) \approx 0,57721566\,.
 \end{equation*}
@@ -501,7 +518,7 @@ The constant appears in many connections in mathematics, including here in the M
 
 \subsection{Functions $\sigma$ and $\zeta$}
 
-The $\sigma$-function is also a number theoretical and it is quite closely related to the $\phi$-function itself, as we will soon see. The value of $\sigma(n)$ is the sum of the divisors of $n$, or formally defined as:
+The $\sigma$-function is also a number theoretical function and it is quite closely related to the $\phi$-function, as we will soon see. The value of $\sigma(n)$ is the sum of the divisors of $n$, or formally defined as:
 
 \begin{definition}
 The sigma function
@@ -514,9 +531,9 @@ The sigma function
 
 \begin{lemma}
 \label{lemma:sigma}
-Let $n=p_1^{k(p_1)}p_2^{k(p_2)}\cdots p_r^{k(p_r)}$ be the prime factorization of $n$, where $p_1,p_2,\dots,p_r$ are distinct primes and $k(p_i)\geq0$ is the power of each $p_i$. Then
+Let $n=p_1^{k_{p1}}p_2^{k_{p2}}\cdots p_r^{k_{pr}}$ be the prime factorization of $n$, where $p_1,p_2,\dots,p_r$ are distinct primes and $k_{pi}\geq0$ is the power of each $p_i$. Then
 \begin{equation*}
-    \sigma(n) = \prod_{p\,\vert\, n} \frac{p^{k(p)+1}-1}{p-1}\,.
+    \sigma(n) = \prod_{p\,\vert\, n} \frac{p^{k_p+1}-1}{p-1}\,.
 \end{equation*}
 
 \begin{proof}
@@ -535,10 +552,10 @@ The proof is fairly easy and it can be found in \textit{An introduction to the T
 \begin{proof}
 By the Euler's product formula and Lemma \ref{lemma:sigma} we get
 \begin{align*}
-    \phi(n)\,\sigma(n) & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\,\vert\, n} \frac{p^{k+1}-1}{p-1}\\
-    & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\,\vert\, n} p^k \cdot \prod_{p\,\vert\, n} \frac{p-\frac{1}{p^k}}{p-1}\\
-    & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot n \prod_{p\,\vert\, n}\frac{1-\frac{1}{p^{k+1}}}{1-\frac{1}{p}}\\
-    & = n^2 \prod_{p\,\vert\, n} \left(1-\frac{1}{p^{k+1}}\right) < n^2\,.
+    \phi(n)\,\sigma(n) & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\,\vert\, n} \frac{p^{k_p+1}-1}{p-1}\\
+    & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot \prod_{p\,\vert\, n} p^k_p \cdot \prod_{p\,\vert\, n} \frac{p-\frac{1}{p^k_p}}{p-1}\\
+    & = n\prod_{p\,\vert\, n}\left(1-\frac{1}{p}\right) \cdot n \prod_{p\,\vert\, n}\frac{1-\frac{1}{p^{k_p+1}}}{1-\frac{1}{p}}\\
+    & = n^2 \prod_{p\,\vert\, n} \left(1-\frac{1}{p^{k_p+1}}\right) < n^2\,.
 \end{align*}
 Equivalently
 \begin{equation*}
@@ -547,10 +564,10 @@ Equivalently
 \end{proof}
 \end{lemma}
 
-We also need the $\zeta$-function briefly later on.
+Lastly, let us define the $\zeta$-funtion. We will need it briefly later on.
 
 \begin{definition}
-Riemann $\zeta$-function \emph{\cite{HardyWright}}
+Riemann $\zeta$-function
 %(\textcolor{blue}{Hardy-Wright: chp. 17.2, p. 320})
 
 \begin{equation*}
@@ -580,7 +597,7 @@ This is not difficult to prove using unique decomposition of primes. See \textit
 \begin{proof}
 By Lemma \ref{lemma:zeta}, we have
 \begin{equation*}
-    \lim_{s\rightarrow\infty} \zeta(s) = \lim_{s\rightarrow\infty} \prod_p \frac{1}{1-\frac{1}{p^s}} = \prod_p \lim_{s\rightarrow\infty} \frac{1}{1-\frac{1}{p^s}}
+    \lim_{s\rightarrow\infty} \zeta(s) = \lim_{s\rightarrow\infty} \prod_p \frac{1}{1-\frac{1}{p^s}}
 \end{equation*}
 and since $\lim_{s\rightarrow\infty}\frac{1}{k^s}=0$ when $k>1$, we get
 \begin{equation*}
@@ -595,27 +612,27 @@ Altogether,
 
 \section{The growth rate of Euler's totient function}
 
-Finally reaching the point, in which we are equipped to start dealing with the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula prsents the totient function in a more computable form than the mere definition. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
+Finally reaching the point, in which we are equipped to start dealing with the order of the totient function, let us still consider, why it is interesting at all. As pondered before, the Euler's product formula presents the totient function in a more computable form than the mere definition. However, using it requires factorization of $n$, which still makes it difficult to estimate the size of $\phi(n)$ as $n$ gets bigger.
 
 Let us amuse ourselves with a quick example.
 
 \begin{example}
-\emph{\cite{Pomerance}} Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$. By Theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
+Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$ \emph{\cite{Pomerance}}. By Theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
 
-Now we see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
+We see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
 \end{example}
 
 
-All this in our mind, next we will prove the exact growth rate of the totient function, starting with the fairly obvious upper bound and then diving into a detailed proof of the lower growth rate.
+Next, all this in our mind, we will prove the exact growth rate of the totient function, starting with the fairly obvious upper bound and then diving into a detailed proof of the lower growth rate.
 
 \subsection{Upper bound of Euler's totient function}
 
-The maximum value of $\phi(n)$ given $n$ is easy to deduce with Theorem \ref{thm:phiprime}.
+The maximum value of $\phi(n)$ for given $n$ is easy to deduce with Theorem \ref{thm:phiprime}.
 
 \begin{theorem}%(\textcolor{blue}{Hardy-Wright: thm. 326, chp. 18.4, p. 352})
 For every $n \geq 2$ holds $\phi(n) \leq n-1$ and
 \begin{equation*}
-    \limsup{\frac{\phi(n)}{n}} = 1\,.
+    \limsup_{n \rightarrow \infty}{\frac{\phi(n)}{n}} = 1\,.
 \end{equation*}
 
 \begin{proof}
@@ -642,7 +659,7 @@ in \textit{An Introduction to the Theory of Numbers} \cite{HardyWright} (ch. 22.
 \begin{theorem}
 %(\textcolor{blue}{Hardy-Wright: thm. 328, chp. 18.4, p. 352})
 \begin{equation*}
-    \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,,
+    \liminf_{n \rightarrow \infty}{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,,
 \end{equation*}
 where $\gamma$ is the Euler-Mascheroni constant.
 
@@ -708,20 +725,14 @@ and by the Mertens' third theorem (Theorem \ref{thm:mertens3})
 
 The last limit was seen by observing that $t^{\frac{t}{\log t}} = e^t$.
 
-\begin{equation*}
-    \lim_{t \rightarrow \infty} \left( 1-\frac{1}{t}\right)^\frac{t}{\log t} = \lim_{t \rightarrow \infty} \frac{(t-1)^\frac{t}{\log t}}{t^\frac{t}{\log t}}
-\end{equation*}
-
 Now we have proved the part (\ref{eq:first}) and showed that
-$\liminf{f(n)}\geq 1$.
+$\liminf_{n \rightarrow \infty}{f(n)}\geq 1$.
 
 Next, to prove the part (\ref{eq:second}), let us define
 \begin{equation*}
     g(n)=\frac{\sigma(n)}{n\,e^\gamma \log\log n}
 \end{equation*}
-and show that $g(n_j) \geq F_2(j)$ for an infinite increasing sequence $n_2,n_3\dots$. In the end we will see that the desired result follows from this.
-
-The desired result will follow from Theorem \ref{thm:sigmafii}.
+and show that $g(n_j) \geq F_2(j)$ for an infinite increasing sequence $n_2,n_3\dots$. In the end we will see that the desired result follows from Theorem \ref{thm:sigmafii}.
 
 Let us define
 \begin{equation*}
@@ -773,7 +784,7 @@ By the Mertens' third theorem (Theorem \ref{thm:mertens3})
     \lim_{t \rightarrow \infty}\, \frac{1}{t} \cdot \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right) = \lim_{t \rightarrow \infty} \frac{1}{\log e^t\prod_{p\leq e^t} \left(1-\frac{1}{p}\right)} = \frac{1}{e^{-\gamma}} = e^\gamma
 \end{equation*}
 
-and since $\zeta(t+1)\rightarrow 1$ when $t\rightarrow\infty$ (Lemma \ref{lemma:zetalim}), we now have
+and since $\zeta(t+1)\rightarrow 1$ when $t\rightarrow\infty$ (Lemma \ref{lemma:zetalim}), we have
 \begin{align*}
     \lim_{t \rightarrow \infty} F_2(t) & = \lim_{t \rightarrow \infty} \frac{1}{e^\gamma\,\zeta(t+1)(B+t+\log t)} \prod_{p\leq e^t} \left(\frac{1}{1-\frac{1}{p}}\right)\\
     & = \lim_{t \rightarrow \infty} \frac{e^\gamma\,t}{e^\gamma\,\zeta(t+1)(B+t+\log t)}\\
@@ -793,15 +804,15 @@ and since $g(n_j) \geq F_2(j)$
     f(n_j)\leq \frac{1}{F_2(j)}\,.
 \end{equation*}
 
-Thus we have proved part (\ref{eq:second}) and shown that $\liminf{f(n)\leq 1}$.
+Thus we have proved part (\ref{eq:second}) and shown that $\liminf_{n \rightarrow \infty}{f(n)\leq 1}$.
 
-Altogether, from the parts (\ref{eq:first}) and (\ref{eq:second}), we get that the limit inferior of $f(n)$ must be
+Altogether, from the parts (\ref{eq:first}) and (\ref{eq:second}), we get
 \begin{equation*}
-    \liminf{\frac{\phi(n)\,e^\gamma \log\log n}{n}}=\liminf{f(n)}=1\,
+    \liminf_{n \rightarrow \infty}{\frac{\phi(n)\,e^\gamma \log\log n}{n}}=\liminf_{n \rightarrow \infty}{f(n)}=1\,
 \end{equation*}
 and equivalently
 \begin{equation*}
-    \liminf{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,.
+    \liminf_{n \rightarrow \infty}{\frac{\phi(n)\,\log\log n}{n}}=e^{-\gamma}\,.
 \end{equation*}
 \end{proof}
 \end{theorem}
@@ -809,20 +820,9 @@ and equivalently
 \begin{figure}[!htb]
     \centering
     \includegraphics[width =120mm]{kuva2-philimits.eps}
-    \caption{\textcolor{red}{KORJAA KUVAN SELITTEET "growth rate"}
-    Upper and lower growth rate of Euler's totient function with small and relatively large $n$. We see that the lower bound only holds when $n\rightarrow\infty$.}
+    \caption{Upper and lower growth rate of Euler's totient function with small and relatively large $n$. We see that the lower bound only holds when $n\rightarrow\infty$.}
     \label{fig:k2}
 \end{figure}
-
-\textcolor{red}{- Kuvia voisi kommentoida jotenkin väliselityksissä}
-
-\textcolor{red}{- Lähteet ja viittaukset kuntoon}
-
-\textcolor{red}{- Väliselitykset minttiin: limit-check, now-check, marian oikoluku}
-
-\textcolor{red}{- Johdonmukaisuus ja eheys: muuttuja-check}
-
-\textcolor{red}{- Kypsyysnäyte}
 
 \clearpage
 \nocite{*}

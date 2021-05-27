@@ -37,7 +37,7 @@ hold on
 plot(n,upper,'linewidth',2);
 plot(n,lower,'linewidth',2);
 plot(n,phi,'-k*');
-legend('upper limit', 'lower limit', 'location', 'northwest')
+legend('upper growth rate', 'lower growth rate', 'location', 'northwest')
 % isoja n
 subplot(2,1,2)
 hold on
