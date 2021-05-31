@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 10.5.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 31.5.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 <del><em>Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!</em></del>  
@@ -24,8 +24,9 @@
 | vk [17](#Viikko-17) | Maanantaina kanditapaaminen. **Kandi valmiiksi!** Korjaukset Saksmanin neuvojen mukaan ja tekstit valmiiksi tiistai-iltaan mennessä. Lähetys Marialle oikoluettavaksi. Lähteiden ja viittausten viilaus. Kypsyysnäyte. | 8 |
 | vk [18](#Viikko-18) | Maanantaina kanditapaaminen. Viimeiset korajukset viimeisten kommenttien mukaan. **Kandin palautus!** | 0 |
 | vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | 2 |
-| vk [20](#Viikko-19) | Jos nyt vaan lukisit sen kandin läpi ja korjaisit pari juttuu niin pääsisit tästäkin riesasta. | 0 |
-| vk [21](#Viikko-19) | HUOH, samat sanat. | |
+| vk [20](#Viikko-20) | Jos nyt vaan lukisit sen kandin läpi ja korjaisit pari juttuu niin pääsisit tästäkin riesasta. | 0 |
+| vk [21](#Viikko-21) | HUOH, samat sanat. | 3 |
+| vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, **kandin lopullisen version palautus** viikon loppuun menneessä! |  |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -166,10 +167,15 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 
 *No, palautitko kandin?* Arvaa.
 
-##### Viikko 19
+##### Viikko 21
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 24.5. | Läpilukemista. | 1 |
 | 27.5. | Korjaamista, hiomista. Oiskohan tää nyt jo pian valmis. | 2 |
 
-*No, palautitko kandin?* 
+*No, palautitko kandin?* Palautin lopullista edeltävän version.
+
+##### Viikko 22
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 2.6. |  |  |
