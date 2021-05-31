@@ -171,7 +171,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 24.5. | Läpilukemista. | 1 |
-| 27.5. | Korjaamista, hiomista. Oiskohan tää nyt jo pian valmis. | 2 |
+| 27.5. | Korjaamista, hiomista. Oiskohan tää nyt jo pian valmis. ([Versio 3.0](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-3.0.pdf).) | 2 |
 
 *No, palautitko kandin?* Palautin lopullista edeltävän version.
 
