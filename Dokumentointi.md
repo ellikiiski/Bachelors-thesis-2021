@@ -195,7 +195,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 ##### Viikko 24
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 16.6.  |  |  |
+| 16.6.  | Helpot korjaukset plus raja-arvohomman mietintää | 0.5 |
 
 *No, palautitko kandin?* 
 
