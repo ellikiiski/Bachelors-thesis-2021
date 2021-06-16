@@ -1,6 +1,6 @@
 ### Sykkimissuunnitelma
 
-**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 31.5.2021)*
+**Ehkä kuudessadaskuudeskymmeneskuudes versio** *(viim. muokattu 16.6.2021)*
 
 *Tavoite*: Kandi etenee joka viikko ja parin viikon välein tilannekatsaus Saksmanin kanssa.  
 <del><em>Pakko valmistua viimeistään 29.4.2021, jottei joudu väsäämään SISUn kautta papereita ulos!</em></del>  
@@ -26,7 +26,10 @@
 | vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | 2 |
 | vk [20](#Viikko-20) | Jos nyt vaan lukisit sen kandin läpi ja korjaisit pari juttuu niin pääsisit tästäkin riesasta. | 0 |
 | vk [21](#Viikko-21) | HUOH, samat sanat. | 3 |
-| vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, **kandin lopullisen version palautus** viikon loppuun menneessä! |  |
+| vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, kandin lopullisen version palautus viikon loppuun menneessä! | 0 |
+| vk [23](#Viikko-23) | Kanditapaaminen oikeesti keskiviikkona! | 0.5 |
+| vk [24](#Viikko-24) | Viimeiset korjaukset ja oikoluku |  |
+| vk [25](#Viikko-25) | **Kandin lopullisen version palautus** keskiviikkoon menneessä! |  |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -178,4 +181,27 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 ##### Viikko 22
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 2.6. |  |  |
+| 2.6.  | Piti olla kanditapaaminen mut Saksman feidas :D | 0 |
+
+*No, palautitko kandin?* Tällä kertaa ei ollu mun vika, että en!
+
+##### Viikko 23
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 9.6.  | Kanditapaaminen, sain vimoset kommentit | 0.5 |
+
+*No, palautitko kandin?* Enpä sitte vieläkään niitä korjauksia tehnyt. Jos vaik ens viikolla.
+
+##### Viikko 24
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 16.6.  |  |  |
+
+*No, palautitko kandin?* 
+
+##### Viikko 25
+| päivä | edistys | tunnit |
+| :-----| :-------| :------|
+| 21.6.  |  |  |
+
+*No, palautitko kandin?* 
