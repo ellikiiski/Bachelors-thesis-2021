@@ -26,7 +26,7 @@
 | vk [19](#Viikko-19) | Loppuhiomiset lähteiden ja tekstien kanssa. Skippistä oikoluvulle. **Kandi valmiiksi ja palautukseen!** | 2 |
 | vk [20](#Viikko-20) | Jos nyt vaan lukisit sen kandin läpi ja korjaisit pari juttuu niin pääsisit tästäkin riesasta. | 0 |
 | vk [21](#Viikko-21) | HUOH, samat sanat. | 3 |
-| vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, kandin lopullisen version palautus viikon loppuun menneessä! | 0 |
+| vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, **kandin lopullisen version palautus** viikon loppuun menneessä! | 0 |
 | vk [23](#Viikko-23) | Kanditapaaminen oikeesti keskiviikkona! | 0.5 |
 | vk [24](#Viikko-24) | Viimeiset korjaukset ja oikoluku |  |
 | vk [25](#Viikko-25) | **Kandin lopullisen version palautus** keskiviikkoon menneessä! |  |
