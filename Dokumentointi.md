@@ -196,6 +196,7 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
 | 16.6.  | Helpot korjaukset plus raja-arvohomman mietintää | 0.5 |
+| 17.6.  | Loput korjaukset hoideltu, oikolukua vaille valmis | 1.5 |
 
 *No, palautitko kandin?* 
 
