@@ -63,7 +63,7 @@ Euler's totient function, also know as Euler's $\phi$-function, is one of the mo
 
 The totient function is also interesting as such, since its values differ quite unpredictable as it grows. That is why the growth rate (i.e. the order) of the Euler's totient function is the question, on which will be concentrating in this thesis.
 
-To talk about the notation, the variables ($a$, $b$, $k$, $m$, $n$, $p$ etc.) denote integers if not stated otherwise. Particularly $p$ is always a prime number. Also, wdefine the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. In chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
+To talk about the notation, the variables ($a$, $b$, $k$, $m$, $n$, $p$ etc.) denote integers if not stated otherwise. Particularly $p$ is always a prime number. Also, we define the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. In chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
 
 It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. Hence, let us do just that.
 
@@ -304,9 +304,7 @@ We notice that as the sum runs through all combinations of primes $p$ and positi
     \sum_{n\leq x} \frac{\Lambda(n)}{n} = \log x + O(1)\,.
 \end{equation*}
 \begin{proof}
-First, we have a weak form of so called Stirling's formula
-
-We observe that
+First, we observe that
 \begin{align*}
     \left\vert \log n - \int_{n-1}^n \log t \,dt \right\vert & = \vert \log n - n\log n -\log (n-1) + n\log (n-1) +1 \vert \\
     & = \int_{n-1}^n \log \left(\frac{n}{t}\right) \,dt = \int_{n-1}^n \log \left(1+\frac{n-t}{t}\right)\\
@@ -617,7 +615,7 @@ Finally reaching the point, in which we are equipped to start dealing with the o
 Let us amuse ourselves with a quick example.
 
 \begin{example}
-Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$ \emph{\cite{Pomerance}}. By Theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
+Let $n = 2^p - 1 \in \Prime$ be so called Mersenne prime, meaning also $p \in \Prime$. By Theorem \ref{thm:phiprime} we know $\phi(n) = n - 1$. On the other hand, from Euler's product formula follows that $\phi(n+1) = \phi(2^p) = 2^p(1-\frac{1}{2}) = \frac{2^p}{2} = \frac{n+1}{2}$.
 
 We see that while $n$ and $n+1$ differ from each other only insignificantly, $\phi(n+1)$ is half the size of $\phi(n)$.
 \end{example}
@@ -671,7 +669,7 @@ It is enough to show that $\liminf_{n\rightarrow\infty}f(n) = 1$, when
 \end{equation*}
 %and $\gamma$ is the Euler-Mascheroni constant.
 
-The proof is based on finding functions $F_1$ and $F_2$, which are used to estimate $f$, such that $\lim_{t\rightarrow \infty} F_1(t) = 1$ and $\lim_{t\rightarrow \infty} F_2(t) = 1$. First we show that 
+The proof is based on finding auxiliary functions $F_1$ and $F_2$, which are used to estimate $f$, and such that $\lim_{t\rightarrow \infty} F_1(t) = 1$ and $\lim_{t\rightarrow \infty} F_2(t) = 1$. First we show that 
 \begin{equation}
 \label{eq:first}
     f(n) \geq F_1(\log n)\text{ for all }n\geq 3
@@ -723,9 +721,19 @@ and by the Mertens' third theorem (Theorem \ref{thm:mertens3})
     & = 1\,.
 \end{align*}
 
-The last limit was seen by observing that $t^{\frac{t}{\log t}} = e^t$.
+The last limit was seen by observing that
+\begin{align*}
+    \lim_{t\rightarrow\infty} \log \left(\frac{(t-1)^\frac{t}{\log t}}{t^\frac{t}{\log t}}\right) & = \lim_{t\rightarrow\infty} \frac{t}{\log t} \log\left(\frac{t-1}{t}\right)\\
+    & = \lim_{t\rightarrow\infty} t \log \left(1-\frac{1}{t}\right) \cdot \lim_{t\rightarrow\infty} \frac{1}{\log t}\\
+    & = \lim_{t\rightarrow\infty} -\frac{1}{\log t} = 0\,
+\end{align*}
+since
+\begin{equation*}
+    \lim_{t\rightarrow\infty} t \log \left(1-\frac{1}{t}\right) = \lim_{t\rightarrow\infty} \frac{\log \left(1-\frac{1}{t}\right)}{\frac{1}{t}} = \lim_{t\rightarrow\infty} \frac{\frac{1}{t(t-1)}}{-\frac{1}{t^2}} = \lim_{t\rightarrow\infty} -\frac{t}{t-1} = -1
+\end{equation*}
+by l'H\^{o}pitals rule. 
 
-Now we have proved the part (\ref{eq:first}) and showed that
+Now we have proved the part (\ref{eq:first}) and shown that
 $\liminf_{n \rightarrow \infty}{f(n)}\geq 1$.
 
 Next, to prove the part (\ref{eq:second}), let us define
@@ -748,7 +756,7 @@ where $A$ is a positive real constant.
 Hence
 \begin{equation*}
 \label{eq:lognj}
-    \log \log n_j = \log (Aje^j) = \log A + \log j + j\,.
+    \log \log n_j \leq \log (Aje^j) = \log A + \log j + j\,.
 \end{equation*}
 
 Since $n_j$ is the product of all primes smaller than $e^j$ to the power of $j$, by Lemma \ref{lemma:sigma} we have
@@ -820,7 +828,7 @@ and equivalently
 \begin{figure}[!htb]
     \centering
     \includegraphics[width =120mm]{kuva2-philimits.eps}
-    \caption{Upper and lower growth rate of Euler's totient function with small and relatively large $n$. We see that the lower bound only holds when $n\rightarrow\infty$.}
+    \caption{Upper and lower growth rate of Euler's totient function with small and relatively large $n$. We see that the lower bound only begins to hold when $n\rightarrow\infty$.}
     \label{fig:k2}
 \end{figure}
 
