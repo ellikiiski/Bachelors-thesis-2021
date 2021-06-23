@@ -59,13 +59,13 @@ Tämän tutkielman rakenne on seuraavanlainen. Johdannossa kerrataan tärkeimpi�
 \pagenumbering{arabic}
 \section{Introduction}
 
-Euler's totient function, also know as Euler's $\phi$-function, is one of the most fundamental functions in number theory. It is used broadly within the field and unlike most concepts in number theory, the totient function even has a significant practical application, namely the RSA encryption system.
+Euler's totient function, also know as Euler's $\phi$-function, is one of the most fundamental functions in number theory. It is used broadly within the field and unlike most concepts in number theory, the totient function even has a significant practical application, namely the RSA encryption system \cite{RSA}.
 
-The totient function is also interesting as such, since its values differ quite unpredictable as it grows. That is why the growth rate (i.e. the order) of the Euler's totient function is the question, on which will be concentrating in this thesis.
+The totient function is also interesting as such, since its values differ quite unpredictable as it grows. This becomes apparent, when taking a look at figures \ref{fig:k1} and \ref{fig:k2} later. That is why the growth rate (i.e. the order) of the Euler's totient function is the question, on which will be concentrating in this thesis.
 
 To talk about the notation, the variables ($a$, $b$, $k$, $m$, $n$, $p$ etc.) denote integers if not stated otherwise. Particularly $p$ is always a prime number. Also, we define the set of natural numbers $\N$ to consist of positive integers, meaning $0 \not\in \N$. In chapter \ref{apujutut} the notation $\lfloor x\rfloor$ is used to denote the integer part and $\{x\}$ the decimal part of a real number $x$. In other words, $x=\lfloor x\rfloor+\{x\}$.
 
-It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. Hence, let us do just that.
+It is beneficial to go through the basic definitions concerning the essential areas before considering the totient function itself. So, let us start with that.
 
 \begin{definition}
 Divisibility
@@ -313,9 +313,11 @@ First, we observe that
 \end{align*}
 from which we get
 \begin{align*}
-    \left\vert \sum_{n\leq x} \log n - \int_1^x \log t \,dt \right\vert \leq \sum_{2\leq n\leq x} \frac{1}{n-1} = O(\log x)\,.
+    \left\vert \sum_{n\leq x} \log n - \int_1^x \log t \,dt \right\vert \leq \sum_{2\leq n\leq x} \frac{1}{n-1} = O(\log x)\,,
 \end{align*}
- Hence
+ since the partial sums of harmonic series grow logarithmically.
+ 
+Hence
  \begin{equation*}
      \sum_{n\leq x} \log n = \int_1^x \log t\,dt + O(\log x) = x\log x - x + O(\log x)\,.
  \end{equation*}
@@ -324,7 +326,7 @@ On the other hand, by Theorem \ref{thm:lambdaf} we can deduce
 \begin{equation*}
     \sum_{n\leq x} \log n = \sum_{n\leq x} \sum_{d\,\vert\, n} \Lambda(d) = \sum_{d\leq x} \Lambda(d)\,\left\lfloor \frac{x}{d}\right\rfloor = x\cdot\sum_{d\leq x} \frac{\Lambda(d)}{d} + O(\psi(x))\,,
 \end{equation*}
-where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ as defined before.
+where $\psi(x)=\sum_{d\leq x} \Lambda(d)$ as will be defined later.
 
 Now we have
 \begin{equation*}
@@ -338,14 +340,14 @@ since $\frac{O(\psi(x))}{x}=O(1)$ by Lemma \ref{lemma:cheb} below.
 \end{proof}
 \end{lemma}
 
-As we did in the previous proof, it is sometimes useful to denote the partial sum of the $\Lambda$-function with another function, so called $\psi$-function. Along with it, let us also introduce another similar function, the $\vartheta$-function, as we will need it soon too.
+As we did in the previous proof, it is sometimes useful to denote the partial sum of the $\Lambda$-function with so called $\psi$-function. Along with it, let us introduce another similar function, the $\vartheta$-function, as we will need it soon too.
 
 \begin{definition}
 Chebyshev functions $\vartheta$ and $\psi$
 
 \begin{align*}
      \vartheta(x) & = \sum_{p\leq x} \log p = \log \prod_{p\leq x} p\\
-    \psi(x) & = \sum_{p^m\leq x} \log p = \sum_{n\leq x} \Lambda(n)
+    \psi(x) & = \sum_{p^k\leq x} \log p = \sum_{n\leq x} \Lambda(n)
 \end{align*}
 \end{definition}
 
