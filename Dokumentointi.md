@@ -28,8 +28,8 @@
 | vk [21](#Viikko-21) | HUOH, samat sanat. | 3 |
 | vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, **kandin lopullisen version palautus** viikon loppuun menneessä! | 0 |
 | vk [23](#Viikko-23) | Kanditapaaminen oikeesti keskiviikkona! | 0.5 |
-| vk [24](#Viikko-24) | Viimeiset korjaukset ja oikoluku |  |
-| vk [25](#Viikko-25) | **Kandin lopullisen version palautus** keskiviikkoon menneessä! |  |
+| vk [24](#Viikko-24) | Viimeiset korjaukset ja oikoluku | 2 |
+| vk [25](#Viikko-25) | **Kandin lopullisen version palautus** keskiviikkoon mennessä! |  |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -195,14 +195,15 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 ##### Viikko 24
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 16.6.  | Helpot korjaukset plus raja-arvohomman mietintää | 0.5 |
-| 17.6.  | Loput korjaukset hoideltu, oikolukua vaille valmis | 1.5 |
+| 16.6. | Helpot korjaukset plus raja-arvohomman mietintää | 0.5 |
+| 17.6. | Loput korjaukset hoideltu, oikolukua vaille valmis | 1.5 |
 
-*No, palautitko kandin?* 
+*No, palautitko kandin?* No ennn...
 
 ##### Viikko 25
 | päivä | edistys | tunnit |
 | :-----| :-------| :------|
-| 21.6.  |  |  |
+| 21.6. | Oikoluvun aloittamista ja puutteitahan vielä löytyi | 1 |
+| 23.6. | Nyt ehkä oikeesti vikan korjaukset hoideltu | 1 |
 
 *No, palautitko kandin?* 
