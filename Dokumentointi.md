@@ -206,5 +206,6 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | :-----| :-------| :------|
 | 21.6. | Oikoluvun aloittamista ja puutteitahan vielä löytyi | 1 |
 | 23.6. | Nyt ehkä oikeesti vikan korjaukset hoideltu | 1 |
+| 23.6. | Viimeinen oikoluku ja korjailu, SE ON VALMIS!! | 2 |
 
 *No, palautitko kandin?* 
