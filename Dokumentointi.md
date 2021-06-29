@@ -30,7 +30,8 @@
 | vk [22](#Viikko-22) | Kanditapaaminen keskiviikkona, **kandin lopullisen version palautus** viikon loppuun menneessä! | 0 |
 | vk [23](#Viikko-23) | Kanditapaaminen oikeesti keskiviikkona! | 0.5 |
 | vk [24](#Viikko-24) | Viimeiset korjaukset ja oikoluku | 2 |
-| vk [25](#Viikko-25) | **Kandin lopullisen version palautus** keskiviikkoon mennessä! |  |
+| vk [25](#Viikko-25) | **Kandin lopullisen version palautus** juhannukseen mennessä! | 4 |
+| | YHTEENSÄ | 77 |
 
 #### Kooste kandin edistymisestä ennen 17.2.2021
 
@@ -207,5 +208,8 @@ Englanninnoksen valmistuttua aloin perehtyä jälleen φ-funktion alarajoihin ja
 | 21.6. | Oikoluvun aloittamista ja puutteitahan vielä löytyi | 1 |
 | 23.6. | Nyt ehkä oikeesti vikan korjaukset hoideltu | 1 |
 | 23.6. | Viimeinen oikoluku ja korjailu, SE ON VALMIS!! | 2 |
+| 24.6. | Pikkujuttui vielä ja PALAUTUS! Myös arvosana tuli heti: femma perkele!! | 0 |
 
-*No, palautitko kandin?* 
+*No, palautitko kandin?* **V I H D O I N K I N !**
+
+Kiitti ja kuitti!
