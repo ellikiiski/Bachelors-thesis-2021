@@ -3,9 +3,10 @@
 **Subject: The order of Euler's totient function**  
 **Supervisor: Eero Saksman**
 
-[Latest verion of the paper (version 3.0)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-3.0.pdf)  
-[Current state (latest commit)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Kehitys/kandi.pdf)
-
-[Documentation of my writing process (in Finnish)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Dokumentointi.md)
+- [**Final version of the thesis**](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-3.0.pdf)  
+- [Version history (In Finnish)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/tree/master/Versiohistoria)
+- [Some references and inspiration/help papers](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/tree/master/Apupapereita)
+- [MATLAB code of the pictures](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/tree/master/MATLAB)
+- [Documentation of my writing process (in Finnish)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Dokumentointi.md)
 
 
