@@ -1,7 +1,8 @@
 # Bachelor's thesis
 
 **Subject: The order of Euler's totient function**  
-**Supervisor: Eero Saksman**
+**Supervisor: Eero Saksman**  
+**Grade: 5/5**
 
 - [**Final version of the thesis**](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/blob/master/Versiohistoria/version-FINAL.pdf)  
 - [Version history (in Finnish)](https://github.com/ellikiiski/Bachelors-thesis-2021-MAT/tree/master/Versiohistoria)
