@@ -1,4 +1,4 @@
-# Bachelor's thesis
+# Bachelor's thesis in mathematics at University of Helsinki
 
 **Subject: The order of Euler's totient function**  
 **Supervisor: Eero Saksman**  
